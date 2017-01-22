@@ -11,7 +11,7 @@
 	    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha/css/bootstrap.min.css" />
 
 			<!-- Custom styles -->
-	  	<link rel="stylesheet" href="/assets/css/styles.css">
+	  	<link rel="stylesheet" href="{{ site.github.url }}/assets/css/styles.css">
 
 			<!--Custom Fonts-->
 			<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
@@ -20,7 +20,7 @@
 			<!--Other Stuff-->
 			<link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" rel="stylesheet" />
 			<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
-			<link rel="icon" type="image/png" href="/assets/images/sep-black.png">
+			<link rel="icon" type="image/png" href="{{ site.github.url }}/assets/images/sep-black.png">
 
 	    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -39,10 +39,10 @@
 				☰
 			</button>
 			<div class="navbar-brand page-scroll logo-desktop">
-				<a href="/"><img src= "/assets/images/sep-white.png" id="navbar_img" alt="Sigma Eta Pi"></a>
+				<a href="/"><img src= "{{ site.github.url }}/assets/images/sep-white.png" id="navbar_img" alt="Sigma Eta Pi"></a>
 			</div>
 			<div class="navbar-brand page-scroll logo-mobile pull-left">
-				<a href="/"><img src= "/assets/images/sep-black.png" id="navbar_img" alt="Sigma Eta Pi"></a>
+				<a href="/"><img src= "{{ site.github.url }}/assets/images/sep-black.png" id="navbar_img" alt="Sigma Eta Pi"></a>
 			</div>
 			<div class="collapse navbar-toggleable-sm" id="collapsingNavbar">
 				<ul class="nav navbar-nav pull-right">
@@ -94,8 +94,8 @@
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
-	<script src="/assets/js/jquery.backstretch.min.js"></script>
-	<script src="/assets/js/scripts.js"></script>
+	<script src="{{ site.github.url }}/assets/js/jquery.backstretch.min.js"></script>
+	<script src="{{ site.github.url }}/assets/js/scripts.js"></script>
 	<script>
 		if (screen.width > 764) {
 			$(document).ready(function(){
@@ -114,7 +114,7 @@
 	<script>
 		$.backstretch([
 			{% for img in page.header %}
-				"/assets/images/{{ img }}",
+				"{{ site.github.url }}/assets/images/{{ img }}",
 			{% endfor %}
 		], {duration: 4000, fade: 1000});
 		</script>
