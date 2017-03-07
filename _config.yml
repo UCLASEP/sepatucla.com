@@ -19,7 +19,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Sigma Eta Pi, founded in 2010 at University of California Los Angeles,
   is the premier entrepreneurship fraternity on the West Coast.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://ucla.sigmaetapi.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://uclasep.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
