@@ -306,7 +306,7 @@ var muMembers = [
   },
   {
     firstname: "Christine",
-    lastname: "Aung",
+    lastname: "You",
     major: "Communications Studies",
     year: "2019",
     linkedin: "#",
