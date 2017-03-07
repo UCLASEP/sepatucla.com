@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="sepApp">
 	<head>
 		  <meta charset="utf-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -107,10 +107,13 @@
 	    	</div>
 				<div class="row bg-black text-center">
 					<br>
-					<p class="text-white">© 2016 — SEP | UCLA Alpha Chapter</p>
+					<p class="text-white">© 2017 — SEP | UCLA Alpha Chapter</p>
 				</div>
 	    </div>
 	</footer>
+
+	<div id="backstretch-overlay"></div>
+	<div id="backstretch-container"></div>
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -119,7 +122,12 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
 	<script src="{{ site.github.url }}/assets/js/jquery.backstretch.min.js"></script>
+	<script src="https://fb.me/react-15.0.1.js"></script>
+	<script src="https://fb.me/react-dom-15.0.1.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+	<script src="{{ site.github.url  }}/assets/js/constants.js"></script>
 	<script src="{{ site.github.url }}/assets/js/scripts.js"></script>
+	<script src="{{ site.github.url }}/assets/js/react-script.js" type="text/babel"></script>
 	<script>
 		if (screen.width > 764) {
 			$(document).ready(function(){
@@ -136,7 +144,7 @@
 
 	{% if page.header %}
 	<script>
-		$.backstretch([
+		$("#backstretch-container").backstretch([
 			{% for img in page.header %}
 				"{{ site.github.url }}/assets/images/{{ img }}",
 			{% endfor %}
