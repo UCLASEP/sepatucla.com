@@ -237,7 +237,7 @@ var lambdaMembers = [
     firstname: "Sriram",
     lastname: "Ramakrishnan",
     major: "Economics",
-    year: "2018",
+    year: "2017",
     linkedin: "#",
     email: "#"
   },
