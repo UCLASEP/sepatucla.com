@@ -49,7 +49,7 @@ var LetterClass = React.createClass({
         })
         .join(", ") : null;
     var notPicturedDiv =
-        this.props.members ? (<div className="not-pictured">Not pictured: {notPictured}</div>) : null;
+        notPictured ? (<div className="not-pictured">Not pictured: {notPictured}</div>) : null;
     return (
       <div className="brothers-container">
         <div className="brothers-class-title">{this.props.letter.toUpperCase()} CLASS</div>
