@@ -7,8 +7,7 @@ var etaMembers = [
     major: "Sociology",
     year: "2017",
     linkedin: "#",
-    email: "#",
-    notPictured: true
+    email: "#"
   }
 ];
 
@@ -56,8 +55,7 @@ var iotaMembers = [
     major: "Statistics",
     year: "2017",
     linkedin: "#",
-    email: "#",
-    notPictured: true
+    email: "#"
   },
   {
     firstname: "James",
@@ -116,8 +114,7 @@ var kappaMembers = [
     major: "Business Economics",
     year: "2017",
     linkedin: "#",
-    email: "#",
-    notPictured: true
+    email: "#"
   },
   {
     firstname: "Andrew",
@@ -134,8 +131,7 @@ var kappaMembers = [
     major: "Computer Science",
     year: "2017",
     linkedin: "#",
-    email: "#",
-    notPictured: true
+    email: "#"
   },
   {
     firstname: "Suhani",
@@ -143,8 +139,7 @@ var kappaMembers = [
     major: "Business Economics",
     year: "2018",
     linkedin: "#",
-    email: "#",
-    notPictured: true
+    email: "#"
   },
   {
     firstname: "Christina",
@@ -176,8 +171,7 @@ var kappaMembers = [
     major: "Cognitive Science",
     year: "2017",
     linkedin: "#",
-    email: "#",
-    notPictured: true
+    email: "#"
   }
 ];
 
@@ -205,8 +199,7 @@ var lambdaMembers = [
     major: "Computer Science",
     year: "2018",
     linkedin: "#",
-    email: "#",
-    notPictured: true
+    email: "#"
   },
   {
     firstname: "Ethan",
@@ -247,8 +240,7 @@ var lambdaMembers = [
     major: "Global Studies",
     year: "2018",
     linkedin: "#",
-    email: "#",
-    notPictured: true
+    email: "#"
   },
   {
     firstname: "Rohan",
