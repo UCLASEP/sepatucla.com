@@ -3,11 +3,13 @@
 
 var Member = React.createClass({
   render: function() {
+    console.log(this.props.firstname.toLowerCase() + this.props.lastname.toLowerCase());
+    console.log(this.props.notpictured);
     return (
       <div className="brother">
         <div className='brother-img-container'>
           <img
-            src={'assets/images/brothers/' + this.props.firstname.toLowerCase() + this.props.lastname.toLowerCase() + '.jpg'}
+            src={'assets/images/brothers/' + (this.props.notpictured ? 'notpictured' : (this.props.firstname.toLowerCase() + this.props.lastname.toLowerCase())) + '.jpg'}
             className='img-responsive center-block'
           />
           <div className="brother-img-overlay"></div>
@@ -28,7 +30,7 @@ var LetterClass = React.createClass({
   render: function() {
     var items =
       this.props.members ? this.props.members.map(function(member){
-        return member.notPictured ? null : (
+        return (
           <Member
             firstname={member.firstname}
             lastname={member.lastname}
@@ -37,19 +39,10 @@ var LetterClass = React.createClass({
             linkedin={member.linkedin}
             email={member.email}
             execposition={member.execposition ? member.execposition : null}
+            notpictured={member.notPictured}
           />
         );
       }) : null;
-    var notPictured =
-        this.props.members ? this.props.members.filter(function(member){
-          return member.notPictured;
-        })
-        .map(function(member){
-          return member.firstname + " " + member.lastname;
-        })
-        .join(", ") : null;
-    var notPicturedDiv =
-        notPictured ? (<div className="not-pictured">Not pictured: {notPictured}</div>) : null;
     return (
       <div className="brothers-container">
         <div className="brothers-class-title">{this.props.letter.toUpperCase()} CLASS</div>
@@ -58,7 +51,6 @@ var LetterClass = React.createClass({
         <div className="brother-spacer"></div>
         <div className="brother-spacer"></div>
         <div className="brother-spacer"></div>
-        {notPicturedDiv}
       </div>
     );
   }
