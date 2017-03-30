@@ -136,7 +136,7 @@ var kappaMembers = [
   {
     firstname: "Suhani",
     lastname: "Ashok",
-    major: "Business Economics",
+    major: "Design | Media Arts",
     year: "2018",
     linkedin: "#",
     email: "#"
