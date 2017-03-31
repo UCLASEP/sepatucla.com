@@ -499,6 +499,51 @@ footer {
   }
 
 }
+
+//Shards stuff
+#shards-container {
+  position: relative;
+  height: 45vh;
+  max-width: 60vw;
+}
+
+#shards-logo {
+  position: relative;
+  height: 100%;
+}
+
+#shards-img-large {
+  position: absolute;
+  top: -32%;
+  left: -55%;
+  height: 220%;
+  opacity: 0.25;
+}
+
+#shards-img-above {
+  position: absolute;
+  top: -15%;
+  left: -20%;
+  height: 140%;
+  opacity: 0.6;
+}
+
+#shards-img-mid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  opacity: 0.8;
+}
+
+// #shards-img-below {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   height: 100%;
+//   opacity: 0.95;
+// }
+
 /** About Page **/
 #about-main .row {
   padding: 25px 0;
