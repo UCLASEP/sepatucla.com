@@ -4,6 +4,7 @@
 
 @import "normalize";
 @import "variables";
+@import "bootstrap_variables";
 @import "typography";
 @import "components";
 
@@ -33,7 +34,7 @@ hr.light {
 }
 
 hr.primary {
-    border-color: #056505;
+    border-color: $accent-color;
     opacity: 1;
 }
 
@@ -72,7 +73,7 @@ h6 {
 }
 
 i {
-  color: #056505;
+  color: $accent-color;
 }
 
 section {
@@ -305,32 +306,30 @@ header .header-content .inner p {
 
 
 .btn.btn-primary-outline {
-  color: #056505;
-  border-color: #056505;
+  color: $accent-color;
+  border: 2px solid $accent-color;
   padding: 10px 20px;
 }
 
 .btn.btn-primary-outline:hover,
 .btn.btn-primary-outline:active,
 .btn.btn-primary-outline:focus {
-  background-color: #056505;
+  background-color: $accent-color;
   color: #fff;
 }
 
 
 .btn.btn-primary-outline-reversed {
   color: #fff;
-  border-color: #056505;
-  background-color: #056505;
+  border: 2px solid #fff;
   padding: 10px 20px;
 }
 
 .btn.btn-primary-outline-reversed:hover,
 .btn.btn-primary-outline-reversed:active,
 .btn.btn-primary-outline-reversed:focus {
-  background-color: #055005;
-  border-color: #055005;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
 }
 
 @media(max-width:48em) {
@@ -452,7 +451,7 @@ footer {
     padding: 45px;
     padding-top: 40px;
     background-color: #111;
-    outline-color: #056505;
+    outline-color: $accent-color;
     outline-style: solid;
     outline-width: 5px;
 }
@@ -637,7 +636,7 @@ footer {
   }
 
   .brothers-caption {
-    // color: #056505;
+    // color: $accent-color;
     margin-bottom: -10px;
     font-weight: 700;
   }
