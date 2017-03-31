@@ -31,10 +31,10 @@
     $(document).mousemove(function(event){
       if ($("#shards-container")) {
         var location = 0.5 * $(document).width() - event.pageX;
-        $("#shards-img-above").css("transform", "rotateY(" + (Math.floor(location / 150) * 30) * (-2) + "deg)");
-        $("#shards-img-mid").css("transform", "rotateY(" + Math.floor(location / 300) * 300 + "deg)");
+        $("#shards-img-above").css("transform", "rotateY(" + Math.floor(location / 150) * 20 + "deg)");
+        $("#shards-img-mid").css("transform", "rotateY(" + (Math.floor(location / 150) * 40 + 180) + "deg)");
         // $("#shards-img-below").css("transform", "rotateY(" + Math.floor((0.5 * $(document).width() - event.pageX) / 200) * 50 + "deg)");
-        $("#shards-img-large").css("transform", "rotateY(" + Math.floor(location / 200) * 5 + "deg) scale(" + (1 + Math.floor(Math.abs(location) / 200) / 20) + ")");
+        $("#shards-img-large").css("transform", "rotateY(" + Math.floor(location / 200) * 10 + "deg) scale(" + (1 + Math.floor(Math.abs(location) / 200) / 20) + ")");
       }
     });
 
