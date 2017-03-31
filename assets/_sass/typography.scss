@@ -1,9 +1,15 @@
+@charset "UTF-8";
+
 @font-face {
-    font-family: "Priori Sans Regular";
-    src: url("../fonts/PrioriSansRegular.ttf");
+    font-family: "Encode Sans Wide Thin";
+    src: url("../css/fonts/EncodeSansWide-Thin.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: "Priori Sans Bold";
-    src: url("../fonts/PrioriSansBold.ttf");
+    font-family: "Encode Sans Bold";
+    src: url("../css/fonts/EncodeSans-Bold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
 }

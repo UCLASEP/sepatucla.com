@@ -99,12 +99,15 @@ section {
   margin: 0 auto;
 }
 
-.priori-regular {
-  font-family: "Priori Sans Regular";
+.encode-wide-thin {
+  font-family: "Encode Sans Wide Thin", sans-serif;
+  // font-family: "Trebuchet MS", sans-serif;
 }
 
-.priori-bold {
-  font-family: "Priori Sans Bold";
+.encode-bold {
+  font-family: "Encode Sans Bold", sans-serif;
+  // font-family: "Trebuchet MS", sans-serif;
+  // font-weight: bold;
 }
 
 #backstretch-container {
@@ -747,39 +750,39 @@ footer {
   .rush-text-date, .rush-text-title, .rush-text-location, .rush-text-time {
     padding: 0;
     margin: 0;
-    line-height: 90%;
+    line-height: 1.1;
     white-space: nowrap;
     width: 100%;
   }
 
   .rush-text-date, .rush-text-title {
-    font-size: 40px;
+    font-size: 35px;
     @media(max-width: $screen-md-max) {
-      font-size: 35px;
+      font-size: 30px;
     }
     @media(max-width: $screen-xs-max) {
-      font-size: 40px;
+      font-size: 35px;
     }
   }
 
   .rush-text-location {
-    font-size: 25px;
+    font-size: 22px;
     @media(max-width: $screen-md-max) {
-      font-size: 22px;
+      font-size: 18px;
     }
     @media(max-width: $screen-xs-max) {
-      font-size: 25px;
+      font-size: 22px;
     }
   }
 
   .rush-text-time {
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 20px;
     @media(max-width: $screen-md-max) {
-      font-size: 16px;
+      font-size: 14px;
     }
     @media(max-width: $screen-xs-max) {
-      font-size: 20px;
+      font-size: 18px;
     }
   }
 }
@@ -788,8 +791,12 @@ footer {
   width: 100%;
   text-align: center;
   display: none;
-  line-height: 80%;
   margin-bottom: 30px;
+
+  p {
+    font-size: 35px;
+    line-height: 90%;
+  }
 
   @media(max-width: $screen-md-max) {
     display: inherit;
