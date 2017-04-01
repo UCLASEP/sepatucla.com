@@ -3,8 +3,11 @@
 
 var Member = React.createClass({
   render: function() {
-    console.log(this.props.firstname.toLowerCase() + this.props.lastname.toLowerCase());
-    console.log(this.props.notpictured);
+    var linkedinElement = this.props.linkedin ? (
+      <a href={this.props.linkedin} className="brother-link" target="_blank">
+        <img src="assets/images/brothers/linkedin.png"/>
+      </a>
+    ) : null;
     return (
       <div className="brother">
         <div className='brother-img-container'>
@@ -12,7 +15,12 @@ var Member = React.createClass({
             src={'assets/images/brothers/' + (this.props.notpictured ? 'notpictured' : (this.props.firstname.toLowerCase() + this.props.lastname.toLowerCase())) + '.jpg'}
             className='img-responsive center-block'
           />
-          <div className="brother-img-overlay"></div>
+          <div className="brother-img-overlay">
+            <a href={'mailto:' + this.props.email} className="brother-link">
+              <img src="assets/images/brothers/email.png"/>
+            </a>
+            {linkedinElement}
+          </div>
         </div>
 
         <p className="brothers-caption text-uppercase text-center">{this.props.firstname} {this.props.lastname}</p>
@@ -36,7 +44,7 @@ var LetterClass = React.createClass({
             lastname={member.lastname}
             major={member.major}
             year={member.year}
-            linkedin={member.linkedin}
+            linkedin={member.linkedin ? member.linkedin : null}
             email={member.email}
             execposition={member.execposition ? member.execposition : null}
             notpictured={member.notPictured}

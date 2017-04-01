@@ -665,6 +665,13 @@ footer {
         height: 100%;
         top: 0;
         left: 0;
+        padding: 2vw;
+
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
 
         background-color: black;
         opacity: 0;
@@ -674,7 +681,18 @@ footer {
         -o-transition: opacity .5s ease-out;
 
         &:hover {
-          opacity: 0.4;
+          opacity: 0.5;
+        }
+
+        .brother-link {
+          height: 4vw;
+          @media(max-width: 48em) {
+            height: 8vw;
+          }
+          img {
+            height: 100%;
+            width: auto;
+          }
         }
       }
     }
