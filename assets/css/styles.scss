@@ -699,8 +699,7 @@ footer {
   }
 }
 
-/** ventures **/
-/** careers **/
+/** careers, ventures **/
 .grey img {
   -webkit-transition: all 1s ease;
      -moz-transition: all 1s ease;
@@ -713,13 +712,40 @@ footer {
   -webkit-filter: grayscale(100%);
 }
 
-.careers-img{
+.careers-container {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.careers-img, .ventures-img, .careers-spacer {
   padding: 4vh;
   position: relative;
+  width: 220px;
+  @media(max-width: $screen-md-max) {
+    width: 190px;
+  }
 }
-.careers-img > img{
-  max-height: 8em;
+
+.careers-img img {
+  max-height: 80px;
   max-width: 90%;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.ventures-img img {
+  max-height: 100px;
+  max-width: 90%;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 /** rush **/
@@ -875,15 +901,4 @@ footer {
 	left: 0;
 	width: 100%;
 	height: 100%;
-}
-
-/** ventures **/
-.ventures-img{
-  padding: 4vh;
-  position: relative;
-}
-
-.ventures-img img{
-  max-height: 20em;
-  max-width: 90%;
 }
