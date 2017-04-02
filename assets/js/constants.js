@@ -458,7 +458,7 @@ var nuMembers = [
     lastname: "Yoo",
     major: "Undeclared",
     year: "2019",
-    // linkedin: "#",
+    linkedin: "https://www.linkedin.com/in/will-yoo-ab0844128",
     email: "95kyungseok@gmail.com"
   },
   {
