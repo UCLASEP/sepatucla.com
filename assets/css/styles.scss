@@ -522,14 +522,14 @@ footer {
 
 #shards-logo {
   position: relative;
-  height: 100%;
+  width: 100%;
 }
 
 #shards-img-large {
   position: absolute;
   top: -32%;
   left: -55%;
-  height: 220%;
+  width: 220%;
   opacity: 0.25;
 }
 
@@ -537,7 +537,7 @@ footer {
   position: absolute;
   top: -15%;
   left: -20%;
-  height: 140%;
+  width: 140%;
   opacity: 0.6;
 }
 
@@ -545,7 +545,7 @@ footer {
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
+  width: 100%;
   opacity: 0.8;
 }
 
