@@ -122,8 +122,7 @@ var kappaMembers = [
     major: "Cognitive Science",
     year: "2016",
     linkedin: "https://www.linkedin.com/in/andrewwlee/",
-    email: "drew.lee@ucla.edu",
-    notPictured: true
+    email: "drew.lee@ucla.edu"
   },
   {
     firstname: "Kyle",
