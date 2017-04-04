@@ -19,6 +19,8 @@ body {
     font-family: 'Montserrat', sans-serif;
     top:0;
     overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: auto;
 }
 
 hr {
