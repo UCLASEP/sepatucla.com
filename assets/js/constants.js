@@ -437,7 +437,7 @@ var nuMembers = [
     email: "jackieljlin@g.ucla.edu"
   },
   {
-    firstname: "Sam",
+    firstname: "Samuel",
     lastname: "Gessow",
     major: "Mechanical Engineering",
     year: "2020",
@@ -477,16 +477,126 @@ var nuMembers = [
     email: "ysabelschav@gmail.com"
   }
 ];
-
+var xiMembers = [
+  {
+    firstname: "Swapnil",
+    lastname: "Bhardwaj",
+    major: "Business Economics",
+    year: "2020",
+    linkedin: "https://www.linkedin.com/in/swapnil-bhardwaj-050a8313a/",
+    email: "swapbhardwaj@g.ucla.edu",
+    notPictured: true,
+  },
+  {
+    firstname: "Adam",
+    lastname: "Brownell",
+    major: "Cognitive Science",
+    year: "2018",
+    linkedin: "https://www.linkedin.com/in/adam-brownell-581a89b5/",
+    email: "adam1brownell@gmail.com",
+    notPictured: true,
+  },
+  {
+    firstname: "Hirsh",
+    lastname: "Bhatt",
+    major: "Business Economics",
+    year: "2020",
+    linkedin: "https://www.linkedin.com/in/hirsh-bhatt-590987139",
+    email: "hirsh.bhatt@gmail.com",
+    notPictured: true,
+  },
+  {
+    firstname: "Jonathan",
+    lastname: "Chang",
+    major: "Business Economics",
+    year: "2020",
+    linkedin: "https://www.linkedin.com/in/thejonathanchang",
+    email: "changjonathan23@gmail.com",
+    notPictured: true,
+  },
+  {
+    firstname: "Ryan",
+    lastname: "Lopez",
+    major: "Economics",
+    year: "2018",
+    linkedin: "https://www.linkedin.com/in/ryanlopezucla",
+    email: "ryanlopez@ucla.edu",
+    notPictured: true,
+  },
+  {
+    firstname: "Tula",
+    lastname: "Masterman",
+    major: "Business Economics",
+    year: "2020",
+    linkedin: "https://www.linkedin.com/in/tula-masterman-423459123",
+    email: "tula@themastermans.com",
+    notPictured: true,
+  },
+  {
+    firstname: "Pradyuman",
+    lastname: "Mittal",
+    major: "Computer Science and Engineering",
+    year: "2020",
+    linkedin: "https://www.linkedin.com/in/pradyuman-mittal-16854390/",
+    email: "pradyuman.mittal789@gmail.com",
+    notPictured: true,
+  },
+  {
+    firstname: "Kiarod",
+    lastname: "Pashminehazar",
+    major: "Mechanical Engineering",
+    year: "2020",
+    linkedin: "https://www.linkedin.com/in/kia-azar-a81853128",
+    email: "kiarodazar@gmail.com",
+    notPictured: true,
+  },
+  {
+    firstname: "Jen",
+    lastname: "Shan",
+    major: "Psychobiology",
+    year: "2019",
+    linkedin: "https://www.linkedin.com/in/jennifer-shan-877315116",
+    email: "jenshan97@gmail.com",
+    notPictured: true,
+  },
+  {
+    firstname: "William",
+    lastname: "Shao",
+    major: "Computer Science",
+    year: "2019",
+    linkedin: "https://www.linkedin.com/in/wllmshao",
+    email: "wllmshao@gmail.com",
+    notPictured: true,
+  },
+  {
+    firstname: "Nishanth",
+    lastname: "Shetty",
+    major: "Math Economics",
+    year: "2020",
+    linkedin: "https://www.linkedin.com/in/nishanthdshetty",
+    email: "nishanth202@gmail.com",
+    notPictured: true,
+  },
+  {
+    firstname: "Megan",
+    lastname: "Shi",
+    major: "Cognitive Science",
+    year: "2019",
+    linkedin: "https://www.linkedin.com/in/megan-shi-033613118",
+    email: "meganshi@g.ucla.edu",
+    notPictured: true,
+  },
+  {
+    firstname: "Haley",
+    lastname: "Williams",
+    major: "Sociology",
+    year: "2019",
+    linkedin: "https://www.linkedin.com/in/haley-williams-4b403351/",
+    email: "haleywilliams64@gmail.com",
+    notPictured: true,
+  },
+];
 var membersclasses = [
-  {
-    letter: "Eta",
-    members: etaMembers
-  },
-  {
-    letter: "Theta",
-    members: thetaMembers
-  },
   {
     letter: "Iota",
     members: iotaMembers
@@ -506,5 +616,9 @@ var membersclasses = [
   {
     letter: "Nu",
     members: nuMembers
-  }
+  },
+  {
+    letter: "Xi",
+    members: xiMembers
+  },
 ];
