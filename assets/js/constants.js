@@ -475,7 +475,7 @@ var nuMembers = [
   {
     firstname: "Ysabel",
     lastname: "Chavez",
-    major: "Business Economics, Communications Studies",
+    major: "International Development Studies",
     year: "2019",
     linkedin: "https://www.linkedin.com/in/ysabel-chavez-793755b4/",
     email: "ysabelschav@gmail.com"
