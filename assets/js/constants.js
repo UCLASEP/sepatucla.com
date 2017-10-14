@@ -253,7 +253,6 @@ var lambdaMembers = [
     year: "2018",
     linkedin: "https://www.linkedin.com/in/mayur-bhandary-20b575107/",
     email: "mayurbhandary96@gmail.com",
-    notPictured: true
   }
 ];
 
@@ -374,7 +373,6 @@ var muMembers = [
     year: "2019",
     linkedin: "https://www.linkedin.com/in/famhuiying/",
     email: "yingfam@g.ucla.edu",
-    notPictured: true
   },
   {
     firstname: "Yong-Yi",
@@ -411,7 +409,6 @@ var nuMembers = [
     year: "2018",
     linkedin: "https://www.linkedin.com/in/emily-rajcic-46877a53/",
     email: "emilyrajcic@gmail.com",
-    notPictured: true
   },
   {
     firstname: "Eshan",
@@ -529,7 +526,6 @@ var xiMembers = [
     year: "2020",
     linkedin: "https://www.linkedin.com/in/tula-masterman-423459123",
     email: "tula@themastermans.com",
-    notPictured : true,
   },
   {
     firstname: "Pradyuman",
