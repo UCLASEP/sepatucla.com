@@ -1,3 +1,9 @@
+$(document).ready(function() {
+  setTimeout(function() {
+    $('body').addClass('loaded');
+  }, 1000);
+});
+
 (function($) {
 
     "use strict";
@@ -38,4 +44,22 @@
       }
     });
 
+    $("#logo-container").hover(
+          function() {
+              $("#shards-logo").attr("src", "/assets/images/sep-bird-front.gif");
+          },
+          function() {
+              $("#shards-logo").attr("src", "/assets/images/sep-front-still.png");
+          }                         
+    );
+
+    $("#logo-second-container").hover(
+          function() {
+              $("#shards-logo").attr("src", "/assets/images/sep-bird-side.gif");
+          },
+          function() {
+              $("#shards-logo").attr("src", "/assets/images/sep-side-still.png");
+          }                         
+    );
 })(jQuery);
+

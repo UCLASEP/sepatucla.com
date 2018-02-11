@@ -55,24 +55,32 @@
 
 </head>
 
-<body class="bg-faded">
+<body>
+
+	<!-- Preloader -->
+<!-- 	<div id="loader-wrapper">
+		<div id="loader"></div>
+
+		<div class="loader-section section-left"></div>
+		<div class="loader-section section-right"></div>
+	</div> -->
 
 	<!--navbar-->
 	<nav id="topNav" class="navbar navbar-default navbar-fixed-top">
 		<div class="container">
-			<button class="navbar-toggler hidden-md-up pull-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+			<button class="navbar-toggler hidden-md-up pull-right" id="collapse-toggle" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
 				☰
 			</button>
 			<div class="navbar-brand page-scroll logo-desktop">
-				<a href="{{ site.github.url }}/"><img src= "{{ site.github.url }}/assets/images/sep-white.png" id="navbar_img" alt="Sigma Eta Pi"></a>
+				<a href="{{ site.github.url }}/"><img src= "{{ site.github.url }}/assets/images/sep-green.png" id="navbar_img" alt="Sigma Eta Pi"></a>
 			</div>
 			<div class="navbar-brand page-scroll logo-mobile pull-left">
-				<a href="{{ site.github.url }}/"><img src= "{{ site.github.url }}/assets/images/sep-black.png" id="navbar_img" alt="Sigma Eta Pi"></a>
+				<a href="{{ site.github.url }}/"><img src= "{{ site.github.url }}/assets/images/sep-green.png" id="navbar_img" alt="Sigma Eta Pi"></a>
 			</div>
 			<div class="collapse navbar-toggleable-sm" id="collapsingNavbar">
 				<ul class="nav navbar-nav pull-right">
 					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">About</a>
+						<a class="nav-link dropdown-toggle" data-target="{{ site.github.url }}\/" href="{{ site.github.url }}/" role="button" aria-haspopup="true" aria-expanded="false">About</a>
 						<div class="dropdown-menu" aria-labelledby="Preview">
 							<a class="dropdown-item" href="{{ site.github.url }}/about">About Us</a>
 							<a class="dropdown-item" href="{{ site.github.url }}/sisterchapters">Sister Chapters</a>
@@ -89,7 +97,7 @@
 						<a class="nav-link page-scroll" href="{{ site.github.url }}/careers">Careers</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link page-scroll rush" href="{{ site.github.url }}/rush" style="font-weight: 900;">Rush</a>
+						<a class="nav-link page-scroll rush" href="{{ site.github.url }}/rush" style="color:#FBB124 !important;font-weight: 900;">Rush</a>
 					</li>
 				</ul>
 			</div>
@@ -108,7 +116,7 @@
 	    	</div>
 				<div class="row bg-black text-center">
 					<br>
-					<p class="text-white">© 2017 — Sigma Eta Pi | UCLA Alpha Chapter</p>
+					<p class="text-white">© 2018 — Sigma Eta Pi | UCLA Alpha Chapter</p>
 				</div>
 	    </div>
 	</footer>
@@ -118,7 +126,7 @@
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="{{ site.github.url }}/assets/js/jquery.backstretch.min.js"></script>
 
 	{% if page.header %}
@@ -141,12 +149,38 @@
 	<script src="{{ site.github.url }}/assets/js/scripts.js"></script>
 	<script src="{{ site.github.url }}/assets/js/react-script.js" type="text/babel"></script>
 	<script>
+	var path=location.pathname
+
+
 	var checkNavBar = function() {
 		if ($(document).scrollTop() > 50) { // check if user scrolled more than 50 from top of the browser window
 			$(".navbar-fixed-top").css("background-color", "#111"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+
+			$(document).on("click", "#collapse-toggle", function() {
+				var isExpanded = $('#collapse-toggle').attr("aria-expanded");
+				if (isExpanded) {
+					$(".navbar-fixed-top").css("background-color", "#111");
+				} else {
+					$(".navbar-fixed-top").css("background-color", "#111");
+				}
+		    // do some stuff to check if opening or closing
+			});		
+
 		} else {
+
 			$(".navbar-fixed-top").css("background-color", "transparent"); // if not, change it back to transparent
+		
+			$(document).on("click", "#collapse-toggle", function() {
+				var isExpanded = $('#collapse-toggle').attr("aria-expanded");
+				if (isExpanded) {
+					$(".navbar-fixed-top").css("background-color", "white");
+				} else {
+					$(".navbar-fixed-top").css("background-color", "transparent");
+				}
+		    // do some stuff to check if opening or closing
+			});				
 		}
+
 	};
 	if (screen.width > 764) {
 		checkNavBar();
