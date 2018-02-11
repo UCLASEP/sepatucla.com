@@ -87,8 +87,12 @@
 							<a class="dropdown-item" href="{{ site.github.url }}/startachapter">Start a Chapter</a>
 						</div>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link page-scroll" href="{{ site.github.url }}/members">Members</a>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" data-target="{{ site.github.url }}\/members" href="{{ site.github.url }}/members" role="button" aria-haspopup="true" >Members</a>
+						<div class="dropdown-menu" aria-labelledby="Preview">
+							<a class="dropdown-item" href="{{ site.github.url }}/members">Brothers</a>
+							<a class="dropdown-item" href="{{ site.github.url }}/leadership">Executive Board</a>
+						</div>						
 					</li>
 					<li class="nav-item">
 						<a class="nav-link page-scroll" href="{{ site.github.url }}/ventures">Ventures</a>
