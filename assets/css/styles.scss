@@ -677,6 +677,7 @@ footer {
 
 /** Preloader **/
 #loader-wrapper {
+
   position:fixed;
   top:0;
   left:0;
@@ -686,6 +687,7 @@ footer {
 }
 
 #loader {
+  background: linear-gradient(#D2F0F7, white);
   display: block;
   position: relative;
   left: 50%;
