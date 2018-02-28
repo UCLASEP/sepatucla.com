@@ -167,13 +167,17 @@
 			});		
 
 		} else {
-
-			$(".navbar-fixed-top").css("background-color", "transparent"); // if not, change it back to transparent
+			if ($('#collapse-toggle').attr("aria-expanded") =="true") {
+				$(".navbar-fixed-top").css("background-color", "#D2F0F7");
+			} else {
+				$(".navbar-fixed-top").css("background-color", "transparent");
+			}			
 		
 			$(document).on("click", "#collapse-toggle", function() {
 				var isExpanded = $('#collapse-toggle').attr("aria-expanded");
-				if (isExpanded) {
-					$(".navbar-fixed-top").css("background-color", "white");
+				console.log(isExpanded);
+				if (isExpanded =="true") {
+					$(".navbar-fixed-top").css("background-color", "#D2F0F7");
 				} else {
 					$(".navbar-fixed-top").css("background-color", "transparent");
 				}

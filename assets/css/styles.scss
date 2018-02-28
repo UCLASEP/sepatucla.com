@@ -24,7 +24,7 @@ body {
 }
 
 .half-black {
-  color: rgba(black, 0.5);
+  color: rgba(black, 0.75);
 }
 
 hr {
@@ -164,13 +164,12 @@ section {
 /** navbar formatting **/
 #navbar_img{
   height: 35px;
-  margin-top: -5px;
   width:50px;
 }
 
 .navbar-default {
     border-color: rgba(35,35,35,.05);
-    background-color: #eee;
+    background-color: transparent;
     -webkit-transition: all .4s;
     -moz-transition: all .4s;
     transition: all .4s;
@@ -189,17 +188,17 @@ section {
 }
 
 .navbar-default .navbar-toggler:hover {
-    background-color: #FBB124;
+    background-color: #39BCA9;
 }
 
 .navbar-default .navbar-toggler:active,
 .navbar-default .navbar-toggler:focus {
-      color:#39BCA9;
-    border-color: #FBB124;
+      color:#FBB124;
+    border-color: #39BCA9;
 }
 .navbar-default .navbar-toggler, .navbar-default .collapse {
-      color:#39BCA9;
-    border-color: #FBB124;
+      color:#FBB124 ;
+    border-color: #39BCA9;
 }
 
 .collapse {
@@ -248,9 +247,14 @@ section {
 }
 
 .dropdown:hover .dropdown-menu {
-display: block;
+  display: block;
 }
 
+@media(max-width: $screen-md-max) {
+  .dropdown:click .dropdown-menu {
+    display: block;
+  }
+}
 
 .rush {
   color:#FBB124 !important;
@@ -299,7 +303,7 @@ display: block;
 
 }
 
-@media(min-width:48em) {
+@media(min-width:992px) {
     .navbar-default {
         border-color: transparent;
         background-color: transparent;
@@ -615,9 +619,12 @@ footer {
 
 #shards-logo {
   position: relative;
-  width: 100%;
-  height:100%;
-  top:-30%;
+  max-width: 100%;
+  max-height:100%;
+  top:-25%;
+  @media(max-width: $screen-md-max) {
+    top:0%;
+  }
 }
 
 #shards-img-large {
@@ -687,7 +694,6 @@ footer {
 }
 
 #loader {
-  background: linear-gradient(#D2F0F7, white);
   display: block;
   position: relative;
   left: 50%;
