@@ -156,9 +156,6 @@
 	<script src="{{ site.github.url }}/assets/js/scripts.js"></script>
 	<script src="{{ site.github.url }}/assets/js/react-script.js" type="text/babel"></script>
 	<script>
-	var path=location.pathname
-
-
 	var checkNavBar = function() {
 		if ($(document).scrollTop() > 50) { // check if user scrolled more than 50 from top of the browser window
 			$(".navbar-fixed-top").css("background-color", "#111"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
@@ -193,12 +190,12 @@
 		}
 
 	};
-	if (screen.width > 764) {
-		checkNavBar();
-		$(document).ready(function(){
-      $(window).scroll(checkNavBar);
-    });
-	}
+
+	checkNavBar();
+	$(document).ready(function(){
+		$(window).scroll(checkNavBar);
+	});
+
 	</script>
 
 	</body>
