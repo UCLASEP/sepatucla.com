@@ -621,11 +621,19 @@ footer {
   position: relative;
   max-width: 100%;
   max-height:100%;
-  top:-25%;
-  @media(max-width: $screen-md-max) {
+  top:-20vh;
+  @media (max-width: $screen-xs-max) {
     top:0%;
   }
+
+
 }
+
+  @media (min-width: $screen-sm-min) and (max-width: 1025px){
+    #shards-logo {
+      top:-2vh;
+    }
+  }
 
 #shards-img-large {
   position: absolute;
@@ -911,6 +919,14 @@ footer {
     margin-bottom: 20px;
 
     font-size: 35px;
+
+
+  }
+  
+  @media (max-width: 768px) {
+    .brothers-class-title {
+      font-size: 20px;
+    }
   }
 
   .brother, .brother-spacer {
