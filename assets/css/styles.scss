@@ -267,7 +267,7 @@ section {
 }
 
 /* responsive nav */
-@media (min-width: 769px) and (max-width:992px) {
+@media (min-width: 768px) and (max-width:992px) {
   .navbar-default {
         border-color: transparent;
         background-color: transparent;
@@ -303,8 +303,13 @@ section {
     }
 }
 
+@media(max-width:768px) {
+      .logo-desktop {
+      visibility: hidden;
+    }
+}
 
-@media(max-width:48em) {
+@media(max-width:750px) {
     .navbar-default .navbar-nav>.nav-item {
         float: none;
         margin-left: .1rem;
