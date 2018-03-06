@@ -1166,6 +1166,10 @@ footer {
     }
   }
 
+  .rush-text-title  {
+    text-transform: lowercase;
+  }
+
   .rush-text-location {
     font-size: 22px;
     @media(max-width: $screen-md-max) {
