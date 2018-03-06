@@ -305,19 +305,6 @@ section {
 
 
 @media(max-width:48em) {
-    .navbar-default .navbar-nav>.nav-item {
-        float: none;
-        margin-left: .1rem;
-    }
-    .navbar-default .navbar-nav {
-      float: left !important;
-      margin-top: 3em;
-    }
-
-    .center-logo {
-      display: block;
-      margin: 0 auto;
-    }
 
     .logo-mobile {
       visibility: visible;
