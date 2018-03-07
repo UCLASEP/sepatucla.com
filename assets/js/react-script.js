@@ -5,19 +5,19 @@ var Member = React.createClass({
   render: function() {
     var linkedinElement = this.props.linkedin ? (
       <a href={this.props.linkedin} className="brother-link" target="_blank">
-        <img src="assets/images/newpictures/icons/linkedin.png"/>
+        <img src="assets/images/brothers/icons/linkedin.png"/>
       </a>
     ) : null;
     return (
       <div className="brother">
         <div className='brother-img-container'>
           <img
-            src={'assets/images/newpictures/' + (this.props.notpictured ? 'icons/notpictured' : (this.props.firstname.toLowerCase() + this.props.lastname.toLowerCase())) + '_opt.jpg'}
+            src={'assets/images/brothers/' + (this.props.notpictured ? 'icons/notpictured' : (this.props.firstname.toLowerCase() + this.props.lastname.toLowerCase())) + '_opt.jpg'}
             className='img-responsive center-block'
           />
           <div className="brother-img-overlay">
             <a href={'mailto:' + this.props.email} className="brother-link">
-              <img src="assets/images/newpictures/icons/email.png"/>
+              <img src="assets/images/brothers/icons/email.png"/>
             </a>
             {linkedinElement}
           </div>
