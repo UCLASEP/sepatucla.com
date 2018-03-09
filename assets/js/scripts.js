@@ -55,10 +55,10 @@ $(document).ready(function() {
 
     $("#logo-second-container").hover(
           function() {
-              $("#shards-logo").attr("src", "/assets/images/sep-bird-side.gif");
+              $("#rush-shards-logo").attr("src", "/assets/images/sep-bird-side.gif");
           },
           function() {
-              $("#shards-logo").attr("src", "/assets/images/sep-side-still.png");
+              $("#rush-shards-logo").attr("src", "/assets/images/sep-side-still.png");
           }                         
     );
 })(jQuery);
