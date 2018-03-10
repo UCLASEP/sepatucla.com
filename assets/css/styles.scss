@@ -652,10 +652,17 @@ footer {
 
 #logo-container {
   position:absolute;
-  width:70%;
-  height:75%;
-  left:15%;
+  width:60%;
+  height:100%;
+  left:20%;
   z-index:5;
+/*
+    position:absolute;
+  top:35%;
+  left:30%;
+  width:40%;
+  height:65%;
+  z-index:5;*/
 }
 
 #logo-second-container {
