@@ -429,7 +429,6 @@ var nuMembers = [
     year: "2018",
     linkedin: "https://www.linkedin.com/in/fiona-tang/",
     email: "tang.fiona@ucla.edu",
-    notPictured: true
   },
   {
     firstname: "Jackie",
