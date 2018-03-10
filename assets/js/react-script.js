@@ -8,26 +8,36 @@ var Member = React.createClass({
         <img src="assets/images/brothers/icons/linkedin.png"/>
       </a>
     ) : null;
-    return (
-      <div className="brother">
-        <div className='brother-img-container'>
-          <img
-            src={'assets/images/brothers/' + (this.props.notpictured ? 'icons/notpictured' : (this.props.firstname.toLowerCase() + this.props.lastname.toLowerCase())) + '_opt.jpg'}
-            className='img-responsive center-block'
-          />
-          <div className="brother-img-overlay">
-            <a href={'mailto:' + this.props.email} className="brother-link">
-              <img src="assets/images/brothers/icons/email.png"/>
-            </a>
-            {linkedinElement}
+
+    var notpictured=this.props.notpictured;
+
+    if (!notpictured) {
+      return (
+        <div className="brother">
+          <div className='brother-img-container'>
+            <img
+              src={'assets/images/brothers/' + (this.props.notpictured ? 'icons/notpictured' : (this.props.firstname.toLowerCase() + this.props.lastname.toLowerCase())) + '_opt.jpg'}
+              className='img-responsive center-block'
+            />
+            <div className="brother-img-overlay">
+              <a href={'mailto:' + this.props.email} className="brother-link">
+                <img src="assets/images/brothers/icons/email.png"/>
+              </a>
+              {linkedinElement}
+            </div>
           </div>
+
+          <p className="brothers-caption text-uppercase text-center">{this.props.firstname} {this.props.lastname}</p>
+          <p className="brothers-subcaption text-center">{this.props.major} | {this.props.year}</p>
+
         </div>
+      );
+    }
+    else {
 
-        <p className="brothers-caption text-uppercase text-center">{this.props.firstname} {this.props.lastname}</p>
-        <p className="brothers-subcaption text-center">{this.props.major} | {this.props.year}</p>
+      return null;
 
-      </div>
-    );
+    }
   }
 });
 
@@ -51,6 +61,17 @@ var LetterClass = React.createClass({
           />
         );
       }) : null;
+
+    var notPicturedArray = []
+
+    for (var i = 0; i < items.length;i++) {
+      if (items[i].props.notpictured==true) {
+        var nameString=items[i].props.firstname + " " + items[i].props.lastname;
+        notPicturedArray.push(nameString);
+      }
+    }
+    const isnotPictured = notPicturedArray.length;
+    console.log(isnotPictured);
     return (
       <div className="brothers-container">
         <div className="brothers-class-title">{this.props.letter.toUpperCase()} CLASS</div>
@@ -59,6 +80,14 @@ var LetterClass = React.createClass({
         <div className="brother-spacer"></div>
         <div className="brother-spacer"></div>
         <div className="brother-spacer"></div>
+
+        {isnotPictured ? (
+          <div className="not-pictured">Not Pictured: {notPicturedArray.join(", ")}</div>
+          ) : (
+            <div className="not-pictured"></div>
+          )}
+
+                
       </div>
     );
   }
