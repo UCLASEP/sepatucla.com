@@ -1277,7 +1277,7 @@ footer {
     line-height: 90%;
   }
 
-  @media(max-width: $screen-md-max) {
+  @media(max-width: 1323px) {
     display: inherit;
   }
 }
@@ -1289,7 +1289,7 @@ footer {
   justify-content: center;
   align-items: center;
 
-  @media(max-width: $screen-md-max) {
+  @media(max-width: 1323px) {
     display: none;
   }
 }
