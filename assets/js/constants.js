@@ -301,7 +301,7 @@ var muMembers = [
   {
     firstname: "Danielle",
     lastname: "Nivinski",
-    major: "Economics",
+    major: "Political Science",
     year: "2018",
     linkedin: "https://www.linkedin.com/in/danielle-nivinski-818386128/",
     email: "dnivinski@ucla.edu"
@@ -343,7 +343,7 @@ var muMembers = [
   {
     firstname: "Neha",
     lastname: "Shah",
-    major: "Pre-Business Economics",
+    major: "Economics",
     year: "2019",
     linkedin: "https://www.linkedin.com/in/neha-shah-56983b118/",
     email: "neha_shah1997@yahoo.com"
@@ -511,7 +511,7 @@ var xiMembers = [
   {
     firstname: "Jonathan",
     lastname: "Chang",
-    major: "Business Economics",
+    major: "Statistics",
     year: "2020",
     linkedin: "https://www.linkedin.com/in/thejonathanchang",
     email: "changjonathan23@gmail.com",
@@ -568,7 +568,7 @@ var xiMembers = [
   {
     firstname: "Nishanth",
     lastname: "Shetty",
-    major: "Math Economics",
+    major: "Economics",
     year: "2020",
     linkedin: "https://www.linkedin.com/in/nishanthdshetty",
     email: "nishanth202@gmail.com",
@@ -584,7 +584,7 @@ var xiMembers = [
   {
     firstname: "Haley",
     lastname: "Williams",
-    major: "Sociology",
+    major: "History",
     year: "2019",
     linkedin: "https://www.linkedin.com/in/haley-williams-4b403351/",
     email: "haleywilliams64@gmail.com",
@@ -618,7 +618,7 @@ var omicronMembers = [
   {
     firstname: "James",
     lastname: "Barton",
-    major: "MCDB & German",
+    major: "MCDB",
     year: "2020",
     linkedin: "https://www.linkedin.com/in/james-barton-2b520aa0/",
     email: "james.bartonbsa@gmail.com",
