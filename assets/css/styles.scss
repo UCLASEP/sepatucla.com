@@ -1230,13 +1230,17 @@ footer {
     width: 100%;
   }
 
+  .rush-text-location{
+    white-space: normal;
+  }
+
   .rush-text-date, .rush-text-title {
     font-size: 35px;
     @media(max-width: $screen-md-max) {
       font-size: 30px;
     }
     @media(max-width: $screen-xs-max) {
-      font-size: 35px;
+      font-size: 30px;
     }
   }
 
