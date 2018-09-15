@@ -138,7 +138,7 @@ var kappaMembers = [
   //   lastname: "Huang",
   //   major: "Business Economics",
   //   year: "2018",
-  //   linkedin: "http://www.linkedin.com/in/christina-huang-703572ab",
+  //   linkedin: "https://www.linkedin.com/in/christina-huang-703572ab",
   //   email: "christinahuang@ucla.edu"
   // },
   /*{
