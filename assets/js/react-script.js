@@ -91,7 +91,7 @@ var LetterClass = React.createClass({
             <div className="not-pictured"></div>
           )}*/}
 
-                
+
       </div>
     );
   }

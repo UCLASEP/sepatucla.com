@@ -85,7 +85,7 @@ var nuMembers = [
   {
     firstname: "Nina",
     lastname: "Ling",
-    major: "Computer Science and Engineering",
+    major: "Computer Science",
     year: "2019",
     linkedin: "https://www.linkedin.com/in/ninaling",
     email: "ninaling@ucla.edu"
@@ -127,8 +127,8 @@ var xiMembers = [
     email: "changjonathan23@gmail.com",
   },
   {
-    firstname: "Kiarod",
-    lastname: "Pashminehazar",
+    firstname: "Kia",
+    lastname: "Azar",
     major: "Mechanical Engineering",
     year: "2020",
     linkedin: "https://www.linkedin.com/in/kia-azar-a81853128",
@@ -202,7 +202,7 @@ var omicronMembers = [
     year: "2020",
     linkedin: "https://www.linkedin.com/in/alissaniewiadomski/",
     email: "aniewiadomski@ucla.edu",
-  }, 
+  },
   {
     firstname: "Arhant",
     lastname: "Batra",
@@ -211,7 +211,7 @@ var omicronMembers = [
     linkedin: "https://www.linkedin.com/in/arhantbatra/",
     email: "arhantbatra@gmail.com",
     notPictured: true
-  }, 
+  },
   {
     firstname: "Davis",
     lastname: "Whiteside",
@@ -220,7 +220,7 @@ var omicronMembers = [
     linkedin: "https://www.linkedin.com/in/daviswhiteside/",
     email: "daviswhiteside@gmail.com",
     notPictured: true
-  }, 
+  },
   {
     firstname: "James",
     lastname: "Barton",
@@ -229,7 +229,7 @@ var omicronMembers = [
     linkedin: "https://www.linkedin.com/in/james-barton-2b520aa0/",
     email: "james.bartonbsa@gmail.com",
     notPictured: true
-  }, 
+  },
   {
     firstname: "Jay",
     lastname: "Mishra",
@@ -237,7 +237,7 @@ var omicronMembers = [
     year: "2021",
     linkedin: "https://www.linkedin.com/in/jaythemishra/",
     email: "jaythemishra@gmail.com",
-  }, 
+  },
   {
     firstname: "Jill",
     lastname: "Tiutan",
@@ -245,7 +245,7 @@ var omicronMembers = [
     year: "2020",
     linkedin: "https://www.linkedin.com/in/jilltiutan/",
     email: "jilltiutan@ucla.edu",
-  }, 
+  },
   {
     firstname: "John",
     lastname: "Ma",
@@ -253,7 +253,7 @@ var omicronMembers = [
     year: "2021",
     linkedin: "https://www.linkedin.com/in/john-ma/",
     email: "johnmingyukma@gmail.com",
-  }, 
+  },
   {
     firstname: "Joyce",
     lastname: "Shang",
@@ -262,7 +262,7 @@ var omicronMembers = [
     linkedin: "https://www.linkedin.com/in/joyceshang2",
     email: "joyce.shang@gmail.com",
     notPictured: true
-  }, 
+  },
   {
     firstname: "Kedar",
     lastname: "Gupta",
@@ -270,7 +270,7 @@ var omicronMembers = [
     year: "2021",
     linkedin: "https://www.linkedin.com/in/kgupta99/",
     email: "guptak@ucla.edu",
-  },   
+  },
   {
     firstname: "Matt",
     lastname: "Fang",
@@ -278,7 +278,7 @@ var omicronMembers = [
     year: "2020",
     linkedin: "https://www.linkedin.com/in/matthew-fang/",
     email: "mattyfang10@gmail.com",
-  }, 
+  },
   {
     firstname: "Monica",
     lastname: "Zhang",
@@ -286,7 +286,7 @@ var omicronMembers = [
     year: "2019",
     linkedin: "https://www.linkedin.com/in/monica-zhang-496403130/",
     email: "monicazhang@g.ucla.edu",
-  },   
+  },
   {
     firstname: "Sheldon",
     lastname: "Dong",
@@ -302,7 +302,7 @@ var omicronMembers = [
     year: "2020",
     linkedin: "https://www.linkedin.com/in/william-zhu-95b21b139/",
     email: "william.hy.zhu@gmail.com",
-  }, 
+  },
 ];
 var piMembers = [
   {
@@ -312,7 +312,7 @@ var piMembers = [
     year: "2020",
     linkedin: "https://www.linkedin.com/in/mandysantoso/",
     email: "mandysantoso@g.ucla.edu",
-  }, 
+  },
   {
     firstname: "Annie",
     lastname: "Simon",
@@ -320,7 +320,7 @@ var piMembers = [
     year: "2019",
     linkedin: "https://www.linkedin.com/in/anna-simon-522612148/",
     email: "anniesimon8@ucla.edu",
-  }, 
+  },
   {
     firstname: "Dmitri",
     lastname: "Brereton",
@@ -328,7 +328,7 @@ var piMembers = [
     year: "2019",
     linkedin: "https://www.linkedin.com/in/dmitri-brereton-1194b3106/",
     email: "mitrikyle@ucla.edu",
-  }, 
+  },
   {
     firstname: "Heidi",
     lastname: "Nam",
@@ -336,7 +336,7 @@ var piMembers = [
     year: "2019",
     linkedin: "https://www.linkedin.com/in/heidi-nam-848378162/",
     email: "minjoo_nam@yahoo.com",
-  }, 
+  },
   {
     firstname: "Isabella",
     lastname: "Clark",
@@ -344,7 +344,7 @@ var piMembers = [
     year: "2019",
     linkedin: "https://www.linkedin.com/in/isabella-clark-9a5296124/",
     email: "bellaclark44@gmail.com",
-  }, 
+  },
   {
     firstname: "Jorge",
     lastname: "Fuentes",
@@ -353,7 +353,7 @@ var piMembers = [
     linkedin: "https://www.linkedin.com/in/jsfuentes/",
     email: "jsjfuentesj@gmail.com",
     notPictured: true
-  }, 
+  },
   {
     firstname: "Khatija",
     lastname: "Teekay",
@@ -361,7 +361,7 @@ var piMembers = [
     year: "2019",
     linkedin: "https://www.linkedin.com/in/khatijateekay/",
     email: "khatija.teekay@gmail.com",
-  }, 
+  },
   {
     firstname: "Leo",
     lastname: "Siow",
@@ -369,7 +369,7 @@ var piMembers = [
     year: "2020",
     linkedin: "https://www.linkedin.com/in/jiunn-siow/",
     email: "siow98@ucla.edu",
-  }, 
+  },
   {
     firstname: "Minh",
     lastname: "Mai",
@@ -377,7 +377,7 @@ var piMembers = [
     year: "2020",
     linkedin: "https://www.linkedin.com/in/minh-mai-55a205133/",
     email: "bminh.mai@gmail.com",
-  },   
+  },
   {
     firstname: "Phakorn",
     lastname: "Chansrichawla",
@@ -385,7 +385,7 @@ var piMembers = [
     year: "2021",
     linkedin: "https://www.linkedin.com/in/phakorn-chansrichawla/",
     email: "phakorn1999@ucla.edu",
-  }, 
+  },
   {
     firstname: "Ronald",
     lastname: "Liu",
@@ -393,7 +393,7 @@ var piMembers = [
     year: "2021",
     linkedin: "https://www.linkedin.com/in/ronaldaliu/",
     email: "ronaldxliu@gmail.com",
-  },   
+  },
   {
     firstname: "Saagar",
     lastname: "Godithi",

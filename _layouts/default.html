@@ -76,7 +76,7 @@
 			</button>
 			<div class="navbar-brand page-scroll logo-desktop">
 				<a href="https://uclasep.com/"><img src= "https://uclasep.com/assets/images/sep-green.png" id="navbar_img" alt="Sigma Eta Pi"></a>
-			</div>			
+			</div>
 			<div class="navbar-brand page-scroll logo-mobile pull-left">
 				<a href="https://uclasep.com/"><img src= "https://uclasep.com/assets/images/sep-green.png" id="navbar_img" alt="Sigma Eta Pi"></a>
 			</div>
@@ -95,11 +95,11 @@
 						<div class="dropdown-menu" aria-labelledby="Preview">
 							<a class="dropdown-item" href="https://uclasep.com/members">Brothers</a>
 							<a class="dropdown-item" href="https://uclasep.com/leadership">Executive Board</a>
-						</div>						
+						</div>
 					</li> -->
 					<li class="nav-item">
 						<a class="nav-link page-scroll" href="https://uclasep.com/members">Members</a>
-					</li>					
+					</li>
 					<li class="nav-item">
 						<a class="nav-link page-scroll" href="https://uclasep.com/ventures">Ventures</a>
 					</li>
@@ -155,9 +155,9 @@
 	<script src="https://fb.me/react-15.0.1.js"></script>
 	<script src="https://fb.me/react-dom-15.0.1.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
-	<script src="https://uclasep.com/assets/js/constants.js"></script>
-	<script src="https://uclasep.com/assets/js/scripts.js"></script>
-	<script src="https://uclasep.com/assets/js/react-script.js" type="text/babel"></script>
+	<script src="../assets/js/constants.js"></script>
+	<script src="../assets/js/scripts.js"></script>
+	<script src="../assets/js/react-script.js" type="text/babel"></script>
 	<script>
 	var checkNavBar = function() {
 		if ($(document).scrollTop() > 50) { // check if user scrolled more than 50 from top of the browser window
@@ -171,15 +171,15 @@
 					$(".navbar-fixed-top").css("background-color", "#111");
 				}
 		    // do some stuff to check if opening or closing
-			});		
+			});
 
 		} else {
 			if ($('#collapse-toggle').attr("aria-expanded") =="true") {
 				$(".navbar-fixed-top").css("background-color", "#052049");
 			} else {
 				$(".navbar-fixed-top").css("background-color", "transparent");
-			}			
-		
+			}
+
 			$(document).on("click", "#collapse-toggle", function() {
 				var isExpanded = $('#collapse-toggle').attr("aria-expanded");
 				console.log(isExpanded);
@@ -189,7 +189,7 @@
 					$(".navbar-fixed-top").css("background-color", "transparent");
 				}
 		    // do some stuff to check if opening or closing
-			});				
+			});
 		}
 
 	};
