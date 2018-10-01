@@ -312,6 +312,7 @@ var piMembers = [
     year: "2020",
     linkedin: "https://www.linkedin.com/in/mandysantoso/",
     email: "mandysantoso@g.ucla.edu",
+    notPictured: true
   },
   {
     firstname: "Annie",
@@ -344,6 +345,7 @@ var piMembers = [
     year: "2019",
     linkedin: "https://www.linkedin.com/in/isabella-clark-9a5296124/",
     email: "bellaclark44@gmail.com",
+    notPictured: true
   },
   {
     firstname: "Jorge",
@@ -369,6 +371,7 @@ var piMembers = [
     year: "2020",
     linkedin: "https://www.linkedin.com/in/jiunn-siow/",
     email: "siow98@ucla.edu",
+    notPictured: true
   },
   {
     firstname: "Minh",
