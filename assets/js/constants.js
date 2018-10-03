@@ -311,8 +311,7 @@ var piMembers = [
     major: "Psychology and Communications",
     year: "2020",
     linkedin: "https://www.linkedin.com/in/mandysantoso/",
-    email: "mandysantoso@g.ucla.edu",
-    notPictured: true
+    email: "mandysantoso@g.ucla.edu"
   },
   {
     firstname: "Annie",
@@ -344,8 +343,7 @@ var piMembers = [
     major: "Design | Media Arts",
     year: "2019",
     linkedin: "https://www.linkedin.com/in/isabella-clark-9a5296124/",
-    email: "bellaclark44@gmail.com",
-    notPictured: true
+    email: "bellaclark44@gmail.com"
   },
   {
     firstname: "Jorge",
