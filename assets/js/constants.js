@@ -333,7 +333,7 @@ var piMembers = [
   {
     firstname: "Heidi",
     lastname: "Nam",
-    major: "Undeclared Sciences",
+    major: "Computational Sociology",
     year: "2019",
     linkedin: "https://www.linkedin.com/in/heidi-nam-848378162/",
     email: "minjoo_nam@yahoo.com",
