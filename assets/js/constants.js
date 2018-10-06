@@ -374,7 +374,7 @@ var piMembers = [
   {
     firstname: "Minh",
     lastname: "Mai",
-    major: "Economics",
+    major: "Cognitive Science",
     year: "2020",
     linkedin: "https://www.linkedin.com/in/minh-mai-55a205133/",
     email: "bminh.mai@gmail.com",
