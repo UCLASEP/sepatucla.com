@@ -143,7 +143,7 @@
 	<script>
 		$("#backstretch-container").backstretch([
 			{% for img in page.header %}
-				"https://uclasep.com/assets/images/{{ img }}",
+				"./assets/images/{{ img }}",
 			{% endfor %}
 		], {fadeFirstImage: false, fade: 500, duration: 3000});
 		</script>
