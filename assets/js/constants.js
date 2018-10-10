@@ -212,7 +212,7 @@ var omicronMembers = [
     email: "arhantbatra@gmail.com",
     notPictured: true
   },
-  {
+  /*{
     firstname: "Davis",
     lastname: "Whiteside",
     major: "Human Biology & Society",
@@ -220,7 +220,7 @@ var omicronMembers = [
     linkedin: "https://www.linkedin.com/in/daviswhiteside/",
     email: "daviswhiteside@gmail.com",
     notPictured: true
-  },
+  },*/
   {
     firstname: "James",
     lastname: "Barton",
