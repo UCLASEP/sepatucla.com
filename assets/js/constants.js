@@ -428,6 +428,113 @@ var piMembers = [
     email: "suyash2099@gmail.com",
   },
 ];
+
+var rhoMembers = [
+  {
+    firstname: "Abhishek",
+    lastname: "Naik",
+    major: "Computer Science",
+    year: "2021",
+    linkedin: "https://www.linkedin.com/in/abhishek-naik-8b55b413b/",
+    email: "abhisheksnaik00@gmail.com"
+  },
+  {
+    firstname: "Alexandra",
+    lastname: "Li",
+    major: "Bioengineering",
+    year: "2021",
+    linkedin: "https://www.linkedin.com/in/alexandra-li-5b09a814b/",
+    email: "lialexandrah08@gmail.com",
+  },
+  {
+    firstname: "Andrew",
+    lastname: "Zhou",
+    major: "Computer Science",
+    year: "2022",
+    linkedin: "https://www.linkedin.com/in/andrew-zh/",
+    email: "andrewzhou@g.ucla.edu",
+  },
+  {
+    firstname: "Andy",
+    lastname: "Cai",
+    major: "Electrical Engineering",
+    year: "2022",
+    linkedin: "https://www.linkedin.com/in/andycai0212/",
+    email: "andycai20000212@gmail.com",
+  },
+  {
+    firstname: "Annie",
+    lastname: "Cui",
+    major: "Math/Economics",
+    year: "2022",
+    linkedin: "https://www.linkedin.com/in/annie-cui-053778172/",
+    email: "annie000717@gmail.com"
+  },
+  {
+    firstname: "Cameron",
+    lastname: "Miller",
+    major: "Chemical Engineering",
+    year: "2022",
+    linkedin: "https://www.linkedin.com/in/cameron-miller-b9266814a/",
+    email: "camm73@yahoo.com",
+  },
+  {
+    firstname: "Cindy",
+    lastname: "Zheng",
+    major: "Computer Science",
+    year: "2022",
+    linkedin: "https://www.linkedin.com/in/cindy-z-b2860013a/",
+    email: "cindyrzheng@gmail.com",
+  },
+  {
+    firstname: "Hari",
+    lastname: "Senthilkumar",
+    major: "Mechanical Engineering",
+    year: "2022",
+    linkedin: "https://www.linkedin.com/in/hari-s-114618118/",
+    email: "harikrishna.s2000@gmail.com",
+  },
+  {
+    firstname: "Julia",
+    lastname: "Tung",
+    major: "Pure Math",
+    year: "2021",
+    linkedin: "https://www.linkedin.com/in/julia-t-48888699/",
+    email: "jjt.tung@gmail.com",
+  },
+  {
+    firstname: "Katherine",
+    lastname: "Miao",
+    major: "Computer Science",
+    year: "2021",
+    linkedin: "https://www.linkedin.com/in/kat-miao/",
+    email: "katmiao99@gmail.com",
+  },
+  {
+    firstname: "Rachel",
+    lastname: "Lu",
+    major: "Environmental Science",
+    year: "2021",
+    linkedin: "",
+    email: "rachel.lu@ucla.edu",
+  },
+  {
+    firstname: "Saumya",
+    lastname: "Dedhia",
+    major: "Computer Science",
+    year: "2021",
+    linkedin: "https://www.linkedin.com/in/saumyadedhia/",
+    email: "saumyadedhia@gmail.com",
+  },
+  {
+    firstname: "Sumayyah",
+    lastname: "Muhammad",
+    major: "African-American Studies",
+    year: "2020",
+    linkedin: "https://www.linkedin.com/in/sumayyah-muhammad-743641139/",
+    email: "smuhammad1@g.ucla.edu",
+  },
+];
 var membersclasses = [
   {
     letter: "Lambda",
@@ -452,5 +559,9 @@ var membersclasses = [
   {
     letter: "Pi",
     members: piMembers
+  },
+  {
+    letter: "Rho",
+    members: rhoMembers
   }
 ];
