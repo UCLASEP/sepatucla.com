@@ -6,7 +6,7 @@ var lambdaMembers = [
     lastname: "Donner",
     major: "Mechanical Engineering",
     year: "2019",
-    linkedin: "https://www.linkedin.com/in/samuel-donner-193520108/", target="_blank",
+    linkedin: "https://www.linkedin.com/in/samuel-donner-193520108/",
     email: "samuelalandonner@gmail.com",
   },
 ];

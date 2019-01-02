@@ -23,7 +23,7 @@ var Member = React.createClass({
               <a href={'mailto:' + this.props.email} className="brother-link">
                 <img src="assets/images/brothers/icons/email.png"/>
               </a>
-              <a href={this.props.linkedin} className="brother-link">
+              <a href={this.props.linkedin} target="_blank" className="brother-link">
                 <img src="assets/images/brothers/icons/linkedin.png"/>
               </a>
               {/*{linkedinElement}*/}
