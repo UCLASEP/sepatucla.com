@@ -1,0 +1,24 @@
+{
+  "name": "uclasep.github.io",
+  "version": "1.0.0",
+  "description": "This repository contains all of the files hosted on [ucla.sigmaetapi.com](http://ucla.sigmaetapi.com).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UCLASEP/uclasep.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UCLASEP/uclasep.github.io/issues"
+  },
+  "homepage": "https://github.com/UCLASEP/uclasep.github.io#readme",
+  "dependencies": {
+    "gatsby": "^2.13.83",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  }
+}
