@@ -16,9 +16,9 @@ if [ -n "$JAVASCRIPT_DIFFED_FILES" ]; then
     yarn run prettier --write $PRETTIER_FILES
     git add $PRETTIER_FILES
   fi
-   echo "✔️ Restaged pretty-fied files! 💅💄"
+   echo "✔️  Restaged pretty-fied files! 💅💄"
 else
-  echo "✔️ No staged changes to JS files detected.\n"
+  echo "✔️  No staged changes to JS files detected.\n"
 fi
 
 # Don't ever directly commit to master or to gh-pages branch!
@@ -58,7 +58,7 @@ if [[ $push_command =~ "master" ]] || [ $(contains "${protected_branches[@]}" $c
   exit_and_echo_git_policy $current_branch
 fi
 
-echo "✔️ No branch policy violations detected.\n"
+echo "✔️  No branch policy violations detected.\n"
 
 unset exit_and_echo_git_policy
 
