@@ -1,5 +1,6 @@
 set -e
 
+echo "👉 👉 👉 Running JS file checks..."
 # Run prettier on javascript files.
 JAVASCRIPT_DIFFED_FILES=`git diff HEAD --cached --name-only --diff-filter=ACMR -- '*.jsx' '*.js' '*.json'`
 if [ -n "$JAVASCRIPT_DIFFED_FILES" ]; then
@@ -15,12 +16,13 @@ if [ -n "$JAVASCRIPT_DIFFED_FILES" ]; then
     yarn run prettier --write $PRETTIER_FILES
     git add $PRETTIER_FILES
   fi
-   echo "Restaged pretty-fied files! 💅💄"
+   echo "✔️ Restaged pretty-fied files! 💅💄"
 else
-  echo "No staged changes to JS files detected.\n"
+  echo "✔️ No staged changes to JS files detected.\n"
 fi
 
 # Don't ever directly commit to master or to gh-pages branch!
+echo "👉 👉 👉 Validating branch policies..."
 protected_branches=("master" "gh-pages" "test-branch")
 
 git_policy_ghpages="\n\n❌❌❌❌❌❌❌❌❌❌\nNEVER commit directly to the gh-pages branch!\n❌❌❌❌❌❌❌❌❌❌\n\n"
@@ -56,6 +58,10 @@ if [[ $push_command =~ "master" ]] || [ $(contains "${protected_branches[@]}" $c
   exit_and_echo_git_policy $current_branch
 fi
 
+echo "✔️ No branch policy violations detected.\n"
+
 unset exit_and_echo_git_policy
+
+echo "\n 🛁 🛁 🛁 Pre-commit hooks completed! 🛁 🛁 🛁\n"
 
 exit 0
