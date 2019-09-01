@@ -16,7 +16,7 @@ if [ -n "$JAVASCRIPT_DIFFED_FILES" ]; then
     yarn run prettier --write $PRETTIER_FILES
     git add $PRETTIER_FILES
   fi
-   echo "✔️  Restaged pretty-fied files! 💅💄"
+   echo "✔️  Restaged pretty-fied files! 💅 💄\n"
 else
   echo "✔️  No staged changes to JS files detected.\n"
 fi
