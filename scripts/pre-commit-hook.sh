@@ -16,6 +16,8 @@ if [ -n "$JAVASCRIPT_DIFFED_FILES" ]; then
     git add $PRETTIER_FILES
   fi
    echo "Restaged pretty-fied files! 💅💄"
+else
+  echo "No staged changes to JS files detected.\n"
 fi
 
 # Don't ever directly commit to master or to gh-pages branch!
@@ -28,7 +30,7 @@ current_branch=$(git symbolic-ref --quiet HEAD | sed -e 's,.*/\(.*\),\1,')
 push_command=$(ps -ocommand= -p $PPID)
 
 exit_and_echo_git_policy() {
-  if [$1 == "master"]
+  if [$1 = "master"]
   then
     echo -e $git_policy_master
   else
