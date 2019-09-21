@@ -1,7 +1,7 @@
 module.exports = {
   trailingComma: 'es5',
   bracketSpacing: false,
-  parser: 'flow',
+  singleQuote: true,
   overrides: [
     {
       files: '*.json',
