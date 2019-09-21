@@ -4,7 +4,7 @@
   "description": "This repository contains all of the files hosted on [ucla.sigmaetapi.com](http://ucla.sigmaetapi.com).",
   "main": "index.js",
   "scripts": {
-    "lint:js": "eslint . --ext .js,.jsx",
+    "lint:js": "eslint",
     "lint:js:fix": "npm run lint:js -- --fix"
   },
   "repository": {
@@ -41,10 +41,6 @@
     }
   },
   "lint-staged": {
-    "*.{js,css,json,md}": [
-      "prettier --write",
-      "git add"
-    ],
     "*.{js,jsx}": [
       "npm run --silent lint:js:fix",
       "git add"
