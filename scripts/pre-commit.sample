@@ -1,3 +1,0 @@
-#!/bin/sh
-
-./scripts/pre-commit-hook.sh
