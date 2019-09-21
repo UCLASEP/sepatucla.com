@@ -28,6 +28,7 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - src             # /src will contain files for conversion to gatsby
 sass:
   sass_dir: assets/_sass
   style: compressed
