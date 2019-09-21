@@ -1,6 +1,6 @@
 set -e
 
-echo "\n\n\n"
+echo "\n"
 echo "👉 👉 👉 Running JS file checks..."
 # Run prettier on javascript files.
 JAVASCRIPT_DIFFED_FILES=`git diff HEAD --cached --name-only --diff-filter=ACMR -- '*.jsx' '*.js' '*.json'`
