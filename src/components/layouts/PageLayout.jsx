@@ -4,7 +4,7 @@ import NavigationBar from '../NavigationBar';
 
 const PageLayout = ({children}) => (
   <div>
-    <NavigationBar />
+    <NavigationBar activePage="members" />
     {children}
   </div>
 );
