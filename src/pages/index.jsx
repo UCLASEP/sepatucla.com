@@ -1,5 +1,10 @@
-import React from "react";
+import React from 'react';
+import PageLayout from '../components/layouts/PageLayout';
 
-const UCLASEPWebsite = () => <div>hi</div>;
+const HomePage = () => (
+  <PageLayout>
+    <div>hi</div>
+  </PageLayout>
+);
 
-export default UCLASEPWebsite;
+export default HomePage;

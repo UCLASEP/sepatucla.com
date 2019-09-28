@@ -18,10 +18,14 @@
   },
   "homepage": "https://github.com/UCLASEP/uclasep.github.io#readme",
   "dependencies": {
+    "babel-plugin-styled-components": "^1.10.6",
     "gatsby": "^2.13.83",
+    "gatsby-plugin-styled-components": "^3.1.8",
     "husky": "^3.0.5",
+    "prop-types": "^15.7.2",
     "react": "^16.9.0",
-    "react-dom": "^16.9.0"
+    "react-dom": "^16.9.0",
+    "styled-components": "^4.4.0"
   },
   "devDependencies": {
     "eslint": "^6.4.0",
