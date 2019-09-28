@@ -33,11 +33,11 @@ current_branch=$(git symbolic-ref --quiet HEAD | sed -e 's,.*/\(.*\),\1,')
 push_command=$(ps -ocommand= -p $PPID)
 
 exit_and_echo_git_policy() {
-  if [$1 == "master"]
+  if [ $1 == "master" ] 
   then
-    echo -e $git_policy_master
+    echo $git_policy_master
   else
-    echo -e $git_policy_ghpages
+    echo $git_policy_ghpages
   fi
   exit 1
 }
