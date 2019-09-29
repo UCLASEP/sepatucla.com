@@ -4,7 +4,7 @@ import PageLayout from '../components/layouts/PageLayout';
 import PageHero from '../components/layouts/PageHero';
 
 const MembersPage = () => (
-  <PageLayout>
+  <PageLayout location="actives">
     <PageHero
       miniTitle="brothers and sisters"
       title="Active Members"

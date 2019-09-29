@@ -4,7 +4,7 @@ import PageLayout from '../components/layouts/PageLayout';
 import PageHero from '../components/layouts/PageHero';
 
 const ExecPage = () => (
-  <PageLayout>
+  <PageLayout location="exec">
     <PageHero
       miniTitle="leadership"
       title="Executive Board"
