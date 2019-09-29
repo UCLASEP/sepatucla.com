@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 
 import NavigationLink from './NavigationLink';
 
-import {PADDING, PRIMARY_GREEN, HOVER_GREEN, GREY80} from '../styles/global';
+import {PADDING, PRIMARY_GREEN, HOVER_GREEN, GREY80} from '../../styles/global';
 
 export default class NavigationDropdown extends React.Component {
   constructor(props) {

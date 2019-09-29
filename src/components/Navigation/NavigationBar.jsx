@@ -6,11 +6,11 @@ import PropTypes from 'prop-types';
 import NavigationDropdown from './NavigationDropdown';
 import NavigationLink from './NavigationLink';
 
-import ROUTES from '../routes';
+import ROUTES from '../../routes';
 
-import {MARGINS} from '../styles/global';
+import {MARGINS} from '../../styles/global';
 
-import Logo from '../../assets/images/sep-logo-large.png';
+import Logo from '../../../assets/images/sep-logo-large.png';
 
 const NavigationLinkWrapper = ({activePage, linkText, to, options, slug}) => (
   <div>

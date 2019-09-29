@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import NavigationBar from '../NavigationBar';
+import NavigationBar from '../Navigation/NavigationBar';
 
 const PageLayout = ({children}) => (
   <div>

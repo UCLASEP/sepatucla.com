@@ -4,7 +4,7 @@ import {Link} from 'gatsby';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-import {GREY80, PRIMARY_GREEN, HOVER_GREEN} from '../styles/global';
+import {GREY80, PRIMARY_GREEN, HOVER_GREEN} from '../../styles/global';
 
 const NavigationLinkContainer = styled.div`
   a {
