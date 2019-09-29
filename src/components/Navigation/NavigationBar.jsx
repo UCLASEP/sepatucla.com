@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'gatsby';
 
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
@@ -8,7 +9,7 @@ import NavigationLink from './NavigationLink';
 
 import ROUTES from '../../routes';
 
-import {MARGINS} from '../../styles/global';
+import {MARGINS, BLACK} from '../../styles/global';
 
 import Logo from '../../../assets/images/sep-logo-large.png';
 
@@ -52,8 +53,13 @@ NavigationLinkWrapper.defaultProps = {
 const NavigationBar = ({activePage}) => (
   <Container>
     <Section>
-      <LogoImg src={Logo} alt="SEP Logo" />
-      <div>Sigma Eta Pi</div>
+      <Link
+        style={{display: 'flex', 'text-decoration': 'none', color: `${BLACK}`}}
+        to="/"
+      >
+        <LogoImg src={Logo} alt="SEP Logo" />
+        <div>Sigma Eta Pi</div>
+      </Link>
     </Section>
     <Section>
       {Object.entries(ROUTES).map(([key, linkObj]) => (

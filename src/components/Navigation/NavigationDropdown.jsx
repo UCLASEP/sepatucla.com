@@ -84,6 +84,8 @@ const Submenu = styled.div`
 
   top: 28px;
   left: 10px;
+
+  background-color: white;
 `;
 
 const NavigationDropdownOption = styled.div`
