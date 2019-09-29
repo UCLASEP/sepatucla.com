@@ -2,6 +2,7 @@
  * Global colors
  */
 export const PRIMARY_GREEN = '#219653';
+export const HOVER_GREEN = 'rgba(33, 150, 83, 0.5)';
 export const BLACK = '#222222';
 export const WHITE = '#FFFFFF';
 export const GREY80 = '#4F4F4F';
@@ -30,4 +31,9 @@ export const TEXT_FONT_SIZES = {
 export const MARGINS = {
   l: '128px',
   m: '68px',
+  s: '16px',
+};
+
+export const PADDING = {
+  m: '16px',
 };

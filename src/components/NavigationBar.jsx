@@ -1,25 +1,52 @@
 import React from 'react';
-import {Link} from 'gatsby';
 
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
+import NavigationDropdown from './NavigationDropdown';
+import NavigationLink from './NavigationLink';
+
 import ROUTES from '../routes';
 
-import {MARGINS, GREY80, PRIMARY_GREEN} from '../styles/global';
+import {MARGINS} from '../styles/global';
 
 import Logo from '../../assets/images/sep-logo-large.png';
 
-const NavigationLink = ({isActive, link, to}) => (
-  <LinkContainer active={isActive}>
-    <Link to={to}>{link}</Link>
-  </LinkContainer>
+const NavigationLinkWrapper = ({activePage, linkText, to, options, slug}) => (
+  <div>
+    {options.length > 0 ? (
+      <NavigationDropdown
+        activePage={activePage}
+        options={options}
+        text={linkText}
+      />
+    ) : (
+      <NavigationLink
+        isActive={activePage === slug}
+        to={to}
+        linkText={linkText}
+      />
+    )}
+  </div>
 );
 
-NavigationLink.propTypes = {
-  isActive: PropTypes.bool.isRequired,
-  link: PropTypes.string.isRequired,
-  to: PropTypes.string.isRequired,
+NavigationLinkWrapper.propTypes = {
+  activePage: PropTypes.string.isRequired,
+  linkText: PropTypes.string.isRequired,
+  to: PropTypes.string,
+  options: PropTypes.arrayOf(
+    PropTypes.shape({
+      linkText: PropTypes.string.isRequired,
+      slug: PropTypes.string.isRequired,
+      to: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+  slug: PropTypes.string,
+};
+
+NavigationLinkWrapper.defaultProps = {
+  to: null,
+  slug: null,
 };
 
 const NavigationBar = ({activePage}) => (
@@ -30,11 +57,13 @@ const NavigationBar = ({activePage}) => (
     </Section>
     <Section>
       {Object.entries(ROUTES).map(([key, linkObj]) => (
-        <NavigationLink
+        <NavigationLinkWrapper
           key={key}
-          isActive={activePage === linkObj.slug}
+          activePage={activePage}
           to={linkObj.to}
-          link={linkObj.linkText}
+          options={linkObj.options}
+          linkText={linkObj.linkText}
+          slug={linkObj.slug}
         />
       ))}
     </Section>
@@ -64,13 +93,6 @@ const Section = styled.div`
 const LogoImg = styled.img`
   width: 50px;
   height: 31px;
-`;
-
-const LinkContainer = styled.div`
-  a {
-    color: ${props => (props.active ? PRIMARY_GREEN : GREY80)};
-    text-decoration: none;
-  }
 `;
 
 export default NavigationBar;
