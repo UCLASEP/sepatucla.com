@@ -57,6 +57,7 @@ export default class NavigationDropdown extends React.Component {
                 to={option.to}
                 isActive={activePage === option.slug}
                 linkText={option.linkText}
+                external={option.external}
               />
             ))}
           </Submenu>

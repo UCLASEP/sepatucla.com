@@ -39,7 +39,8 @@ const ROUTES = {
       {
         linkText: 'Bruin Tank',
         slug: 'bruintank',
-        to: '/bruintank', // TODO: update this
+        external: true,
+        to: 'https://bruintank.com',
       },
     ],
     to: null,
