@@ -38,7 +38,7 @@ const xiMembers = [
   {
     firstname: 'Kia',
     lastname: 'Azar',
-    major: 'Mechanical Engineering',
+    major: 'Computer Science',
     year: '2020',
     linkedin: 'https://www.linkedin.com/in/kia-azar-a81853128',
     email: 'kiarodazar@gmail.com',
@@ -46,7 +46,7 @@ const xiMembers = [
   {
     firstname: 'Nishanth',
     lastname: 'Shetty',
-    major: 'Economics',
+    major: 'Statistics',
     year: '2020',
     linkedin: 'https://www.linkedin.com/in/nishanthdshetty',
     email: 'nishanth202@gmail.com',
@@ -62,7 +62,7 @@ const xiMembers = [
   {
     firstname: 'Swapnil',
     lastname: 'Bhardwaj',
-    major: 'Business Economics',
+    major: 'International Developmental Studies',
     year: '2020',
     linkedin: 'https://www.linkedin.com/in/swapnil-bhardwaj-050a8313a/',
     email: 'swapbhardwaj@g.ucla.edu',
@@ -107,7 +107,7 @@ const omicronMembers = [
   {
     firstname: 'Jay',
     lastname: 'Mishra',
-    major: 'Computer Science and Engineering',
+    major: 'Computer Science',
     year: '2021',
     linkedin: 'https://www.linkedin.com/in/jaythemishra/',
     email: 'jaythemishra@gmail.com',
@@ -131,7 +131,7 @@ const omicronMembers = [
   {
     firstname: 'Kedar',
     lastname: 'Gupta',
-    major: 'Computer Science',
+    major: 'Cognitive Science',
     year: '2021',
     linkedin: 'https://www.linkedin.com/in/kgupta99/',
     email: 'guptak@ucla.edu',
@@ -155,7 +155,7 @@ const omicronMembers = [
   {
     firstname: 'William',
     lastname: 'Zhu',
-    major: 'Math/Economics',
+    major: 'Statistics',
     year: '2020',
     linkedin: 'https://www.linkedin.com/in/william-zhu-95b21b139/',
     email: 'william.hy.zhu@gmail.com',
@@ -265,7 +265,7 @@ const rhoMembers = [
   {
     firstname: 'Andy',
     lastname: 'Cai',
-    major: 'Electrical Engineering',
+    major: 'Computer Science',
     year: '2022',
     linkedin: 'https://www.linkedin.com/in/andycai0212/',
     email: 'andycai20000212@gmail.com',
@@ -281,7 +281,7 @@ const rhoMembers = [
   {
     firstname: 'Cameron',
     lastname: 'Miller',
-    major: 'Chemical Engineering',
+    major: 'Computer Science',
     year: '2022',
     linkedin: 'https://www.linkedin.com/in/cameron-miller-b9266814a/',
     email: 'camm73@yahoo.com',
@@ -297,7 +297,7 @@ const rhoMembers = [
   {
     firstname: 'Hari',
     lastname: 'Senthilkumar',
-    major: 'Mechanical Engineering',
+    major: 'Computer Science',
     year: '2022',
     linkedin: 'https://www.linkedin.com/in/hari-s-114618118/',
     email: 'harikrishna.s2000@gmail.com',
@@ -305,7 +305,7 @@ const rhoMembers = [
   {
     firstname: 'Julia',
     lastname: 'Tung',
-    major: 'Pure Math',
+    major: 'Civil Engineering',
     year: '2021',
     linkedin: 'https://www.linkedin.com/in/julia-t-48888699/',
     email: 'jjt.tung@gmail.com',
