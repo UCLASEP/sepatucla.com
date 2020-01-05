@@ -10,13 +10,10 @@ import {
   GREY40,
 } from '../../../styles/global';
 
+import MemberPhoto from '../../generic/MemberPhoto';
+
 const Container = styled.div`
   display: flex;
-`;
-
-const MemberPhoto = styled.img`
-  width: 235px;
-  height: 235px;
 `;
 
 const Name = styled.div`
@@ -39,14 +36,9 @@ const Description = styled.div`
   color: ${GREY40};
 `;
 
-const MemberLayout = ({name, title, desc}) => (
+const MemberLayout = ({name, title, desc, notPictured}) => (
   <Container>
-    <MemberPhoto
-      src={require(`../../../../assets/images/brothers/${name
-        .split(' ')
-        .join('')
-        .toLowerCase()}_opt.jpg`)}
-    />
+    <MemberPhoto name={name} notPictured={notPictured} />
     <div style={{display: 'flex', flexDirection: 'column'}}>
       <Name>{name}</Name>
       <Title>{title}</Title>
@@ -59,6 +51,7 @@ MemberLayout.propTypes = {
   name: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   desc: PropTypes.string.isRequired,
+  notPictured: PropTypes.bool.isRequired,
 };
 
 export default MemberLayout;

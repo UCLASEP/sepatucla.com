@@ -16,7 +16,6 @@ const Title = styled.div`
 `;
 
 const PhotosContainer = ({title, children}) => {
-  console.log(children);
   return (
     <Container>
       <Title>{title}</Title>

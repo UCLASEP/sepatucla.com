@@ -5,6 +5,8 @@ import PageHero from '../components/layouts/PageHero';
 import PhotosContainer from '../components/layouts/exec/PhotosContainer';
 import MemberLayout from '../components/layouts/exec/MemberLayout';
 
+import execData from '../constants/exec';
+
 const ExecPage = () => (
   <PageLayout location="exec">
     <PageHero
@@ -15,16 +17,15 @@ const ExecPage = () => (
       heroImg="exec/exec-hero"
     />
     <PhotosContainer title="Presidents">
-      <MemberLayout
-        name="Nishanth Shetty"
-        title="President"
-        desc="Nish is a 4th year Statistics major. He is working at Deloitte this summer as an investment banking intern. He is obsessed with Liverpool and having really engaging deep conversations."
-      />
-      <MemberLayout
-        name="Alissa Niewiadomski"
-        title="President"
-        desc="Nish is a 4th year Statistics major. He is working at Deloitte this summer as an investment banking intern. He is obsessed with Liverpool and having really engaging deep conversations."
-      />
+      {execData.PRESIDENTS.map(pres => (
+        <MemberLayout
+          name={`${pres.firstname} ${pres.lastname}`}
+          title={pres.title}
+          key={`${pres.firstname} ${pres.lastname}`}
+          desc={pres.desc}
+          notPictured={pres.notPictured}
+        />
+      ))}
     </PhotosContainer>
   </PageLayout>
 );
