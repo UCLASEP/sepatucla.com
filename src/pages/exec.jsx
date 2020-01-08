@@ -27,6 +27,17 @@ const ExecPage = () => (
         />
       ))}
     </PhotosContainer>
+    <PhotosContainer title="Directors">
+      {execData.DIRECTORS.map(director => (
+        <MemberLayout
+          name={`${director.firstname} ${director.lastname}`}
+          title={director.title}
+          key={`${director.firstname} ${director.lastname}`}
+          desc={director.desc}
+          notPictured={director.notPictured}
+        />
+      ))}
+    </PhotosContainer>
   </PageLayout>
 );
 

@@ -1,4 +1,4 @@
-import XI from '../classes';
+import {XI} from '../classes';
 
 export const JONATHAN_CHANG = {
   firstname: 'Jonathan',

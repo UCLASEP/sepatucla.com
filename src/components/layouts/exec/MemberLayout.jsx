@@ -14,6 +14,8 @@ import MemberPhoto from '../../generic/MemberPhoto';
 
 const Container = styled.div`
   display: flex;
+  margin-right: 48px;
+  margin-bottom: 48px;
 `;
 
 const Name = styled.div`
@@ -21,6 +23,7 @@ const Name = styled.div`
   font-weight: bold;
   color: ${BLACK};
   margin-bottom: 4px;
+  letter-spacing: -1px;
 `;
 
 const Title = styled.div`
@@ -29,21 +32,29 @@ const Title = styled.div`
   color: ${GREY40};
   text-transform: uppercase;
   margin-bottom: 8px;
+  letter-spacing: 4px;
 `;
 
 const Description = styled.div`
   font-size: ${TEXT_FONT_SIZES.s};
   color: ${GREY40};
+  line-height: 21px;
+`;
+
+const TextContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
 `;
 
 const MemberLayout = ({name, title, desc, notPictured}) => (
   <Container>
     <MemberPhoto name={name} notPictured={notPictured} />
-    <div style={{display: 'flex', flexDirection: 'column'}}>
+    <TextContainer>
       <Name>{name}</Name>
       <Title>{title}</Title>
       <Description>{desc}</Description>
-    </div>
+    </TextContainer>
   </Container>
 );
 

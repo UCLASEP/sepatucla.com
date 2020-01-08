@@ -1,4 +1,4 @@
-import PI from '../classes';
+import {PI} from '../classes';
 
 export const AMANDA_SANTOSO = {
   firstname: 'Amanda',

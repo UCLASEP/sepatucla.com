@@ -9,38 +9,34 @@ const Grid = styled.div`
 `;
 
 const Item = styled.div`
-  height: 250px;
   flex-basis: 20%;
-  width: 250px;
   position: relative;
   /* padding: 10px; */
   box-sizing: border-box;
 `;
 
-const GridItem = ({children, flexBasis}) => (
-  <Item style={{flexBasis: `${flexBasis}`}}>{children}</Item>
-);
+const GridItem = ({children, style}) => <Item style={style}>{children}</Item>;
 
 GridItem.propTypes = {
   children: PropTypes.element.isRequired,
-  flexBasis: PropTypes.string.isRequired,
+  style: PropTypes.shape({}).isRequired,
 };
 
-const FlexGrid = ({children, flexBasis}) => (
+const FlexGrid = ({children, style}) => (
   <Grid>
     {children.map(item => (
-      <GridItem flexBasis={flexBasis}>{item}</GridItem>
+      <GridItem style={style}>{item}</GridItem>
     ))}
   </Grid>
 );
 
 FlexGrid.propTypes = {
-  flexBasis: PropTypes.string,
+  style: PropTypes.shape({}),
   children: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
 };
 
 FlexGrid.defaultProps = {
-  flexBasis: '20%',
+  style: {},
 };
 
 export default FlexGrid;

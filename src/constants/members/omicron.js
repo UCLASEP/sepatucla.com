@@ -1,4 +1,4 @@
-import OMICRON from '../classes';
+import {OMICRON} from '../classes';
 
 export const ALISSA_NIEWIADOMSKI = {
   firstname: 'Alissa',

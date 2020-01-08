@@ -18,6 +18,7 @@ const Container = styled.div`
   display: flex;
   width: 100%;
   padding-left: ${PADDING.xl};
+  margin: ${MARGINS.l} 0;
   max-height: 500px;
 `;
 

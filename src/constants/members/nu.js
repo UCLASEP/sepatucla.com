@@ -1,4 +1,4 @@
-import NU from '../classes';
+import {NU} from '../classes';
 
 export const ANIKET_MUTATKAR = {
   firstname: 'Aniket',

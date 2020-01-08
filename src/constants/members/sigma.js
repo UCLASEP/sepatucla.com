@@ -1,4 +1,4 @@
-import SIGMA from '../classes';
+import {SIGMA} from '../classes';
 
 export const BRIAN_CHANG = {
   firstname: 'Brian',

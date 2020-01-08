@@ -1,4 +1,4 @@
-import RHO from '../classes';
+import {RHO} from '../classes';
 
 export const ABHISHEK_NAIK = {
   firstname: 'Abhishek',
