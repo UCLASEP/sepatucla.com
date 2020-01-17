@@ -47,12 +47,12 @@ const TextContainer = styled.div`
   margin-left: 30px;
 `;
 
-const MemberLayout = ({name, title, desc, notPictured}) => (
+const MemberLayout = ({name, title, desc, notPictured, isDirector}) => (
   <Container>
     <MemberPhoto name={name} notPictured={notPictured} />
     <TextContainer>
       <Name>{name}</Name>
-      <Title>{title}</Title>
+      <Title>{isDirector ? `Director, ${title}` : title}</Title>
       <Description>{desc}</Description>
     </TextContainer>
   </Container>
@@ -63,6 +63,11 @@ MemberLayout.propTypes = {
   title: PropTypes.string.isRequired,
   desc: PropTypes.string.isRequired,
   notPictured: PropTypes.bool.isRequired,
+  isDirector: PropTypes.bool,
+};
+
+MemberLayout.defaultProps = {
+  isDirector: false,
 };
 
 export default MemberLayout;

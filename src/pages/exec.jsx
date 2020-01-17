@@ -35,6 +35,7 @@ const ExecPage = () => (
           key={`${director.firstname} ${director.lastname}`}
           desc={director.desc}
           notPictured={director.notPictured}
+          isDirector
         />
       ))}
     </PhotosContainer>
