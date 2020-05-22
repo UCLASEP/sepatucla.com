@@ -1,6 +1,6 @@
 import {InactiveMember} from '../ventures_constants';
 
-const LOGOS = {
+export const LOGOS = {
   firstname: 'Logos',
   lastname: '',
   major: '',
