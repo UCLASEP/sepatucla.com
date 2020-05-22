@@ -6,6 +6,7 @@ import PageHero from '../components/layouts/PageHero';
 import VentureLayout from '../components/layouts/ventures/VentureLayout';
 import ventureData from '../constants/active_inactive';
 import VenturesContainer from '../components/layouts/ventures/PhotosContainer';
+import CallToAction from '../components/layouts/CallToAction';
 
 const Border = styled.div`
   height: 3px;
@@ -66,6 +67,10 @@ const VenturesPage = () => (
         />
       ))}
     </VenturesContainer>
+    <CallToAction
+      title="Many of us have also worked at some of the most innovative startups in the world"
+      buttonTitle="Careers"
+    />
   </PageLayout>
 );
 

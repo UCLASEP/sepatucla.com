@@ -57,19 +57,19 @@ const FEATURED = [
   },
   {
     ...SIKE,
-    title: 'Sam kazemian, zeta class',
+    title: 'Sid Pandiya, pi class Andrew Zhou, rho class',
     desc:
       'Everipedia offers a space for you to dive into anything you find interesting, connect with people who share your interests, and contribute your own perspective.',
   },
   {
     ...REFINELA,
-    title: 'Sam kazemian, zeta class',
+    title: 'Mandy Santoso, pi class Sonam Beckham, pi class Minh Mai, pi class',
     desc:
       'Everipedia offers a space for you to dive into anything you find interesting, connect with people who share your interests, and contribute your own perspective.',
   },
   {
     ...OFFBEAT,
-    title: 'Sam kazemian, zeta class',
+    title: 'Anu Shivakumar, tau class | Emily Noronha, tau class',
     desc:
       'Everipedia offers a space for you to dive into anything you find interesting, connect with people who share your interests, and contribute your own perspective.',
   },

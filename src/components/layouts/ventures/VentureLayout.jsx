@@ -22,6 +22,7 @@ const Name = styled.div`
   font-weight: bold;
   color: ${BLACK};
   margin-bottom: 4px;
+  width: 280px;
   letter-spacing: -1px;
 `;
 
@@ -32,6 +33,7 @@ const Title = styled.div`
   text-transform: uppercase;
   margin-bottom: 8px;
   letter-spacing: 4px;
+  width: 280px;
 `;
 
 const Description = styled.div`
