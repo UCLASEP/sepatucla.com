@@ -47,7 +47,7 @@ const TextContainer = styled.div`
 
 const VentureLayout = ({name, title, desc}) => (
   <Container>
-    <VenturePhoto name={name}/>
+    <VenturePhoto name={name} />
     <TextContainer>
       <Name>{name}</Name>
       <Title> {title}</Title>
