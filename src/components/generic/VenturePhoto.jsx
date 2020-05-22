@@ -5,17 +5,14 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 const Photo = styled.img`
-  height: 135px;
+  width: 280px;
 `;
 
 const VenturePhoto = ({name, notPictured}) => {
   return (
     <Photo
       src={require(`../../../assets/images/venture_final/${
-        notPictured
-          ? 'icons/notpictured_opt.jpg'
-          : `${name
-              .toLowerCase()}.jpg`
+        notPictured ? 'icons/notpictured_opt.jpg' : `${name.toLowerCase()}.jpg`
       }`)}
     />
   );

@@ -37,7 +37,7 @@ const Title = styled.div`
 const Description = styled.div`
   font-size: ${TEXT_FONT_SIZES.s};
   color: ${GREY40};
-  width: 300px;
+  width: 280px;
   line-height: 21px;
 `;
 
