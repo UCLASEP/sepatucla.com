@@ -4,6 +4,7 @@ import PageLayout from '../components/layouts/PageLayout';
 import PageHero from '../components/layouts/PageHero';
 import ToggleableViewContainer from '../components/layouts/members/ToggleableViewContainer';
 import FlexGrid from '../components/generic/FlexGrid';
+import CallToAction from '../components/layouts/CallToAction';
 
 import {MEMBERS} from '../constants/members';
 import MemberLayout from '../components/layouts/members/MemberLayout';
@@ -33,6 +34,11 @@ const MembersPage = () => (
       right={<div>right</div>}
       leftText="members"
       rightText="memories"
+    />
+    <CallToAction
+      title="Be part of our fam. Come talk to us at rush!"
+      buttonTitle="Recruitment"
+      link="recruitment"
     />
   </PageLayout>
 );

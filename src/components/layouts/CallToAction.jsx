@@ -3,7 +3,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import NavigationLink from '../Navigation/NavigationLink';
+import {Link} from 'gatsby';
 
 import {
   MARGINS,
@@ -51,23 +51,22 @@ const ViewSelectorButton = styled.div`
   background-color: ${PRIMARY_GREEN};
 `;
 
-const PageHero = ({title, buttonTitle}) => (
+const PageHero = ({title, buttonTitle, link}) => (
   <Container>
     <Border />
     <Title>{title}</Title>
-    <ViewSelectorButton
-      onClick={() => <NavigationLink>to: {'/careers'},</NavigationLink>}
-      role="button"
-      tabIndex={0}
-    >
-      {buttonTitle}
-    </ViewSelectorButton>
+    <Link to={`/${link}`} style={{textDecoration: 'none'}}>
+      <ViewSelectorButton role="button" tabIndex={0}>
+        {buttonTitle}
+      </ViewSelectorButton>
+    </Link>
   </Container>
 );
 
 PageHero.propTypes = {
   title: PropTypes.string.isRequired,
   buttonTitle: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
 };
 
 export default PageHero;
