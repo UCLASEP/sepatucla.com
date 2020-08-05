@@ -4,6 +4,7 @@ import PageLayout from '../components/layouts/PageLayout';
 import PageHero from '../components/layouts/PageHero';
 import PhotosContainer from '../components/layouts/exec/PhotosContainer';
 import MemberLayout from '../components/layouts/exec/MemberLayout';
+import CallToAction from '../components/layouts/CallToAction';
 
 import execData from '../constants/exec';
 
@@ -39,6 +40,11 @@ const ExecPage = () => (
         />
       ))}
     </PhotosContainer>
+    <CallToAction
+      title="Meet the rest of the our chapter"
+      buttonTitle="Members"
+      link="members"
+    />
   </PageLayout>
 );
 
