@@ -20,8 +20,12 @@
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.6",
     "gatsby": "^2.24.8",
+    "gatsby-image": "^2.4.14",
     "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
+    "gatsby-plugin-sharp": "^2.6.25",
     "gatsby-plugin-styled-components": "^3.1.8",
+    "gatsby-source-filesystem": "^2.3.24",
+    "gatsby-transformer-sharp": "^2.5.12",
     "husky": "^3.0.5",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
