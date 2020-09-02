@@ -32,7 +32,7 @@ const Title = styled.div`
 
 const Border = styled.div`
   height: 3px;
-  width: 90%;
+  width: 82%;
   background-color: #f2f2f2;
   margin: ${MARGINS.m} auto;
 `;
