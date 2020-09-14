@@ -5,6 +5,7 @@ import PageLayout from '../components/layouts/PageLayout';
 
 import Left from '../../assets/images/recruitment/left.png';
 import Right from '../../assets/images/recruitment/right.png';
+import FbBanner from '../../assets/images/recruitment/recruitment_banner.png';
 
 import {PRIMARY_GREEN} from '../styles/global';
 
@@ -47,7 +48,7 @@ const GreyText = styled.div`
   opacity: 0.7;
 `;
 
-const ViewSelectorButton = styled.div`
+const Button = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -125,6 +126,20 @@ const Dates = () => (
   </div>
 );
 
+// eslint-disable-next-line react/prop-types
+const FacebookEventButton = ({tabIndex, margin = '32px'}) => (
+  <a
+    href="https://www.facebook.com/sigmaetapi"
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{'text-decoration': 'none', 'margin-top': `${margin}`}}
+  >
+    <Button role="button" tabIndex={tabIndex}>
+      Come Rush
+    </Button>
+  </a>
+);
+
 const Main = () => (
   <div style={{display: 'flex', 'justify-content': 'space-between'}}>
     <MemberImage src={Left} alt="Members of Sigma Eta Pi" />
@@ -140,16 +155,7 @@ const Main = () => (
       <AccentText>- come join us!</AccentText>
       <Header>Recruitment</Header>
       <Bold>Fall Rush 2019 | Sep 31st - Oct 3rd</Bold>
-      <a
-        href="https://www.facebook.com/sigmaetapi"
-        target="_blank"
-        rel="noopener noreferrer"
-        style={{'text-decoration': 'none', 'margin-top': '32px'}}
-      >
-        <ViewSelectorButton role="button" tabIndex={0}>
-          Come Rush
-        </ViewSelectorButton>
-      </a>
+      <FacebookEventButton tabIndex={0} />
       <VerticalBorder />
       <GreyText>
         Although vastly diverse and widespread, our SEP family shares one
@@ -161,10 +167,81 @@ const Main = () => (
   </div>
 );
 
+const FbLink = () => (
+  <RecruitmentAdditionalSection
+    title="event details"
+    desc="For more details, check out our Facebook event page"
+    isFb
+  >
+    <img
+      style={{width: '100%', height: 'auto', margin: '24px 0'}}
+      src={FbBanner}
+      alt="Facebook Rush Event Banner with event details and dates."
+    />
+  </RecruitmentAdditionalSection>
+);
+
+const Sponsorship = () => (
+  <RecruitmentAdditionalSection
+    title="sponsorship"
+    desc="A huge thank you to this year's sponsors!"
+  >
+    <>{/* Add sponsorship logos here */}</>
+  </RecruitmentAdditionalSection>
+);
+
+// eslint-disable-next-line react/prop-types
+const RecruitmentAdditionalSection = ({title, desc, isFb, children}) => (
+  <div
+    style={{
+      display: 'flex',
+      'flex-direction': 'column',
+      'justify-content': 'center',
+      padding: '50px 100px',
+      'border-top': '3px solid #F2F2F2',
+      margin: '50px 200px',
+    }}
+  >
+    <div style={{display: 'flex', 'justify-content': 'space-between'}}>
+      <div>
+        <AccentText>- {title}</AccentText>
+        <Bold style={{margin: '10px 0px'}}>{desc}</Bold>
+      </div>
+      {isFb && <FacebookEventButton margin="0px" tabIndex={-1} />}
+    </div>
+    {children}
+  </div>
+);
+
+const Video = () => (
+  <div
+    style={{
+      display: 'flex',
+      'justify-content': 'center',
+      'align-items': 'center',
+    }}
+  >
+    <iframe
+      src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fsigmaetapi%2Fvideos%2F300640867460840%2F&show_text=0&width=1028"
+      style={{border: 'none'}}
+      width="1028"
+      height="628"
+      scrolling="no"
+      frameBorder="0"
+      allowTransparency="true"
+      allowFullScreen="true"
+      title="Recruitment Video"
+    />
+  </div>
+);
+
 const RecruitmentPage = () => (
   <PageLayout location="recruitment">
     <Main />
     <Dates />
+    <Video />
+    <FbLink />
+    <Sponsorship />
   </PageLayout>
 );
 
