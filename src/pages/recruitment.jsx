@@ -154,7 +154,7 @@ const Main = () => (
     >
       <AccentText>- come join us!</AccentText>
       <Header>Recruitment</Header>
-      <Bold>Fall Rush 2019 | Sep 31st - Oct 3rd</Bold>
+      <Bold>Fall Rush 2019&emsp;|&emsp;Sep 31st - Oct 3rd</Bold>
       <FacebookEventButton tabIndex={0} />
       <VerticalBorder />
       <GreyText>
