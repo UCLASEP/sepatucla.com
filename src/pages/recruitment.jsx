@@ -1,15 +1,22 @@
+/* eslint-disable react/prop-types */
+
 import React from 'react';
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
 
 import PageLayout from '../components/layouts/PageLayout';
 
 import Left from '../../assets/images/recruitment/left.png';
 import Right from '../../assets/images/recruitment/right.png';
+import LeftNarrow from '../../assets/images/recruitment/narrow-left.png';
+import RightNarrow from '../../assets/images/recruitment/narrow-right.png';
+
 import FbBanner from '../../assets/images/recruitment/recruitment_banner.png';
 
 import {PRIMARY_GREEN} from '../styles/global';
 
 import RUSH_INFO from '../constants/rush-info';
+
+import useWindowWidth from '../util/useWindowWidth';
 
 const AccentText = styled.div`
   font-weight: 500;
@@ -23,6 +30,10 @@ const AccentText = styled.div`
 
 const MemberImage = styled.img`
   height: 570px;
+
+  @media (max-width: 1300px) {
+    height: 500px;
+  }
 `;
 
 const Header = styled.div`
@@ -30,6 +41,10 @@ const Header = styled.div`
   font-size: 52px;
   line-height: 62px;
   color: ${PRIMARY_GREEN};
+
+  @media (max-width: 1000px) {
+    font-size: 32px;
+  }
 `;
 
 const Bold = styled.div`
@@ -38,6 +53,20 @@ const Bold = styled.div`
   line-height: 33px;
   letter-spacing: -1px;
   margin: 16px 0px;
+
+  ${props =>
+    props.resize &&
+    css`
+      @media (max-width: 1300px) {
+        font-size: 20px;
+        margin: 8px 0px;
+      }
+    `};
+
+  @media (max-width: 1000px) {
+    font-size: 20px;
+    margin: 4px 0px;
+  }
 `;
 
 const GreyText = styled.div`
@@ -46,6 +75,14 @@ const GreyText = styled.div`
   text-align: center;
   color: #222222;
   opacity: 0.7;
+
+  ${props =>
+    props.resize &&
+    css`
+      @media (max-width: 1300px) {
+        font-size: 16px;
+      }
+    `};
 `;
 
 const Button = styled.div`
@@ -68,6 +105,18 @@ const VerticalBorder = styled.div`
   top: 523px;
   border: 1px solid #e0e0e0;
   margin: 36px;
+
+  ${props =>
+    props.resize &&
+    css`
+      @media (max-width: 1300px) {
+        height: 33px;
+      }
+    `};
+
+  @media (max-width: 1000px) {
+    margin: 16px;
+  }
 `;
 
 const Text = styled.div`
@@ -77,9 +126,19 @@ const Text = styled.div`
   opacity: 0.7;
 `;
 
+const DateContainer = styled.div`
+  display: flex;
+  margin: 20px 0px;
+  width: 400px;
+
+  @media (max-width: 1400px) {
+    width: 300px;
+  }
+`;
+
 // eslint-disable-next-line react/prop-types
 const Date = ({title, date, location, dress}) => (
-  <div style={{display: 'flex', width: '400px', margin: '20px 0px'}}>
+  <DateContainer>
     <VerticalBorder
       style={{height: '120px', margin: '0px 12px', border: '2px solid #E0E0E0'}}
     />
@@ -89,18 +148,22 @@ const Date = ({title, date, location, dress}) => (
       <Text>{location}</Text>
       <Text>{dress}</Text>
     </div>
-  </div>
+  </DateContainer>
 );
 
+const DatesContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px 300px;
+
+  @media (max-width: 1400px) {
+    padding: 100px 250px;
+  }
+`;
+
 const Dates = () => (
-  <div
-    style={{
-      display: 'flex',
-      'flex-direction': 'column',
-      'justify-content': 'center',
-      padding: '100px 300px',
-    }}
-  >
+  <DatesContainer>
     <AccentText>- Come join us!</AccentText>
     <br />
     <Text>
@@ -123,47 +186,77 @@ const Dates = () => (
       ))}
     </div>
     <Text>We will meet at the Bruin Bear 15 minutes before each event.</Text>
-  </div>
+  </DatesContainer>
 );
 
-// eslint-disable-next-line react/prop-types
-const FacebookEventButton = ({tabIndex, margin = '32px'}) => (
-  <a
+const FacebookEventButton = ({tabIndex, margin = '24px'}) => (
+  <LinkContainer
     href="https://www.facebook.com/sigmaetapi"
     target="_blank"
     rel="noopener noreferrer"
-    style={{'text-decoration': 'none', 'margin-top': `${margin}`}}
+    margin={margin}
   >
     <Button role="button" tabIndex={tabIndex}>
       Come Rush
     </Button>
-  </a>
+  </LinkContainer>
 );
 
-const Main = () => (
+const LinkContainer = styled.a`
+  text-decoration: none;
+  margin-top: ${props => props.margin};
+
+  @media (max-width: 1000px) {
+    margin: 10px;
+  }
+`;
+
+const BannerTextContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 120px;
+
+  @media (max-width: 1300px) {
+    padding: 20px 80px;
+  }
+
+  @media (max-width: 1000px) {
+    padding: 5px 60px;
+  }
+`;
+
+const LeftImage = ({windowWidth}) => {
+  if (windowWidth < 830) return <></>;
+  if (windowWidth < 1130)
+    return <MemberImage src={LeftNarrow} alt="Members of Sigma Eta Pi" />;
+  return <MemberImage src={Left} alt="Members of Sigma Eta Pi" />;
+};
+
+const RightImage = ({windowWidth}) => {
+  if (windowWidth < 830) return <></>;
+  if (windowWidth < 1130)
+    return <MemberImage src={RightNarrow} alt="Members of Sigma Eta Pi" />;
+  return <MemberImage src={Right} alt="Members of Sigma Eta Pi" />;
+};
+
+const Main = ({windowWidth}) => (
   <div style={{display: 'flex', 'justify-content': 'space-between'}}>
-    <MemberImage src={Left} alt="Members of Sigma Eta Pi" />
-    <div
-      style={{
-        display: 'flex',
-        'flex-direction': 'column',
-        'justify-content': 'center',
-        'align-items': 'center',
-        padding: '40px 120px',
-      }}
-    >
+    <LeftImage windowWidth={windowWidth} />
+    <BannerTextContainer>
       <AccentText>- come join us!</AccentText>
       <Header>Recruitment</Header>
       <Bold>Fall Rush 2019&emsp;|&emsp;Sep 31st - Oct 3rd</Bold>
       <FacebookEventButton tabIndex={0} />
-      <VerticalBorder />
-      <GreyText>
+      <VerticalBorder resize />
+      <GreyText resize>
         Although vastly diverse and widespread, our SEP family shares one
         distinct objective:
       </GreyText>
-      <Bold>do what you love.</Bold>
-    </div>
-    <MemberImage src={Right} alt="Members of Sigma Eta Pi" />
+      <Bold resize>do what you love.</Bold>
+    </BannerTextContainer>
+    <RightImage windowWidth={windowWidth} />
   </div>
 );
 
@@ -190,7 +283,6 @@ const Sponsorship = () => (
   </RecruitmentAdditionalSection>
 );
 
-// eslint-disable-next-line react/prop-types
 const RecruitmentAdditionalSection = ({title, desc, isFb, children}) => (
   <div
     style={{
@@ -235,14 +327,18 @@ const Video = () => (
   </div>
 );
 
-const RecruitmentPage = () => (
-  <PageLayout location="recruitment">
-    <Main />
-    <Dates />
-    <Video />
-    <FbLink />
-    <Sponsorship />
-  </PageLayout>
-);
+const RecruitmentPage = () => {
+  const windowWidth = useWindowWidth();
+
+  return (
+    <PageLayout location="recruitment">
+      <Main windowWidth={windowWidth} />
+      <Dates />
+      <Video />
+      <FbLink />
+      <Sponsorship />
+    </PageLayout>
+  );
+};
 
 export default RecruitmentPage;
