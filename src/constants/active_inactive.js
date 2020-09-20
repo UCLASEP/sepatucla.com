@@ -13,19 +13,11 @@ import {
   PLUTO,
   VIBEZ,
   ASSETCAMP,
-  AUTOPREME,
-  AVAANT,
   BEATMATCHES,
-  COLOSSI,
   GOALOPEDIA,
-  HANGSTER,
-  HEADFIRST,
   MEMOIRE,
   PHOENIX,
   PRIME,
-  QCIGARETTES,
-  ROOMCRUNCH,
-  RYDE,
   SIKE,
   REFINELA,
   OFFBEAT,
@@ -35,7 +27,7 @@ import {
   PEARL,
   GOGYFT,
   FINDINGFOUNDERS,
-  SLINGSHOT,
+  SLINGSHOW,
   ETERNALIST,
   FREEMONEYFORFOUNDERS,
   ECSTATIC,
@@ -194,7 +186,7 @@ const ACTIVE = [
       'Finding Founders is a podcast showcasing the vibrant entrepreneurial spirit of Los Angeles and their journey is to find the founders responsible',
   },
   {
-    ...SLINGSHOT,
+    ...SLINGSHOW,
     title: 'Nilay Modi (Iota Class), Jorge Fuentes (Pi class)',
     desc:
       'Create an engaged and connected community with networking, breakout rooms, presentations, and more with Slingshow!',
@@ -204,117 +196,69 @@ const ACTIVE = [
 const INACTIVE = [
   {
     ...ASSETCAMP,
-    title: 'Sam kazemian (zeta class)',
+    title: 'Bryan Tran (Iota Class)',
     desc:
-      'Everipedia offers a space for you to dive into anything you find interesting, connect with people who share your interests, and contribute your own perspective.',
-  },
-  {
-    ...AUTOPREME,
-    title: 'Aza Steel, beta class)',
-    desc:
-      'GoGuardian provides Chromebook management software that protects students online and gives educators better control over how their technology is used.',
-  },
-  {
-    ...AVAANT,
-    title: 'kevin longa, alpha class)',
-    desc:
-      'TASTE With Kevin Longa: a documentary series telling the stories of international food entrepreneurs. Real food. True entrepreneurs. Raw stories.',
+      'AssetCamp is a community where 3D Creators can showcase and sell their assets in a “Pay What You Want” marketplace using a technology stack consisting of Python, Django, Postgres, and Nginx.',
   },
   {
     ...BEATMATCHES,
-    title: 'Sam kazemian (zeta class)',
+    title: 'Ritesh Gupta (Alpha Class)',
     desc:
-      'Everipedia offers a space for you to dive into anything you find interesting, connect with people who share your interests, and contribute your own perspective.',
-  },
-  {
-    ...COLOSSI,
-    title: 'Sam kazemian (zeta class)',
-    desc:
-      'Everipedia offers a space for you to dive into anything you find interesting, connect with people who share your interests, and contribute your own perspective.',
+      'A musical collabaration between an incredible producer from Germany named Robot Koch that ended up in an lively musical collobaration in the form of a track called "Dreams".',
   },
   {
     ...GOALOPEDIA,
-    title: 'Sam kazemian (zeta class)',
+    title: 'Andrew Howard (delta class)',
     desc:
-      'Everipedia offers a space for you to dive into anything you find interesting, connect with people who share your interests, and contribute your own perspective.',
-  },
-  {
-    ...HANGSTER,
-    title: 'Sam kazemian (zeta class)',
-    desc:
-      'Everipedia offers a space for you to dive into anything you find interesting, connect with people who share your interests, and contribute your own perspective.',
-  },
-  {
-    ...HEADFIRST,
-    title: 'Sam kazemian (zeta class)',
-    desc:
-      'Everipedia offers a space for you to dive into anything you find interesting, connect with people who share your interests, and contribute your own perspective.',
+      "Goalopedia's mission is to document every goal caught on tape, help make Goalopedia the best resource for goals possible!",
   },
   {
     ...MEMOIRE,
-    title: 'Sam kazemian (zeta class)',
+    title: 'Daniel lin (zeta class)',
     desc:
-      'Everipedia offers a space for you to dive into anything you find interesting, connect with people who share your interests, and contribute your own perspective.',
+      'Memoire is a short form daily journal app created to help individuals reflect upon themselves and spread postivity and connection.',
   },
   {
     ...PHOENIX,
-    title: 'Sam kazemian (zeta class)',
+    title: 'Dillon Liang (Mu class)',
     desc:
-      'Everipedia offers a space for you to dive into anything you find interesting, connect with people who share your interests, and contribute your own perspective.',
+      'Phoenix & Powell is a UCLA student-run, non-profit strategy consultancy targeted towards high-growth startups in LA.',
   },
   {
     ...PRIME,
-    title: 'Sam kazemian (zeta class)',
+    title: 'Kris Quan (Mu class)',
     desc:
-      'Everipedia offers a space for you to dive into anything you find interesting, connect with people who share your interests, and contribute your own perspective.',
-  },
-  {
-    ...QCIGARETTES,
-    title: 'Sam kazemian (zeta class)',
-    desc:
-      'Everipedia offers a space for you to dive into anything you find interesting, connect with people who share your interests, and contribute your own perspective.',
-  },
-  {
-    ...ROOMCRUNCH,
-    title: 'Sam kazemian (zeta class)',
-    desc:
-      'Everipedia offers a space for you to dive into anything you find interesting, connect with people who share your interests, and contribute your own perspective.',
-  },
-  {
-    ...RYDE,
-    title: 'Sam kazemian (zeta class)',
-    desc:
-      'Everipedia offers a space for you to dive into anything you find interesting, connect with people who share your interests, and contribute your own perspective.',
+      "Prime boxers are a line of men's underwear made from Bamboo aimed at improving social equity within inner cities by promoting and helping launch other youth social enterprises.",
   },
   {
     ...LOGOS,
-    title: 'Sam kazemian (zeta class)',
+    title: 'Sid Pandiya (pi class)',
     desc:
-      'Everipedia offers a space for you to dive into anything you find interesting, connect with people who share your interests, and contribute your own perspective.',
+      'Logos is a news platform for the new age of digital content consumption that participated in the StartupUCLA Summer Accelerator Program.',
   },
   {
     ...ETERNALIST,
-    title: 'Sam kazemian (zeta class)',
+    title: 'Aaron Yih (iota class)',
     desc:
-      'Everipedia offers a space for you to dive into anything you find interesting, connect with people who share your interests, and contribute your own perspective.',
+      'Eternalist is a web app that pulls in data from all these apps that you already use and turns it into a timeline of your life that makes it easy for you to find, explore, and remember your greatest memories.',
   },
   {
     ...FREEMONEYFORFOUNDERS,
-    title: 'Sam kazemian (zeta class)',
+    title: 'Aza Steel (beta class)',
     desc:
-      'Everipedia offers a space for you to dive into anything you find interesting, connect with people who share your interests, and contribute your own perspective.',
+      'Free Money for Founders provides cash and mentorship to student startups without taking an ownership stake, unlike other venture capital groups.',
   },
   {
     ...ECSTATIC,
-    title: 'Sam kazemian (zeta class)',
+    title: 'Nilay Modi (Iota Class)',
     desc:
-      'Everipedia offers a space for you to dive into anything you find interesting, connect with people who share your interests, and contribute your own perspective.',
+      'Proactively Prevent School Crises with Ecstatic by using data and insights to avoid student crises and save time, money & headaches.',
   },
   {
     ...BRUINMEET,
-    title: 'Sam kazemian (zeta class)',
+    title: 'Dmitri Brereton (pi class)',
     desc:
-      'Everipedia offers a space for you to dive into anything you find interesting, connect with people who share your interests, and contribute your own perspective.',
+      'Bruinmeet is a UCLA-exclusive dating app to help you and set up in-person meeetings with other students on campus and go on dates.',
   },
 ];
 
