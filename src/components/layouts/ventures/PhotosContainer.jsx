@@ -17,6 +17,7 @@ const Container = styled.div`
   flex-direction: column;
   margin: 0 ${MARGINS.l};
   margin-bottom: ${MARGINS.m};
+  margin-right: 10px;
 `;
 
 const Title = styled.div`

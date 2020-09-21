@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 
 import styled from 'styled-components';
 import {Link} from 'gatsby';
@@ -32,13 +32,22 @@ const MainTitle = styled.div`
   color: ${PRIMARY_GREEN};
   margin-bottom: 30px;
   max-width: 700px;
+
+  @media (max-width: 768px) {
+    margin-left: ${MARGINS.s};
+    font-size: ${HEADER_FONT_SIZES.m};
+  }
 `;
 
 const Container = styled.div`
   display: flex;
-  margin: 9px
+  margin-left: 9px;
   flex-direction: row;
-  width: 92.3%
+  width: 92.3%;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
 `;
 
 // column for socials 105 for s, 155 for m
@@ -57,18 +66,35 @@ const SocialColumn = styled.div`
       opacity: 70%;
     }
   }
+  @media (max-width: 768px) {
+    margin-left: 0px;
+    margin-left: ${MARGINS.s};
+    margin-top: 10px;
+    margin-bottom: -${MARGINS.xs};
+  }
 `;
 
 const HeaderContainer = styled.div`
   align-items: center;
   justify-content: center;
   margin-top: ${MARGINS.l};
+  @media (max-width: 768px) {
+    margin-top: ${MARGINS.ms};
+  }
 `;
 
 const HeaderTitle = styled.div`
   font-size: ${HEADER_FONT_SIZES.m};
   font-weight: bold;
   text-align: center;
+  @media (max-width: 768px) {
+    font-size: ${HEADER_FONT_SIZES.s};
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    text-align: center;
+  }
 `;
 
 const HeaderSubtext = styled.div`
@@ -78,6 +104,14 @@ const HeaderSubtext = styled.div`
   width: 650px;
   margin-left: auto;
   margin-right: auto;
+  @media (max-width: 768px) {
+    margin-top: ${MARGINS.s};
+    font-size: ${TEXT_FONT_SIZES.s};
+    text-align: center;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 `;
 
 const HeaderGreen = styled.span`
@@ -85,6 +119,9 @@ const HeaderGreen = styled.span`
   text-align: center;
   font-weight: bold;
   color: ${PRIMARY_GREEN};
+  @media (max-width: 768px) {
+    font-size: ${TEXT_FONT_SIZES.s};
+  }
 `;
 
 const ViewSelectorButton = styled.div`
@@ -92,13 +129,20 @@ const ViewSelectorButton = styled.div`
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
-  width: 309px;
-  height: 50px;
+  width: 350px;
+  height: 55px;
   font-size: 14px;
   letter-spacing: 4px;
   margin: 40px auto ${MARGINS.l} auto;
   color: white;
   background-color: ${PRIMARY_GREEN};
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+    width: 350px;
+    height: 50px;
+    margin: 40px auto -${MARGINS.s} auto;
+  }
 `;
 
 const CaptionContainer = styled.div`
@@ -106,17 +150,32 @@ const CaptionContainer = styled.div`
   align-items: center;
   justify-content: center;
   margin-top: ${MARGINS.m};
+  @media (max-width: 768px) {
+    margin-top: ${MARGINS.s};
+  }
 `;
 
 const CaptionPart = styled.div`
   font-size: ${HEADER_FONT_SIZES.ml};
   font-weight: 600;
+  @media (max-width: 1300px) {
+    font-size: ${HEADER_FONT_SIZES.m};
+  }
+  @media (max-width: 768px) {
+    font-size: ${HEADER_FONT_SIZES.xs};
+  }
 `;
 
 const GreenCaptionPart = styled.div`
   font-size: ${HEADER_FONT_SIZES.ml};
   font-weight: 600;
   color: ${PRIMARY_GREEN};
+  @media (max-width: 1300px) {
+    font-size: ${HEADER_FONT_SIZES.m};
+  }
+  @media (max-width: 768px) {
+    font-size: ${HEADER_FONT_SIZES.xs};
+  }
 `;
 
 const CaptionText = styled.span`
@@ -124,6 +183,12 @@ const CaptionText = styled.span`
   font-weight: 100;
   color: #222222;
   padding-left: 0px;
+  @media (max-width: 1300px) {
+    font-size: ${TEXT_FONT_SIZES.xs};
+  }
+  @media (max-width: 768px) {
+    font-size: ${TEXT_FONT_SIZES.xxs};
+  }
 `;
 
 const CaptionSeparateText = styled.div`
@@ -133,29 +198,65 @@ const CaptionSeparateText = styled.div`
   font-style: italic;
   margin-left: ${MARGINS.m};
   margin-right: ${MARGINS.m};
+  @media (max-width: 1300px) {
+    margin-left: ${MARGINS.s};
+    margin-right: ${MARGINS.s};
+    font-size: ${TEXT_FONT_SIZES.s};
+  }
+  @media (max-width: 768px) {
+    margin-left: 0;
+    margin-right: 0;
+    font-size: ${TEXT_FONT_SIZES.xxs};
+  }
 `;
 
 const CaptionParent = styled.div`
   align-items: center;
   text-align: center;
+  @media (max-width: 1300px) {
+    margin-left: ${MARGINS.s};
+    margin-right: ${MARGINS.s};
+  }
+  @media (max-width: 768px) {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 `;
 
 const MemberParent = styled.div``;
 
+const EntrepreneurshipParent = styled.div`
+  margin-right: 58px;
+`;
 const MemberContainer = styled.div`
   display: flex;
   align-items: center;
   margin-top: ${MARGINS.m};
   margin-bottom: ${MARGINS.m};
+  @media (max-width: 1300px) {
+    display: block;
+  }
 `;
 
 const MemberText = styled.div`
   margin-left: ${MARGINS.xl};
+  @media (max-width: 1300px) {
+    width: 273px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 `;
 
 const EntrepreneurshipText = styled.div`
   margin-left: ${MARGINS.l};
   padding-left: 60px;
+  @media (max-width: 1300px) {
+    width: 273px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 `;
 
 const MiniTitle = styled.div`
@@ -203,10 +304,22 @@ const MemberSelectorButton = styled.div`
 
 const MemberPhoto = styled.div`
   margin-left: ${MARGINS.l};
+  @media (max-width: 1300px) {
+    margin-top: ${MARGINS.s};
+    display: flex;
+    justify-content: center;
+    margin-right: 130px;
+  }
 `;
 
 const EntrepreneurshipPhoto = styled.div`
   margin-left: ${MARGINS.xl};
+  @media (max-width: 1300px) {
+    margin-top: ${MARGINS.s};
+    display: flex;
+    justify-content: center;
+    margin-right: 200px;
+  }
 `;
 
 const Caption = styled.div`
@@ -215,10 +328,16 @@ const Caption = styled.div`
   font-size: ${TEXT_FONT_SIZES.s};
   text-align: center;
   padding-top: ${MARGINS.s};
+  @media (max-width: 1300px) {
+    display: none;
+  }
 `;
 
 const ButtonContainer = styled.div`
   display: flex;
+  @media (max-width: 1300px) {
+    display: block;
+  }
 `;
 
 const WorkSelectorButton = styled.div`
@@ -235,38 +354,42 @@ const WorkSelectorButton = styled.div`
   color: ${PRIMARY_GREEN};
   background-color: #fff;
   border: 2px solid ${PRIMARY_GREEN};
+  @media (max-width: 1300px) {
+    margin-left: 0px;
+  }
+  //
 `;
 
-// Hook for size
-function useWindowSize() {
-  // Initialize state with undefined width/height so server and client renders match
-  const [windowSize, setWindowSize] = useState({
-    width: undefined,
-    height: undefined,
-  });
+// // Hook for size
+// function useWindowSize() {
+//   // Initialize state with undefined width/height so server and client renders match
+//   const [windowSize, setWindowSize] = useState({
+//     width: undefined,
+//     height: undefined,
+//   });
 
-  useEffect(() => {
-    // Handler to call on window resize
-    function handleResize() {
-      // Set window width/height to state
-      setWindowSize({
-        width: window.innerWidth,
-        height: window.innerHeight,
-      });
-    }
+//   useEffect(() => {
+//     // Handler to call on window resize
+//     function handleResize() {
+//       // Set window width/height to state
+//       setWindowSize({
+//         width: window.innerWidth,
+//         height: window.innerHeight,
+//       });
+//     }
 
-    // Add event listener
-    window.addEventListener('resize', handleResize);
+//     // Add event listener
+//     window.addEventListener('resize', handleResize);
 
-    // Call handler right away so state gets updated with initial window size
-    handleResize();
+//     // Call handler right away so state gets updated with initial window size
+//     handleResize();
 
-    // Remove event listener on cleanup
-    return () => window.removeEventListener('resize', handleResize);
-  }, []); // Empty array ensures that effect is only run on mount
+//     // Remove event listener on cleanup
+//     return () => window.removeEventListener('resize', handleResize);
+//   }, []); // Empty array ensures that effect is only run on mount
 
-  return windowSize;
-}
+//   return windowSize;
+// }
 
 const SocialsComponent = () => (
   <SocialColumn>
@@ -365,18 +488,18 @@ const MemberComponent = () => (
         </Link>
       </MemberText>
       <MemberPhoto>
-        <img src={people} alt="facebook icon" width={580} style={{}} />
+        <img src={people} alt="facebook icon" className="memberImage" />
       </MemberPhoto>
     </MemberContainer>
   </MemberParent>
 );
 
 const EntrepreneurshipComponent = () => (
-  <MemberParent>
+  <EntrepreneurshipParent>
     <Border />
     <MemberContainer>
       <EntrepreneurshipPhoto>
-        <img src={farout} alt="facebook icon" width={435} style={{}} />
+        <img src={farout} alt="facebook icon" className="entreImage" />
         <Caption>Far Out Fest Organizing Team, 2019</Caption>
       </EntrepreneurshipPhoto>
       <EntrepreneurshipText>
@@ -402,12 +525,10 @@ const EntrepreneurshipComponent = () => (
         </ButtonContainer>
       </EntrepreneurshipText>
     </MemberContainer>
-  </MemberParent>
+  </EntrepreneurshipParent>
 );
 
 function HomePage() {
-  const size = useWindowSize();
-
   return (
     <PageLayout>
       <Container>
@@ -417,8 +538,10 @@ function HomePage() {
       <img
         src={gallery}
         alt="facebook icon"
-        width={size.width}
-        style={{marginTop: MARGINS.m}}
+        style={{
+          width: '100%',
+          marginTop: MARGINS.m,
+        }}
       />
       <CaptionComponent />
       <HeaderComponent />

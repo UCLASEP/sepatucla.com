@@ -1,0 +1,20 @@
+.memberImage{
+    width: 580px;
+  height: 400px;
+  
+}
+.entreImage{
+    width: 435px;
+    height: 300px;
+}
+@media (max-width: 1300px) {
+    .memberImage{
+        width: 350px;
+        height: 250px;
+    }
+    .entreImage{
+        width: 300px;
+        height: 200px;
+        margin-right: 120px;
+    }
+}

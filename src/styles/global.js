@@ -26,6 +26,8 @@ export const TEXT_FONT_SIZES = {
   l: '20px',
   m: '18px',
   s: '14px',
+  xs: '10px',
+  xxs: '8px',
 };
 
 /**
@@ -35,6 +37,7 @@ export const MARGINS = {
   xl: '256px',
   l: '128px',
   m: '68px',
+  ms: '32px',
   s: '16px',
   xs: '12px',
 };
