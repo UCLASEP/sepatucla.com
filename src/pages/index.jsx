@@ -1,5 +1,4 @@
 import React from 'react';
-
 import styled from 'styled-components';
 import {Link} from 'gatsby';
 import PageLayout from '../components/layouts/PageLayout';
@@ -12,7 +11,7 @@ import LinkedinIcon from '../../assets/images/icons/linkedin.svg';
 import gallery from '../../assets/images/gallery/temp.png';
 import people from '../../assets/images/gallery/people.png';
 import farout from '../../assets/images/gallery/farout.png';
-
+import './home.css';
 import {
   MARGINS,
   HEADER_FONT_SIZES,
@@ -318,7 +317,7 @@ const EntrepreneurshipPhoto = styled.div`
     margin-top: ${MARGINS.s};
     display: flex;
     justify-content: center;
-    margin-right: 200px;
+    margin-right: 80px;
   }
 `;
 
