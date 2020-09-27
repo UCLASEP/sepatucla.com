@@ -66,6 +66,7 @@ const Bold = styled.div`
   @media (max-width: 1000px) {
     font-size: 20px;
     margin: 4px 0px;
+    line-height: 28px;
   }
 `;
 
@@ -76,13 +77,13 @@ const GreyText = styled.div`
   color: #222222;
   opacity: 0.7;
 
-  ${props =>
+  /* ${props =>
     props.resize &&
-    css`
+    css` */
       @media (max-width: 1300px) {
         font-size: 16px;
       }
-    `};
+    /* `}; */
 `;
 
 const Button = styled.div`
@@ -96,6 +97,13 @@ const Button = styled.div`
   letter-spacing: 4px;
   color: white;
   background-color: ${PRIMARY_GREEN};
+
+  @media (max-width: 800px) {
+    width: 150px;
+    height: 40px;
+
+    font-size: 12px;
+  }
 `;
 
 const VerticalBorder = styled.div`
@@ -124,6 +132,11 @@ const Text = styled.div`
   line-height: 28px;
   color: #222222;
   opacity: 0.7;
+
+  @media (max-width: 800px) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 `;
 
 const DateContainer = styled.div`
@@ -133,6 +146,10 @@ const DateContainer = styled.div`
 
   @media (max-width: 1400px) {
     width: 300px;
+  }
+
+  @media (max-width: 800px) {
+    width: 250px;
   }
 `;
 
@@ -159,6 +176,10 @@ const DatesContainer = styled.div`
 
   @media (max-width: 1400px) {
     padding: 100px 250px;
+  }
+
+  @media (max-width: 1100px) {
+    padding: 50px 100px;
   }
 `;
 
@@ -208,6 +229,10 @@ const LinkContainer = styled.a`
 
   @media (max-width: 1000px) {
     margin: 10px;
+  }
+
+  @media (max-width: 800px) {
+    align-self: center;
   }
 `;
 
@@ -283,36 +308,62 @@ const Sponsorship = () => (
   </RecruitmentAdditionalSection>
 );
 
+const AdditionalSectionConatiner = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 100px;
+  border-top: 3px solid #f2f2f2;
+  margin: 50px 200px;
+
+  @media (max-width: 1100px) {
+    margin: 50px 100px;
+    padding: 25px 50px;
+  }
+
+  @media (max-width: 800px) {
+    margin: 25px 50px;
+    padding: 25px 0px;
+  }
+`;
+
+const AdditionalSectionSubContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
+`;
+
 const RecruitmentAdditionalSection = ({title, desc, isFb, children}) => (
-  <div
-    style={{
-      display: 'flex',
-      'flex-direction': 'column',
-      'justify-content': 'center',
-      padding: '50px 100px',
-      'border-top': '3px solid #F2F2F2',
-      margin: '50px 200px',
-    }}
-  >
-    <div style={{display: 'flex', 'justify-content': 'space-between'}}>
+  <AdditionalSectionConatiner>
+    <AdditionalSectionSubContainer>
       <div>
         <AccentText>- {title}</AccentText>
         <Bold style={{margin: '10px 0px'}}>{desc}</Bold>
       </div>
       {isFb && <FacebookEventButton margin="0px" tabIndex={-1} />}
-    </div>
+    </AdditionalSectionSubContainer>
     {children}
-  </div>
+  </AdditionalSectionConatiner>
 );
 
+const VideoContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 1000px) {
+    iframe {
+      height: 300px;
+      width: 500px;
+    }
+  }
+`;
+
 const Video = () => (
-  <div
-    style={{
-      display: 'flex',
-      'justify-content': 'center',
-      'align-items': 'center',
-    }}
-  >
+  <VideoContainer>
     <iframe
       src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fsigmaetapi%2Fvideos%2F300640867460840%2F&show_text=0&width=1028"
       style={{border: 'none'}}
@@ -324,7 +375,7 @@ const Video = () => (
       allowFullScreen="true"
       title="Recruitment Video"
     />
-  </div>
+  </VideoContainer>
 );
 
 const RecruitmentPage = () => {
