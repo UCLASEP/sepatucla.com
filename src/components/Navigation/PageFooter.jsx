@@ -19,8 +19,21 @@ const LogoComponent = () => (
   </LogoColumn>
 );
 
+const LinksComponentContainer = styled.div`
+  display: flex;
+  justify-content: flex-start;
+
+  @media (max-width: 1130px) {
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 800px) {
+    justify-content: space-between;
+  }
+`;
+
 const LinksComponent = () => (
-  <div style={{display: 'flex', 'justify-content': 'flex-start'}}>
+  <LinksComponentContainer>
     <LinkColumn>
       <ColumnHeader>Membership</ColumnHeader>
       <Link to="/members">Active Members</Link>
@@ -37,7 +50,7 @@ const LinksComponent = () => (
       <ColumnHeader>Join us!</ColumnHeader>
       <Link to="/recruitment">Recruitment</Link>
     </LinkColumn>
-  </div>
+  </LinksComponentContainer>
 );
 
 const SocialsComponent = () => (
@@ -75,6 +88,17 @@ const FooterContainer = styled.div`
   flex-direction: row;
   background-color: ${GREY90};
   color: white;
+
+  @media (max-width: 1130px) {
+    padding: 48px;
+    flex-direction: column;
+
+    max-width: 100%;
+  }
+
+  @media (max-width: 800px) {
+    font-size: 14px;
+  }
 `;
 
 // column for logo
@@ -92,6 +116,16 @@ const LogoColumn = styled.div`
 
   div {
     margin-left: 64px;
+  }
+
+  @media (max-width: 1250px) {
+    margin-right: 50px;
+  }
+
+  @media (max-width: 1130px) {
+    width: 200px;
+    margin-bottom: 24px;
+    width: auto;
   }
 `;
 
@@ -112,6 +146,15 @@ const LinkColumn = styled.div`
       opacity: 90%;
     }
   }
+
+  @media (max-width: 1130px) {
+    margin-top: 12px;
+    margin-right: ${MARGINS.l};
+  }
+
+  @media (max-width: 800px) {
+    margin-right: 24px;
+  }
 `;
 
 // column for socials
@@ -129,6 +172,11 @@ const SocialColumn = styled.div`
     :hover {
       opacity: 90%;
     }
+  }
+
+  @media (max-width: 1300px) {
+    margin-left: -4px;
+    margin-top: 18px;
   }
 `;
 

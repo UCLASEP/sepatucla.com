@@ -4,6 +4,7 @@ import React from 'react';
 import styled, {css} from 'styled-components';
 
 import PageLayout from '../components/layouts/PageLayout';
+import FadeInSection from '../components/generic/FadeInSection';
 
 import Left from '../../assets/images/recruitment/left.png';
 import Right from '../../assets/images/recruitment/right.png';
@@ -181,31 +182,47 @@ const DatesContainer = styled.div`
   @media (max-width: 1100px) {
     padding: 50px 100px;
   }
+
+  @media (max-width: 550px) {
+    padding: 50px;
+  }
+`;
+
+const DatesSpecificContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 20px 0px;
+
+  @media (max-width: 550px) {
+    padding: 0px 50px;
+  }
+
+  @media (max-width: 450px) {
+    padding: 0px;
+  }
 `;
 
 const Dates = () => (
   <DatesContainer>
-    <AccentText>- Come join us!</AccentText>
-    <br />
-    <Text>
-      We encourage our brothers and sisters to jump headfirst into their
-      passions without looking back.
-    </Text>
-    <Text>Are you an independent thinker? Want to carve your own path?</Text>
-    <div
-      style={{
-        display: 'flex',
-        'flex-direction': 'row',
-        'align-items': 'center',
-        'justify-content': 'space-between',
-        'flex-wrap': 'wrap',
-        margin: '20px 0px',
-      }}
-    >
-      {RUSH_INFO.map(({title, date, location, dress}) => (
-        <Date title={title} date={date} location={location} dress={dress} />
-      ))}
+    <div>
+      <AccentText>- Come join us!</AccentText>
+      <br />
+      <Text>
+        We encourage our brothers and sisters to jump headfirst into their
+        passions without looking back.
+      </Text>
+      <Text>Are you an independent thinker? Want to carve your own path?</Text>
     </div>
+    <DatesSpecificContainer>
+      {RUSH_INFO.map(({title, date, location, dress}) => (
+        <FadeInSection>
+          <Date title={title} date={date} location={location} dress={dress} />
+        </FadeInSection>
+      ))}
+    </DatesSpecificContainer>
     <Text>We will meet at the Bruin Bear 15 minutes before each event.</Text>
   </DatesContainer>
 );
@@ -250,6 +267,10 @@ const BannerTextContainer = styled.div`
   @media (max-width: 1000px) {
     padding: 5px 60px;
   }
+
+  @media (max-width: 450px) {
+    padding: 5px 30px;
+  }
 `;
 
 const LeftImage = ({windowWidth}) => {
@@ -286,26 +307,30 @@ const Main = ({windowWidth}) => (
 );
 
 const FbLink = () => (
-  <RecruitmentAdditionalSection
-    title="event details"
-    desc="For more details, check out our Facebook event page"
-    isFb
-  >
-    <img
-      style={{width: '100%', height: 'auto', margin: '24px 0'}}
-      src={FbBanner}
-      alt="Facebook Rush Event Banner with event details and dates."
-    />
-  </RecruitmentAdditionalSection>
+  <FadeInSection>
+    <RecruitmentAdditionalSection
+      title="event details"
+      desc="For more details, check out our Facebook event page"
+      isFb
+    >
+      <img
+        style={{width: '100%', height: 'auto', margin: '24px 0'}}
+        src={FbBanner}
+        alt="Facebook Rush Event Banner with event details and dates."
+      />
+    </RecruitmentAdditionalSection>
+  </FadeInSection>
 );
 
 const Sponsorship = () => (
-  <RecruitmentAdditionalSection
-    title="sponsorship"
-    desc="A huge thank you to this year's sponsors!"
-  >
-    <>{/* Add sponsorship logos here */}</>
-  </RecruitmentAdditionalSection>
+  <FadeInSection>
+    <RecruitmentAdditionalSection
+      title="sponsorship"
+      desc="A huge thank you to this year's sponsors!"
+    >
+      <>{/* Add sponsorship logos here */}</>
+    </RecruitmentAdditionalSection>
+  </FadeInSection>
 );
 
 const AdditionalSectionConatiner = styled.div`
@@ -363,19 +388,21 @@ const VideoContainer = styled.div`
 `;
 
 const Video = () => (
-  <VideoContainer>
-    <iframe
-      src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fsigmaetapi%2Fvideos%2F300640867460840%2F&show_text=0&width=1028"
-      style={{border: 'none'}}
-      width="1028"
-      height="628"
-      scrolling="no"
-      frameBorder="0"
-      allowTransparency="true"
-      allowFullScreen="true"
-      title="Recruitment Video"
-    />
-  </VideoContainer>
+  <FadeInSection>
+    <VideoContainer>
+      <iframe
+        src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fsigmaetapi%2Fvideos%2F300640867460840%2F&show_text=0&width=1028"
+        style={{border: 'none'}}
+        width="1028"
+        height="628"
+        scrolling="no"
+        frameBorder="0"
+        allowTransparency="true"
+        allowFullScreen="true"
+        title="Recruitment Video"
+      />
+    </VideoContainer>
+  </FadeInSection>
 );
 
 const RecruitmentPage = () => {
