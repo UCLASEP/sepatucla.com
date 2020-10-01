@@ -43,4 +43,5 @@ export const PADDING = {
   xl: '128px',
   l: '64px',
   m: '16px',
+  s: '8px',
 };

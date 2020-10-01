@@ -11,11 +11,18 @@ import {
 } from '../../../styles/global';
 
 import MemberPhoto from '../../generic/MemberPhoto';
+import FadeInSection from '../../generic/FadeInSection';
 
 const Container = styled.div`
   display: flex;
   margin-right: 48px;
   margin-bottom: 48px;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
 `;
 
 const Name = styled.div`
@@ -24,6 +31,10 @@ const Name = styled.div`
   color: ${BLACK};
   margin-bottom: 4px;
   letter-spacing: -1px;
+
+  @media (max-width: 1100px) {
+    font-size: 20px;
+  }
 `;
 
 const Title = styled.div`
@@ -33,29 +44,46 @@ const Title = styled.div`
   text-transform: uppercase;
   margin-bottom: 8px;
   letter-spacing: 4px;
+
+  @media (max-width: 1100px) {
+    font-size: ${HEADER_FONT_SIZES.xxs};
+  }
 `;
 
 const Description = styled.div`
   font-size: ${TEXT_FONT_SIZES.s};
   color: ${GREY40};
   line-height: 21px;
+
+  @media (max-width: 1100px) {
+    line-height: 18px;
+  }
 `;
 
 const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin-left: 30px;
+
+  @media (max-width: 600px) {
+    margin-left: 0;
+    margin-top: 20px;
+    align-items: center;
+    text-align: center;
+  }
 `;
 
 const MemberLayout = ({name, title, desc, notPictured, isDirector}) => (
-  <Container>
-    <MemberPhoto name={name} notPictured={notPictured} />
-    <TextContainer>
-      <Name>{name}</Name>
-      <Title>{isDirector ? `Director, ${title}` : title}</Title>
-      <Description>{desc}</Description>
-    </TextContainer>
-  </Container>
+  <FadeInSection>
+    <Container>
+      <MemberPhoto name={name} notPictured={notPictured} />
+      <TextContainer>
+        <Name>{name}</Name>
+        <Title>{isDirector ? `Director, ${title}` : title}</Title>
+        <Description>{desc}</Description>
+      </TextContainer>
+    </Container>
+  </FadeInSection>
 );
 
 MemberLayout.propTypes = {

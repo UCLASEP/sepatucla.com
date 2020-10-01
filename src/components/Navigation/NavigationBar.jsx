@@ -54,7 +54,7 @@ const NavigationBar = ({activePage}) => (
   <Container>
     <Section>
       <Link
-        style={{display: 'flex', 'text-decoration': 'none', color: `${BLACK}`}}
+        style={{display: 'flex', textDecoration: 'none', color: `${BLACK}`}}
         to="/"
       >
         <LogoImg src={Logo} alt="SEP Logo" />
