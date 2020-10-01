@@ -160,7 +160,7 @@ const Date = ({title, date, location, dress}) => (
     <VerticalBorder
       style={{height: '120px', margin: '0px 12px', border: '2px solid #E0E0E0'}}
     />
-    <div style={{display: 'flex', 'flex-direction': 'column'}}>
+    <div style={{display: 'flex', flexDirection: 'column'}}>
       <Bold style={{margin: '4px 0px'}}>{title}</Bold>
       <AccentText>{date}</AccentText>
       <Text>{location}</Text>
@@ -218,7 +218,7 @@ const Dates = () => (
     </div>
     <DatesSpecificContainer>
       {RUSH_INFO.map(({title, date, location, dress}) => (
-        <FadeInSection>
+        <FadeInSection key={title}>
           <Date title={title} date={date} location={location} dress={dress} />
         </FadeInSection>
       ))}
@@ -288,7 +288,7 @@ const RightImage = ({windowWidth}) => {
 };
 
 const Main = ({windowWidth}) => (
-  <div style={{display: 'flex', 'justify-content': 'space-between'}}>
+  <div style={{display: 'flex', justifyContent: 'space-between'}}>
     <LeftImage windowWidth={windowWidth} />
     <BannerTextContainer>
       <AccentText>- come join us!</AccentText>
@@ -397,8 +397,7 @@ const Video = () => (
         height="628"
         scrolling="no"
         frameBorder="0"
-        allowTransparency="true"
-        allowFullScreen="true"
+        allowFullScreen
         title="Recruitment Video"
       />
     </VideoContainer>
