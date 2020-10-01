@@ -20,6 +20,19 @@ const Container = styled.div`
   padding-left: ${PADDING.xl};
   margin: ${MARGINS.l} 0;
   max-height: 500px;
+
+  @media (max-width: 1300px) {
+    margin: ${MARGINS.m} 0;
+  }
+
+  @media (max-width: 1100px) {
+    padding-left: ${PADDING.l};
+  }
+
+  @media (max-width: 870px) {
+    padding-left: 0;
+    justify-content: center;
+  }
 `;
 
 const TextSection = styled.div`
@@ -27,6 +40,15 @@ const TextSection = styled.div`
   flex-direction: column;
   flex: 1;
   max-width: 600px;
+
+  @media (max-width: 1300px) {
+    flex: 1.5;
+  }
+
+  @media (max-width: 870px) {
+    align-items: center;
+    text-align: center;
+  }
 `;
 
 const MiniTitle = styled.div`
@@ -43,6 +65,11 @@ const MainTitle = styled.div`
   font-weight: bold;
   color: ${PRIMARY_GREEN};
   margin-bottom: 30px;
+
+  @media (max-width: 1300px) {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
 `;
 
 const SubTitle = styled.div`
@@ -51,6 +78,10 @@ const SubTitle = styled.div`
   letter-spacing: -1px;
   color: ${GREY80};
   margin: ${MARGINS.s} 0;
+
+  @media (max-width: 1300px) {
+    font-size: ${TEXT_FONT_SIZES.m};
+  }
 `;
 
 const Blurb = styled.div`
@@ -58,6 +89,10 @@ const Blurb = styled.div`
   color: ${GREY70};
   max-width: 370px;
   line-height: 1.56;
+
+  @media (max-width: 1300px) {
+    font-size: ${TEXT_FONT_SIZES.s};
+  }
 `;
 
 const HeroImage = styled.img`
@@ -65,6 +100,24 @@ const HeroImage = styled.img`
   margin-left: 100px;
   max-width: 100%;
   object-fit: cover;
+  display: auto;
+
+  @media (max-width: 1300px) {
+    flex: 1.5;
+    margin-left: 80px;
+  }
+
+  @media (max-width: 1150px) {
+    flex: 1;
+  }
+
+  @media (max-width: 1100px) {
+    width: 500px;
+  }
+
+  @media (max-width: 870px) {
+    display: none;
+  }
 `;
 
 const PageHero = ({miniTitle, title, subtitle, blurb, heroImg}) => (
