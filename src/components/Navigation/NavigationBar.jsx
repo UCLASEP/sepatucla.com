@@ -102,9 +102,9 @@ const MobileNavigationBar = () => {
     if (open) {
       document.body.style.overflowY = 'hidden';
       document.body.style.position = 'relative';
-      document.documentElement.style.overflow = 'hidden';
+      document.documentElement.style.overflowY = 'hidden';
     } else {
-      document.body.style.overflowY = 'auto';
+      document.documentElement.style.overflowY = 'auto';
     }
   });
 
