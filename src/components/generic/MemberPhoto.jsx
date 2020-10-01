@@ -7,6 +7,14 @@ import PropTypes from 'prop-types';
 const Photo = styled.img`
   /* width: 235px; */
   height: 235px;
+
+  @media (max-width: 1300px) {
+    height: 210px;
+  }
+
+  @media (max-width: 600px) {
+    width: 210px;
+  }
 `;
 
 const MemberPhoto = ({name, notPictured}) => {

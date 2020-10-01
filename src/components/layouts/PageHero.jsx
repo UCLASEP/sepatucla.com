@@ -33,6 +33,10 @@ const Container = styled.div`
     padding-left: 0;
     justify-content: center;
   }
+
+  @media (max-width: 450px) {
+    margin: ${MARGINS.s};
+  }
 `;
 
 const TextSection = styled.div`
