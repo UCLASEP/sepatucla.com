@@ -81,19 +81,38 @@ const NavigationBar = ({activePage}) => (
 const MobileNavigationBar = () => {
   const [open, setOpen] = React.useState(false);
 
+  function effect(ref) {
+    useEffect(() => {
+      function handleClickOutside(event) {
+        if (ref.current && !ref.current.contains(event.target)) {
+          setOpen(false);
+        }
+      }
+      // Bind the event listener
+      document.addEventListener('mousedown', handleClickOutside);
+
+      return () => {
+        // Unbind the event listener on clean up
+        document.removeEventListener('mousedown', handleClickOutside);
+      };
+    }, [ref]);
+  }
+
   useEffect(() => {
     if (open) {
-      document.body.style.overflow = 'hidden';
+      document.body.style.overflowY = 'hidden';
       document.body.style.position = 'relative';
       document.documentElement.style.overflow = 'hidden';
     } else {
-      document.body.style.overflow = 'auto';
+      document.body.style.overflowY = 'auto';
     }
   });
 
   const node = React.useRef();
+  effect(node);
+
   return (
-    <MobileContainer>
+    <MobileContainer ref={node}>
       <Section>
         <Link
           style={{
@@ -108,7 +127,7 @@ const MobileNavigationBar = () => {
         </Link>
       </Section>
       <Section>
-        <div ref={node}>
+        <div style={{zIndex: '10'}} ref={node}>
           <Menu open={open} setOpen={setOpen} />
           <Burger open={open} setOpen={setOpen} />
         </div>

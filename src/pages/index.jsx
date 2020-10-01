@@ -21,6 +21,7 @@ import {
   GREY70,
   BLACK,
 } from '../styles/global';
+import FadeInSection from '../components/generic/FadeInSection';
 
 // use 700px or 40%
 const MainTitle = styled.div`
@@ -548,10 +549,18 @@ function HomePage() {
           marginTop: MARGINS.m,
         }}
       />
-      <CaptionComponent />
-      <HeaderComponent />
-      <MemberComponent />
-      <EntrepreneurshipComponent />
+      <FadeInSection>
+        <CaptionComponent />
+      </FadeInSection>
+      <FadeInSection>
+        <HeaderComponent />
+      </FadeInSection>
+      <FadeInSection>
+        <MemberComponent />
+      </FadeInSection>
+      <FadeInSection>
+        <EntrepreneurshipComponent />
+      </FadeInSection>
       <CallToAction
         title="Interested in doing something different?"
         buttonTitle="Join us"
