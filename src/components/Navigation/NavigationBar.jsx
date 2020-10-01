@@ -1,21 +1,19 @@
-import React, {useState} from 'react';
-import {Link} from 'gatsby';
+import React, {useEffect} from 'react';
 
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
 import PropTypes from 'prop-types';
 
-import {FaChevronUp, FaChevronDown} from 'react-icons/fa';
-import Collapsible from 'react-collapsible';
+import {Link} from 'gatsby';
 import NavigationDropdown from './NavigationDropdown';
 import NavigationLink from './NavigationLink';
 
 import ROUTES from '../../routes';
 
-import {MARGINS, BLACK, HOVER_GREEN, GREY70, GREY80} from '../../styles/global';
+import {MARGINS, BLACK, GREY80} from '../../styles/global';
 
 import Logo from '../../../assets/images/sep-logo-large.png';
 
-import './Menu.css'; // Tell webpack that Button.js uses these styles
+import './Menu.css';
 
 const NavigationLinkWrapper = ({activePage, linkText, to, options, slug}) => (
   <div>
@@ -82,6 +80,17 @@ const NavigationBar = ({activePage}) => (
 
 const MobileNavigationBar = () => {
   const [open, setOpen] = React.useState(false);
+
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = 'hidden';
+      document.body.style.position = 'relative';
+      document.documentElement.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+  });
+
   const node = React.useRef();
   return (
     <MobileContainer>
@@ -124,58 +133,55 @@ Burger.propTypes = {
 };
 
 function Menu({open}) {
-  const [chevron, setChevron] = useState(false);
-
-  const [entre, setEntre] = useState(false);
-
-  function handleClick() {
-    setChevron(prevState => !prevState);
-    console.log('collapse');
-  }
-
-  function handleClick2() {
-    setEntre(prevState => !prevState);
-    console.log('test');
-  }
-
   return (
     <StyledMenu open={open}>
       <SideBarContainer>
-        <SidebarMenuItem>Home</SidebarMenuItem>
+        <Link to="/" style={{textDecoration: 'none'}}>
+          <div className="Home">Home</div>
+        </Link>
       </SideBarContainer>
 
       <Border />
 
-      <SideBarContainer onClick={() => handleClick()}>
-        <Chevron>{chevron ? <FaChevronUp /> : <FaChevronDown />}</Chevron>
-        <Collapsible trigger="Members" transitionTime="300">
-          <p style={{marginLeft: '-8px'}}>Executive Board</p>
-          <p style={{marginLeft: '-8px'}}>Active Members</p>
-          <p style={{marginLeft: '-8px'}}>Sister Chapters</p>
-        </Collapsible>
+      <SideBarContainer>
+        <SidebarMenuItemCover>Members</SidebarMenuItemCover>
+        <Link to="/exec" style={{textDecoration: 'none'}}>
+          <div className="Subtext">Executive Board</div>
+        </Link>
+
+        <Link to="/members" style={{textDecoration: 'none'}}>
+          <div className="Subtext">Active Members</div>
+        </Link>
+
+        <Link to="/sister-chapters" style={{textDecoration: 'none'}}>
+          <div className="Bottom">Sister Chapters</div>
+        </Link>
       </SideBarContainer>
 
       <Border2 />
 
-      <SideBarContainer onClick={() => handleClick2()}>
-        <Chevron2>{entre ? <FaChevronUp /> : <FaChevronDown />}</Chevron2>
-        <Collapsible trigger="Entrpreneurship" transitionTime="300">
-          <a
-            href="https://www.facebook.com/sigmaetapi/"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <p style={{marginLeft: '-8px'}}>Ventures</p>
-          </a>
-          <p style={{marginLeft: '-8px'}}>Careers</p>
-          <p style={{marginLeft: '-8px'}}>BruinTank</p>
-        </Collapsible>
+      <SideBarContainer>
+        <SidebarMenuItemCover>Entrepreneurship</SidebarMenuItemCover>
+
+        <Link to="/ventures" style={{textDecoration: 'none'}}>
+          <div className="Subtext">Ventures</div>
+        </Link>
+
+        <Link to="/careers" style={{textDecoration: 'none'}}>
+          <div className="Subtext">Careers</div>
+        </Link>
+
+        <Link to="http://bruintank.com/" style={{textDecoration: 'none'}}>
+          <div className="Bottom">Bruin Tank</div>
+        </Link>
       </SideBarContainer>
 
       <Border />
 
       <SideBarContainer>
-        <SidebarMenuItem>Recruitment</SidebarMenuItem>
+        <Link to="/recruitment" style={{textDecoration: 'none'}}>
+          <div className="Recruitment">Recruitment</div>
+        </Link>
       </SideBarContainer>
     </StyledMenu>
   );
@@ -187,7 +193,7 @@ Menu.propTypes = {
 
 const MyComponent = ({activePage}) => {
   const [width, setWidth] = React.useState(window.innerWidth);
-  const breakpoint = 768;
+  const breakpoint = 1024;
 
   React.useEffect(() => {
     const handleWindowResize = () => setWidth(window.innerWidth);
@@ -219,7 +225,9 @@ const Container = styled.div`
   align-items: center;
 `;
 
-const SideBarContainer = styled.div``;
+const SideBarContainer = styled.div`
+  margin: 0;
+`;
 const MobileContainer = styled.div`
   margin: ${MARGINS.ms} ${MARGINS.s};
   margin-bottom: ${MARGINS.s};
@@ -228,32 +236,13 @@ const MobileContainer = styled.div`
   align-items: center;
 `;
 
-const SidebarMenuItem = styled.li`
+const SidebarMenuItemCover = styled.li`
   padding-left: ${MARGINS.s};
   color: ${GREY80};
   display: flex;
   height: 20px;
   width: 100%;
   align-items: center;
-  &:hover {
-    color: ${HOVER_GREEN};
-    cursor: pointer;
-  }
-`;
-const Chevron = styled.div`
-  color: ${GREY70};
-  padding-right: 30px;
-  position: absolute;
-  top: 10;
-  right: 0;
-`;
-
-const Chevron2 = styled.div`
-  color: ${GREY70};
-  padding-right: 30px;
-  position: absolute;
-  top: 19;
-  right: 0;
 `;
 
 const Border = styled.div`
@@ -331,12 +320,21 @@ const StyledMenu = styled.nav`
   transform: translateX(100px);
   transform: ${({open}) => (open ? 'translateX(0%)' : 'translateX(100%)')};
   height: 100%;
-  padding-right: 4rem;
+  padding-right: 6rem;
   padding-top: 5rem;
   position: absolute;
   top: -10px;
   right: -10px;
   transition: transform 0.3s ease-in-out;
+  box-shadow: ${({open}) => (open ? '-10px 0px 10px 1px #aaaaaa' : '')};
+
+  ${props =>
+    props.open &&
+    css`
+      * {
+        overflow: hidden;
+      }
+    `}
 `;
 
 export default MyComponent;

@@ -1,8 +1,50 @@
 
-.Collapsible{
-    color: #4F4F4F;
+html, body {
+    margin: 0; 
+    height: 100%; 
 }
 
-.Collapsible__contentInner{
-    color:#828282;
+.Home {
+    text-decoration: 'none';
+    color: #4F4F4F;
+    margin-top: 10px; 
+    margin-left: 25px; 
+    margin-bottom: -10px;
+}
+.Home:hover{
+    color: rgba(33, 150, 83, 0.5);
+}
+
+
+
+.Subtext{
+    text-decoration: 'none';
+    color: #828282;
+    margin-top: -10px;
+    margin-left: 25px;
+}
+.Subtext:hover{
+    color: rgba(33, 150, 83, 0.5);
+}
+
+.Bottom{
+    text-decoration: 'none';
+     color: #828282;
+     margin-top: -10px;
+     margin-left: 25px;
+     margin-bottom: -10px;
+}
+.Bottom:hover{
+    color: rgba(33, 150, 83, 0.5);
+}
+
+.Recruitment {
+    text-decoration: 'none';
+    color: #4F4F4F;
+    margin-top: -10px;
+    margin-left: 25px; 
+    margin-bottom: -10px;
+}
+.Recruitment:hover{
+    color: rgba(33, 150, 83, 0.5);
 }

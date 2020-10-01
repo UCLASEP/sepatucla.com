@@ -32,7 +32,7 @@ const MainTitle = styled.div`
   margin-bottom: 30px;
   max-width: 700px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     margin-left: ${MARGINS.s};
     font-size: ${HEADER_FONT_SIZES.m};
   }
@@ -44,7 +44,7 @@ const Container = styled.div`
   flex-direction: row;
   width: 92.3%;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     display: block;
   }
 `;
@@ -65,7 +65,7 @@ const SocialColumn = styled.div`
       opacity: 70%;
     }
   }
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     margin-left: 0px;
     margin-left: ${MARGINS.s};
     margin-top: 10px;
@@ -225,6 +225,9 @@ const CaptionParent = styled.div`
 const MemberParent = styled.div``;
 
 const EntrepreneurshipParent = styled.div`
+  margin-right: 0px;
+`;
+const EntreContainer = styled.div`
   margin-right: 58px;
 `;
 const MemberContainer = styled.div`
@@ -273,6 +276,7 @@ const Border = styled.div`
   background-color: #f2f2f2;
   margin: ${MARGINS.m} auto;
 `;
+
 const SubTitle = styled.div`
   font-size: ${HEADER_FONT_SIZES.s};
   font-weight: 600;
@@ -496,34 +500,36 @@ const MemberComponent = () => (
 const EntrepreneurshipComponent = () => (
   <EntrepreneurshipParent>
     <Border />
-    <MemberContainer>
-      <EntrepreneurshipPhoto>
-        <img src={farout} alt="facebook icon" className="entreImage" />
-        <Caption>Far Out Fest Organizing Team, 2019</Caption>
-      </EntrepreneurshipPhoto>
-      <EntrepreneurshipText>
-        <MiniTitle>— entrepreneurship</MiniTitle>
-        <SubTitle>There’s something here for everyone</SubTitle>
-        <Blurb>
-          Some of us go off to start something right off the bat, while others
-          put their expertise into helping organizations grow. There’s space
-          here for everyone.
-        </Blurb>
-        <ButtonContainer>
-          <Link to="/ventures" style={{textDecoration: 'none'}}>
-            <MemberSelectorButton role="button" tabIndex={0}>
-              what we’ve started
-            </MemberSelectorButton>
-          </Link>
+    <EntreContainer>
+      <MemberContainer>
+        <EntrepreneurshipPhoto>
+          <img src={farout} alt="facebook icon" className="entreImage" />
+          <Caption>Far Out Fest Organizing Team, 2019</Caption>
+        </EntrepreneurshipPhoto>
+        <EntrepreneurshipText>
+          <MiniTitle>— entrepreneurship</MiniTitle>
+          <SubTitle>There’s something here for everyone</SubTitle>
+          <Blurb>
+            Some of us go off to start something right off the bat, while others
+            put their expertise into helping organizations grow. There’s space
+            here for everyone.
+          </Blurb>
+          <ButtonContainer>
+            <Link to="/ventures" style={{textDecoration: 'none'}}>
+              <MemberSelectorButton role="button" tabIndex={0}>
+                what we’ve started
+              </MemberSelectorButton>
+            </Link>
 
-          <Link to="/careers" style={{textDecoration: 'none'}}>
-            <WorkSelectorButton role="button" tabIndex={0}>
-              where we’ve worked
-            </WorkSelectorButton>
-          </Link>
-        </ButtonContainer>
-      </EntrepreneurshipText>
-    </MemberContainer>
+            <Link to="/careers" style={{textDecoration: 'none'}}>
+              <WorkSelectorButton role="button" tabIndex={0}>
+                where we’ve worked
+              </WorkSelectorButton>
+            </Link>
+          </ButtonContainer>
+        </EntrepreneurshipText>
+      </MemberContainer>
+    </EntreContainer>
   </EntrepreneurshipParent>
 );
 
