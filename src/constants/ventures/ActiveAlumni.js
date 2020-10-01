@@ -148,8 +148,8 @@ export const FINDINGFOUNDERS = {
   notPictured: false,
 };
 
-export const SLINGSHOT = {
-  firstname: 'Slingshot',
+export const SLINGSHOW = {
+  firstname: 'Slingshow',
   lastname: '',
   class: ActiveAlumni,
   notPictured: false,

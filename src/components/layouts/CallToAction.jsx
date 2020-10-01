@@ -8,6 +8,7 @@ import {Link} from 'gatsby';
 import {
   MARGINS,
   HEADER_FONT_SIZES,
+  TEXT_FONT_SIZES,
   PRIMARY_GREEN,
   GREY80,
 } from '../../styles/global';
@@ -28,6 +29,9 @@ const Title = styled.div`
   color: ${GREY80};
   margin: ${MARGINS.s} auto;
   max-width: 500px;
+  @media (max-width: 1024px) {
+    font-size: ${TEXT_FONT_SIZES.l};
+  }
 `;
 
 const Border = styled.div`
