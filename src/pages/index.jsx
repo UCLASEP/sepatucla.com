@@ -158,7 +158,7 @@ const CaptionContainer = styled.div`
 const CaptionPart = styled.div`
   font-size: ${HEADER_FONT_SIZES.ml};
   font-weight: 600;
-  @media (max-width: 1300px) {
+  @media (max-width: 1100px) {
     font-size: ${HEADER_FONT_SIZES.m};
   }
   @media (max-width: 768px) {
@@ -170,7 +170,7 @@ const GreenCaptionPart = styled.div`
   font-size: ${HEADER_FONT_SIZES.ml};
   font-weight: 600;
   color: ${PRIMARY_GREEN};
-  @media (max-width: 1300px) {
+  @media (max-width: 1100px) {
     font-size: ${HEADER_FONT_SIZES.m};
   }
   @media (max-width: 768px) {
@@ -183,7 +183,7 @@ const CaptionText = styled.span`
   font-weight: 100;
   color: #222222;
   padding-left: 0px;
-  @media (max-width: 1300px) {
+  @media (max-width: 1100px) {
     font-size: ${TEXT_FONT_SIZES.xs};
   }
   @media (max-width: 768px) {
@@ -198,7 +198,7 @@ const CaptionSeparateText = styled.div`
   font-style: italic;
   margin-left: ${MARGINS.m};
   margin-right: ${MARGINS.m};
-  @media (max-width: 1300px) {
+  @media (max-width: 1100px) {
     margin-left: ${MARGINS.s};
     margin-right: ${MARGINS.s};
     font-size: ${TEXT_FONT_SIZES.s};
@@ -213,7 +213,7 @@ const CaptionSeparateText = styled.div`
 const CaptionParent = styled.div`
   align-items: center;
   text-align: center;
-  @media (max-width: 1300px) {
+  @media (max-width: 1100px) {
     margin-left: ${MARGINS.s};
     margin-right: ${MARGINS.s};
   }
@@ -229,21 +229,27 @@ const EntrepreneurshipParent = styled.div`
   margin-right: 0px;
 `;
 const EntreContainer = styled.div`
-  margin-right: 58px;
+  margin-right: 24px;
+  margin-left: 24px;
 `;
 const MemberContainer = styled.div`
   display: flex;
   align-items: center;
+  justify-content: space-around;
   margin-top: ${MARGINS.m};
   margin-bottom: ${MARGINS.m};
-  @media (max-width: 1300px) {
+  margin: 0px 48px;
+  @media (max-width: 1100px) {
     display: block;
+  }
+
+  @media (max-width: 400px) {
+    margin: 0;
   }
 `;
 
 const MemberText = styled.div`
-  margin-left: ${MARGINS.xl};
-  @media (max-width: 1300px) {
+  @media (max-width: 1100px) {
     width: 273px;
     display: block;
     margin-left: auto;
@@ -252,13 +258,17 @@ const MemberText = styled.div`
 `;
 
 const EntrepreneurshipText = styled.div`
-  margin-left: ${MARGINS.l};
   padding-left: 60px;
-  @media (max-width: 1300px) {
+  @media (max-width: 1100px) {
     width: 273px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 24px;
+  }
+
+  @media (max-width: 550px) {
+    padding-left: 0;
   }
 `;
 
@@ -304,11 +314,15 @@ const MemberSelectorButton = styled.div`
   margin-top: 40px;
   color: white;
   background-color: ${PRIMARY_GREEN};
+
+  @media (max-width: 1100px) {
+    margin-top: 24px;
+  }
 `;
 
 const MemberPhoto = styled.div`
   margin-left: ${MARGINS.l};
-  @media (max-width: 1300px) {
+  @media (max-width: 1100px) {
     margin-top: ${MARGINS.s};
     display: flex;
     justify-content: center;
@@ -317,12 +331,11 @@ const MemberPhoto = styled.div`
 `;
 
 const EntrepreneurshipPhoto = styled.div`
-  margin-left: ${MARGINS.xl};
-  @media (max-width: 1300px) {
+  @media (max-width: 1100px) {
     margin-top: ${MARGINS.s};
     display: flex;
     justify-content: center;
-    margin-right: 80px;
+    align-items: center;
   }
 `;
 
@@ -332,14 +345,14 @@ const Caption = styled.div`
   font-size: ${TEXT_FONT_SIZES.s};
   text-align: center;
   padding-top: ${MARGINS.s};
-  @media (max-width: 1300px) {
+  @media (max-width: 1100px) {
     display: none;
   }
 `;
 
 const ButtonContainer = styled.div`
   display: flex;
-  @media (max-width: 1300px) {
+  @media (max-width: 1100px) {
     display: block;
   }
 `;
@@ -358,7 +371,7 @@ const WorkSelectorButton = styled.div`
   color: ${PRIMARY_GREEN};
   background-color: #fff;
   border: 2px solid ${PRIMARY_GREEN};
-  @media (max-width: 1300px) {
+  @media (max-width: 1100px) {
     margin-left: 0px;
   }
   //
