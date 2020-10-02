@@ -21,4 +21,5 @@ module.exports = {
       },
     },
   ],
+  pathPrefix: '/uclasep.com',
 };
