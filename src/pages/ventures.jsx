@@ -1,19 +1,19 @@
 import React from 'react';
 
-import styled from 'styled-components';
 import PageLayout from '../components/layouts/PageLayout';
 import PageHero from '../components/layouts/PageHero';
 import VentureLayout from '../components/layouts/ventures/VentureLayout';
 import ventureData from '../constants/active_inactive';
 import VenturesContainer from '../components/layouts/ventures/PhotosContainer';
 import CallToAction from '../components/layouts/CallToAction';
+import FadeInSection from '../components/generic/FadeInSection';
 
-const Border = styled.div`
-  height: 3px;
-  width: 85%;
-  background-color: #f2f2f2;
-  margin: auto;
-`;
+// const Border = styled.div`
+//   height: 3px;
+//   width: 85%;
+//   background-color: #f2f2f2;
+//   margin: auto;
+// `;
 
 const VenturesPage = () => (
   <PageLayout title="Ventures -- UCLA Sigma Eta Pi" location="ventures">
@@ -25,31 +25,36 @@ const VenturesPage = () => (
       heroImg="group"
     />
     <VenturesContainer
-      title="Active"
-      subtitle="Companies and projects created by current actives or alumni that are still thriving today."
-      miniTitle="- Featured"
+      title="Featured"
+      subtitle="New ventures by our current actives!"
     >
       {ventureData.FEATURED.map(featured => (
-        <VentureLayout
-          name={`${featured.firstname} ${featured.lastname}`}
-          title={featured.title}
-          key={`${featured.firstname} ${featured.lastname}`}
-          desc={featured.desc}
-          notPictured={featured.notPictured}
-        />
+        <FadeInSection>
+          <VentureLayout
+            name={`${featured.firstname} ${featured.lastname}`}
+            title={featured.title}
+            key={`${featured.firstname} ${featured.lastname}`}
+            desc={featured.desc}
+            notPictured={featured.notPictured}
+          />
+        </FadeInSection>
       ))}
     </VenturesContainer>
 
-    <Border />
-    <VenturesContainer>
+    <VenturesContainer
+      title="Active"
+      subtitle="Companies and projects created by current actives or alumni that are still thriving today."
+    >
       {ventureData.ACTIVE.map(active => (
-        <VentureLayout
-          name={`${active.firstname} ${active.lastname}`}
-          title={active.title}
-          key={`${active.firstname} ${active.lastname}`}
-          desc={active.desc}
-          notPictured={active.notPictured}
-        />
+        <FadeInSection>
+          <VentureLayout
+            name={`${active.firstname} ${active.lastname}`}
+            title={active.title}
+            key={`${active.firstname} ${active.lastname}`}
+            desc={active.desc}
+            notPictured={active.notPictured}
+          />
+        </FadeInSection>
       ))}
     </VenturesContainer>
 
@@ -58,13 +63,15 @@ const VenturesPage = () => (
       subtitle="Companies and projects that helped us grow and learn along the way"
     >
       {ventureData.INACTIVE.map(inactive => (
-        <VentureLayout
-          name={`${inactive.firstname} ${inactive.lastname}`}
-          title={inactive.title}
-          key={`${inactive.firstname} ${inactive.lastname}`}
-          desc={inactive.desc}
-          notPictured={inactive.notPictured}
-        />
+        <FadeInSection>
+          <VentureLayout
+            name={`${inactive.firstname} ${inactive.lastname}`}
+            title={inactive.title}
+            key={`${inactive.firstname} ${inactive.lastname}`}
+            desc={inactive.desc}
+            notPictured={inactive.notPictured}
+          />
+        </FadeInSection>
       ))}
     </VenturesContainer>
     <CallToAction

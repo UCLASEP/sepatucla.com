@@ -1,6 +1,7 @@
 /* @import url('https://fonts.googleapis.com/css?family=Fira+Sans&display=swap'); */
 html {
   overflow-x: hidden;
+  height: 100%
 }
 
 * {
@@ -10,6 +11,7 @@ html {
 body {
   margin: 0;
   overflow-x: hidden;
+  position: relative;
 }
 
 .fade-in-section {

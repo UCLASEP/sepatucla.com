@@ -171,10 +171,6 @@ function Menu({open}) {
         <Link to="/members" style={{textDecoration: 'none'}}>
           <div className="Subtext">Active Members</div>
         </Link>
-
-        <Link to="/sister-chapters" style={{textDecoration: 'none'}}>
-          <div className="Bottom">Sister Chapters</div>
-        </Link>
       </SideBarContainer>
 
       <Border2 />
