@@ -223,7 +223,17 @@ const Dates = () => (
         </FadeInSection>
       ))}
     </DatesSpecificContainer>
-    <Text>We will meet at the Bruin Bear 15 minutes before each event.</Text>
+    <Text>
+      All events are virtual and held via Zoom through UCLA accounts. Links to
+      Zoom are updated{' '}
+      <a
+        href="http://bit.ly/sepzoomlinks"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        here.
+      </a>
+    </Text>
   </DatesContainer>
 );
 
@@ -293,7 +303,7 @@ const Main = ({windowWidth}) => (
     <BannerTextContainer>
       <AccentText>- come join us!</AccentText>
       <Header>Recruitment</Header>
-      <Bold>Fall Rush 2019&emsp;|&emsp;Sep 31st - Oct 3rd</Bold>
+      <Bold>Fall Rush 2020&emsp;|&emsp;Oct 5th - Oct 8th</Bold>
       <FacebookEventButton tabIndex={0} />
       <VerticalBorder resize />
       <GreyText resize>
