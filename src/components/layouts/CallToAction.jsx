@@ -60,7 +60,7 @@ const PageHero = ({title, buttonTitle, link}) => (
     <Border />
     <Title>{title}</Title>
     <Link to={`/${link}`} style={{textDecoration: 'none'}}>
-      <ViewSelectorButton role="button" tabIndex={0}>
+      <ViewSelectorButton className="button" role="button" tabIndex={0}>
         {buttonTitle}
       </ViewSelectorButton>
     </Link>

@@ -234,7 +234,7 @@ const FacebookEventButton = ({tabIndex, margin = '24px'}) => (
     rel="noopener noreferrer"
     margin={margin}
   >
-    <Button role="button" tabIndex={tabIndex}>
+    <Button className="button" role="button" tabIndex={tabIndex}>
       Come Rush
     </Button>
   </LinkContainer>

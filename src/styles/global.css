@@ -25,3 +25,12 @@ body {
   transform: none;
   visibility: visible;
 }
+
+.button {
+  transition: 0.25s;
+}
+.button:hover,
+.button:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em #219653;
+  transform: translateY(-0.25em);
+}
