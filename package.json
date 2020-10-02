@@ -6,7 +6,7 @@
   "scripts": {
     "lint:js": "eslint",
     "lint:js:fix": "npm run lint:js -- --fix",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "deploy": "gatsby build && gh-pages -d public"
   },
   "repository": {
     "type": "git",
@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/UCLASEP/uclasep.github.io/issues"
   },
-  "homepage": "https://github.com/UCLASEP/uclasep.github.io#readme",
+  "homepage": "https://UCLASEP.github.io/uclasep.com/",
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.6",
     "bootstrap": "^4.5.2",
@@ -48,7 +48,7 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-react-hooks": "^1.7.0",
-    "gh-pages": "^3.1.0",
+    "gh-pages": "^2.0.1",
     "lint-staged": "^9.2.5",
     "prettier": "1.18.2",
     "prettier-eslint": "^11.0.0"
