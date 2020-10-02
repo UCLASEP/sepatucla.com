@@ -21,6 +21,7 @@ import {
   GREY70,
   BLACK,
 } from '../styles/global';
+import FadeInSection from '../components/generic/FadeInSection';
 
 // use 700px or 40%
 const MainTitle = styled.div`
@@ -466,7 +467,7 @@ const HeaderComponent = () => (
       objective: <HeaderGreen>do what you love</HeaderGreen>.
     </HeaderSubtext>
     <Link to="/recruitment" style={{textDecoration: 'none'}}>
-      <ViewSelectorButton role="button" tabIndex={0}>
+      <ViewSelectorButton className="button" role="button" tabIndex={0}>
         FALL recruitment 2020
       </ViewSelectorButton>
     </Link>
@@ -485,7 +486,7 @@ const MemberComponent = () => (
           wonferful people we do it with!
         </Blurb>
         <Link to="/members" style={{textDecoration: 'none'}}>
-          <MemberSelectorButton role="button" tabIndex={0}>
+          <MemberSelectorButton className="button" role="button" tabIndex={0}>
             Active Members
           </MemberSelectorButton>
         </Link>
@@ -516,13 +517,17 @@ const EntrepreneurshipComponent = () => (
           </Blurb>
           <ButtonContainer>
             <Link to="/ventures" style={{textDecoration: 'none'}}>
-              <MemberSelectorButton role="button" tabIndex={0}>
+              <MemberSelectorButton
+                className="button"
+                role="button"
+                tabIndex={0}
+              >
                 what we’ve started
               </MemberSelectorButton>
             </Link>
 
             <Link to="/careers" style={{textDecoration: 'none'}}>
-              <WorkSelectorButton role="button" tabIndex={0}>
+              <WorkSelectorButton className="button" role="button" tabIndex={0}>
                 where we’ve worked
               </WorkSelectorButton>
             </Link>
@@ -535,7 +540,7 @@ const EntrepreneurshipComponent = () => (
 
 function HomePage() {
   return (
-    <PageLayout>
+    <PageLayout title="UCLA Sigma Eta Pi">
       <Container>
         <MainTitle>UCLA’s Premier Entrepreneurship Fraternity</MainTitle>
         <SocialsComponent />
@@ -548,10 +553,18 @@ function HomePage() {
           marginTop: MARGINS.m,
         }}
       />
-      <CaptionComponent />
-      <HeaderComponent />
-      <MemberComponent />
-      <EntrepreneurshipComponent />
+      <FadeInSection>
+        <CaptionComponent />
+      </FadeInSection>
+      <FadeInSection>
+        <HeaderComponent />
+      </FadeInSection>
+      <FadeInSection>
+        <MemberComponent />
+      </FadeInSection>
+      <FadeInSection>
+        <EntrepreneurshipComponent />
+      </FadeInSection>
       <CallToAction
         title="Interested in doing something different?"
         buttonTitle="Join us"

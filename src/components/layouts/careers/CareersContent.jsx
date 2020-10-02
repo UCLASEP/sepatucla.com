@@ -21,5 +21,13 @@ const Container = styled.div`
   align-items: flex-start;
   justify-content: center;
   margin: ${MARGINS.l};
+
+  @media (max-width: 1100px) {
+    margin: ${MARGINS.m};
+  }
+
+  @media (max-width: 450px) {
+    margin: 32px;
+  }
 `;
 export default CareersContent;

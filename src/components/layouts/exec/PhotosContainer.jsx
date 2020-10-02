@@ -54,7 +54,7 @@ const PhotosContainer = ({title, children}) => {
     style = {
       ...style,
       flexBasis: '100%',
-      height: '340px',
+      height: 'auto',
     };
   }
 
@@ -62,7 +62,7 @@ const PhotosContainer = ({title, children}) => {
     style = {
       ...style,
       flexBasis: '100%',
-      height: '380px',
+      height: 'auto',
     };
   }
 

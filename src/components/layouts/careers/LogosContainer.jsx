@@ -27,6 +27,12 @@ const Logo = styled.img`
   margin-right: 24px;
   margin-bottom: 24px;
   max-width: 110px;
+
+  @media (max-width: 450px) {
+    max-width: 80px;
+    margin-right: 18px;
+    margin-bottom: 18px;
+  }
 `;
 
 LogosContainer.propTypes = {

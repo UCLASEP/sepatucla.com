@@ -1,4 +1,7 @@
 /* @import url('https://fonts.googleapis.com/css?family=Fira+Sans&display=swap'); */
+html {
+  overflow-x: hidden;
+}
 
 * {
   font-family: 'Fira Sans', sans-serif;
@@ -21,4 +24,13 @@ body {
   opacity: 1;
   transform: none;
   visibility: visible;
+}
+
+.button {
+  transition: 0.25s;
+}
+.button:hover,
+.button:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em #219653;
+  transform: translateY(-0.25em);
 }

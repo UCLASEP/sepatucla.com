@@ -10,6 +10,7 @@ import {
 } from '../../../styles/global';
 
 import LogosContainer from './LogosContainer';
+import FadeInSection from '../../generic/FadeInSection';
 
 const Container = styled.div`
   display: flex;
@@ -23,18 +24,32 @@ const Title = styled.div`
   margin-bottom: ${MARGINS.xs};
   font-weight: 600;
   letter-spacing: -1px;
+
+  @media (max-width: 1100px) {
+    font-size: ${HEADER_FONT_SIZES.s};
+  }
+
+  @media (max-width: 600px) {
+    font-size: 24px;
+  }
 `;
 
 const Description = styled.div`
   color: ${GREY40};
   font-size: ${TEXT_FONT_SIZES.m};
+
+  @media (max-width: 600px) {
+    font-size: ${TEXT_FONT_SIZES.s};
+  }
 `;
 
 const IndustryContainer = ({name, desc, logos}) => (
   <Container>
-    <Title>{name}</Title>
-    <Description>{desc}</Description>
-    <LogosContainer logos={logos} />
+    <FadeInSection>
+      <Title>{name}</Title>
+      <Description>{desc}</Description>
+      <LogosContainer logos={logos} />
+    </FadeInSection>
   </Container>
 );
 

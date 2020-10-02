@@ -38,7 +38,6 @@ const LinksComponent = () => (
       <ColumnHeader>Membership</ColumnHeader>
       <Link to="/members">Active Members</Link>
       <Link to="/exec">Executive Board</Link>
-      <Link to="/sister-chapters">Sister Chapters</Link>
     </LinkColumn>
     <LinkColumn>
       <ColumnHeader>Entrepreneurship</ColumnHeader>

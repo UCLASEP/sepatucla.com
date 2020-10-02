@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 const Grid = styled.div`
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-start;
+  justify-content: center;
 `;
 
 const Item = styled.div`

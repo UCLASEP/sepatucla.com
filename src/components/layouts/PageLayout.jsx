@@ -1,10 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import {Helmet} from 'react-helmet';
 import NavigationBar from '../Navigation/NavigationBar';
 import PageFooter from '../Navigation/PageFooter';
 
-const PageLayout = ({children, location}) => (
+const PageLayout = ({children, location, title}) => (
   <div>
+    <Helmet title={title} />
     <NavigationBar activePage={location} />
     {children}
     <PageFooter />
@@ -14,6 +16,7 @@ const PageLayout = ({children, location}) => (
 PageLayout.propTypes = {
   children: PropTypes.element.isRequired,
   location: PropTypes.string,
+  title: PropTypes.string.isRequired,
 };
 
 PageLayout.defaultProps = {

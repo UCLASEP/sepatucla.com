@@ -102,7 +102,7 @@ const Blurb = styled.div`
 const HeroImage = styled.img`
   flex: 2;
   margin-left: 100px;
-  max-width: 100%;
+  max-width: 60%;
   object-fit: cover;
   display: auto;
 
