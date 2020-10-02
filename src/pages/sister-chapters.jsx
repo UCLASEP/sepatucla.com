@@ -4,7 +4,7 @@ import PageLayout from '../components/layouts/PageLayout';
 import PageHero from '../components/layouts/PageHero';
 
 const SisterChaptersPage = () => (
-  <PageLayout location="sisters">
+  <PageLayout title="Sister Chapters -- UCLA Sigma Eta Pi" location="sisters">
     <PageHero
       miniTitle="other chapters"
       title="Sister Chapters"

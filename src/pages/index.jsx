@@ -536,7 +536,7 @@ const EntrepreneurshipComponent = () => (
 
 function HomePage() {
   return (
-    <PageLayout>
+    <PageLayout title="UCLA Sigma Eta Pi">
       <Container>
         <MainTitle>UCLA’s Premier Entrepreneurship Fraternity</MainTitle>
         <SocialsComponent />

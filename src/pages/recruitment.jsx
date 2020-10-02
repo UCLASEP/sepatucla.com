@@ -229,7 +229,7 @@ const Dates = () => (
 
 const FacebookEventButton = ({tabIndex, margin = '24px'}) => (
   <LinkContainer
-    href="https://www.facebook.com/sigmaetapi"
+    href="https://fb.me/e/4zgdSo3RB"
     target="_blank"
     rel="noopener noreferrer"
     margin={margin}
@@ -313,25 +313,31 @@ const FbLink = () => (
       desc="For more details, check out our Facebook event page"
       isFb
     >
-      <img
-        style={{width: '100%', height: 'auto', margin: '24px 0'}}
-        src={FbBanner}
-        alt="Facebook Rush Event Banner with event details and dates."
-      />
+      <a
+        href="https://fb.me/e/4zgdSo3RB"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img
+          style={{width: '100%', height: 'auto', margin: '24px 0'}}
+          src={FbBanner}
+          alt="Facebook Rush Event Banner with event details and dates."
+        />
+      </a>
     </RecruitmentAdditionalSection>
   </FadeInSection>
 );
 
-const Sponsorship = () => (
-  <FadeInSection>
-    <RecruitmentAdditionalSection
-      title="sponsorship"
-      desc="A huge thank you to this year's sponsors!"
-    >
-      <>{/* Add sponsorship logos here */}</>
-    </RecruitmentAdditionalSection>
-  </FadeInSection>
-);
+// const Sponsorship = () => (
+//   <FadeInSection>
+//     <RecruitmentAdditionalSection
+//       title="sponsorship"
+//       desc="A huge thank you to this year's sponsors!"
+//     >
+//       <>{/* Add sponsorship logos here */}</>
+//     </RecruitmentAdditionalSection>
+//   </FadeInSection>
+// );
 
 const AdditionalSectionConatiner = styled.div`
   display: flex;
@@ -391,7 +397,7 @@ const Video = () => (
   <FadeInSection>
     <VideoContainer>
       <iframe
-        src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fsigmaetapi%2Fvideos%2F300640867460840%2F&show_text=0&width=1028"
+        src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fsigmaetapi%2Fvideos%2F774916883082913%2F&show_text=0&width=560"
         style={{border: 'none'}}
         width="1028"
         height="628"
@@ -408,12 +414,11 @@ const RecruitmentPage = () => {
   const windowWidth = useWindowWidth();
 
   return (
-    <PageLayout location="recruitment">
+    <PageLayout title="Recruitment -- UCLA Sigma Eta Pi" location="recruitment">
       <Main windowWidth={windowWidth} />
       <Dates />
       <Video />
       <FbLink />
-      <Sponsorship />
     </PageLayout>
   );
 };
