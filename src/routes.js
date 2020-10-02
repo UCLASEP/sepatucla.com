@@ -13,11 +13,6 @@ const ROUTES = {
         slug: 'actives',
         to: '/members',
       },
-      {
-        linkText: 'Sister Chapters',
-        slug: 'sisters',
-        to: '/sister-chapters',
-      },
     ],
     to: null,
     index: 0,
