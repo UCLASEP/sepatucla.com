@@ -22,21 +22,27 @@ GridItem.propTypes = {
   style: PropTypes.shape({}).isRequired,
 };
 
-const FlexGrid = ({children, style}) => (
-  <Grid>
-    {children.map(item => (
-      <GridItem style={style}>{item}</GridItem>
-    ))}
-  </Grid>
+const FlexGrid = ({children, style, includeMiniTitle}) => (
+  <>
+    {includeMiniTitle && includeMiniTitle}
+    <Grid>
+      {children.map(item => (
+        <GridItem style={style}>{item}</GridItem>
+      ))}
+    </Grid>
+  </>
 );
 
 FlexGrid.propTypes = {
   style: PropTypes.shape({}),
   children: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
+  // eslint-disable-next-line react/forbid-prop-types
+  includeMiniTitle: PropTypes.object,
 };
 
 FlexGrid.defaultProps = {
   style: {},
+  includeMiniTitle: null,
 };
 
 export default FlexGrid;

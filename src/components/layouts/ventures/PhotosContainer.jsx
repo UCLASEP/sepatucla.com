@@ -8,16 +8,18 @@ import {
   HEADER_FONT_SIZES,
   MARGINS,
   GREY70,
-  GREY40,
   TEXT_FONT_SIZES,
 } from '../../../styles/global';
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 0 ${MARGINS.l};
+  margin: 0 ${MARGINS.m};
   margin-bottom: ${MARGINS.m};
-  margin-right: 10px;
+
+  @media (max-width: 600px) {
+    margin: 24px;
+  }
 `;
 
 const Title = styled.div`
@@ -26,37 +28,47 @@ const Title = styled.div`
   letter-spacing: -1px;
   margin-bottom: ${MARGINS.s};
   font-weight: 600;
+
+  @media (max-width: 1100px) {
+    font-size: ${HEADER_FONT_SIZES.s};
+  }
+
+  @media (max-width: 600px) {
+    font-size: 24px;
+  }
 `;
 
 const Subtitle = styled.div`
   font-size: ${TEXT_FONT_SIZES.m};
   color: ${GREY70};
   line-height: 1.56;
-  margin-bottom: 70px;
+  margin-bottom: 40px;
+
+  @media (max-width: 600px) {
+    font-size: ${TEXT_FONT_SIZES.s};
+  }
 `;
 
-const MiniTitle = styled.div`
-  font-size: ${HEADER_FONT_SIZES.xs};
-  font-weight: 500;
-  letter-spacing: 4px;
-  color: ${GREY40};
-  text-transform: uppercase;
-  margin: ${MARGINS.xs} 0;
-`;
+// const MiniTitle = styled.div`
+//   font-size: 16px;
+//   font-weight: 500;
+//   letter-spacing: 4px;
+//   color: ${GREY40};
+//   text-transform: uppercase;
+//   margin: 32px 148px;
+// `;
 
-const PhotosContainer = ({title, subtitle, miniTitle, children}) => {
+const PhotosContainer = ({title, subtitle, children}) => {
   return (
     <Container>
       <Title>{title}</Title>
       <Subtitle>{subtitle}</Subtitle>
-      <MiniTitle>{miniTitle}</MiniTitle>
       <FlexGrid
         style={{
           flexBasis: '25%',
-          height: '250px',
-          width: '250px',
-          marginBottom: '128px',
+          height: 'auto',
         }}
+        // includeMiniTitle={<MiniTitle>{miniTitle}</MiniTitle>}
       >
         {children}
       </FlexGrid>
@@ -68,13 +80,11 @@ PhotosContainer.propTypes = {
   title: PropTypes.string,
   children: PropTypes.element.isRequired,
   subtitle: PropTypes.string,
-  miniTitle: PropTypes.string,
 };
 
 PhotosContainer.defaultProps = {
   title: '',
   subtitle: '',
-  miniTitle: '',
 };
 
 export default PhotosContainer;

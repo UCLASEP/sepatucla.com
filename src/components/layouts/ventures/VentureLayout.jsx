@@ -15,6 +15,10 @@ import VenturePhoto from '../../generic/VenturePhoto';
 const Container = styled.div`
   margin-right: 48px;
   margin-bottom: 48px;
+
+  @media (max-width: 600px) {
+    margin-right: 0;
+  }
 `;
 
 const Name = styled.div`
