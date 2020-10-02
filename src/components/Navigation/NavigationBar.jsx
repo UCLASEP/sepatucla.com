@@ -207,7 +207,7 @@ Menu.propTypes = {
 };
 
 const MyComponent = ({activePage}) => {
-  const [width, setWidth] = React.useState(window.innerWidth);
+  const [width, setWidth] = React.useState(0);
   const breakpoint = 1024;
 
   React.useEffect(() => {
