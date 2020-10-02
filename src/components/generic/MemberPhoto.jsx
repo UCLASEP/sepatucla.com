@@ -8,6 +8,14 @@ const Photo = styled.img`
   /* width: 235px; */
   height: 235px;
 
+  @media (min-width: 1920px) {
+    height: 400px;
+  }
+
+  @media (min-width: 1450px) {
+    height: 300px;
+  }
+
   @media (max-width: 1300px) {
     height: 210px;
   }

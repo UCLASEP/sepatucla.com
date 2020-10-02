@@ -16,6 +16,14 @@ const Container = styled.div`
   margin: 0 ${MARGINS.l};
   margin-bottom: ${MARGINS.m};
 
+  @media (min-width: 1920px) {
+    margin: 0 ${MARGINS.xl};
+  }
+
+  @media (min-width: 1450px) {
+    margin: 0 200px;
+  }
+
   @media (max-width: 1240px) {
     margin: 0;
   }
