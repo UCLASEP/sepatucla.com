@@ -22,7 +22,7 @@ const Name = styled.div`
   font-size: ${HEADER_FONT_SIZES.s};
   font-weight: bold;
   color: ${BLACK};
-  margin-bottom: 4px;
+  margin: 4px 0px;
   letter-spacing: -1px;
 `;
 

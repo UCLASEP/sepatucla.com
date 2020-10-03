@@ -563,7 +563,7 @@ function HomePage() {
         alt="facebook icon"
         style={{
           width: '100%',
-          marginTop: MARGINS.m,
+          marginTop: '24px',
         }}
       />
       <FadeInSection>

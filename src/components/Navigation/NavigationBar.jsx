@@ -234,21 +234,33 @@ NavigationBar.propTypes = {
 };
 
 const Container = styled.div`
-  margin: ${MARGINS.m} ${MARGINS.l};
+  margin: 0px ${MARGINS.l};
+  margin-top: ${MARGINS.ms};
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 1300px) {
+    margin: 0px ${MARGINS.m};
+    margin-top: ${MARGINS.ms};
+  }
 `;
 
 const SideBarContainer = styled.div`
   margin: 0;
 `;
 const MobileContainer = styled.div`
-  margin: ${MARGINS.ms} ${MARGINS.s};
+  margin: 0px ${MARGINS.m};
+  margin-top: ${MARGINS.ms};
   margin-bottom: ${MARGINS.s};
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 700px) {
+    margin: 0px ${MARGINS.s};
+    margin-top: ${MARGINS.ms};
+  }
 `;
 
 const SidebarMenuItemCover = styled.li`

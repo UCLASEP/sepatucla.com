@@ -43,7 +43,13 @@ const LinksComponent = () => (
       <ColumnHeader>Entrepreneurship</ColumnHeader>
       <Link to="/careers">Careers</Link>
       <Link to="/ventures">Ventures</Link>
-      <Link to="/bruintank">BruinTank</Link>
+      <Link
+        to="http://bruintank.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        BruinTank
+      </Link>
     </LinkColumn>
     <LinkColumn>
       <ColumnHeader>Join us!</ColumnHeader>

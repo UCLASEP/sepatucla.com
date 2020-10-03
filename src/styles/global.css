@@ -33,6 +33,6 @@ body {
 }
 .button:hover,
 .button:focus {
-  box-shadow: 0 0.5em 0.5em -0.4em #219653;
+  box-shadow: 0 0.5em 0.5em -0.4em rgba(34, 34, 34, 0.7);
   transform: translateY(-0.25em);
 }
