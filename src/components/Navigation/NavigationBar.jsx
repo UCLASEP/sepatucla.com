@@ -177,7 +177,7 @@ function Menu({open}) {
         </SubItem>
       </SideBarContainer>
 
-      <Border2 />
+      <Border />
 
       <SideBarContainer>
         <SidebarMenuItemCover>Entrepreneurship</SidebarMenuItemCover>
@@ -259,6 +259,7 @@ const Container = styled.div`
 
 const SideBarContainer = styled.div`
   margin: 0;
+  padding-left: 12px;
 `;
 const MobileContainer = styled.div`
   margin: 0px ${MARGINS.m};
@@ -280,16 +281,12 @@ const SidebarMenuItemCover = styled.li`
   height: 20px;
   width: 100%;
   align-items: center;
+  margin: 8px !important;
+  margin-top: 12px !important;
 `;
 
 const Border = styled.div`
   height: 2.5px;
-  width: 250%;
-  background-color: #f2f2f2;
-`;
-
-const Border2 = styled.div`
-  height: 3.5px;
   width: 250%;
   background-color: #f2f2f2;
 `;
@@ -380,6 +377,9 @@ const StyledMenu = styled.nav`
 const SubItem = styled.div`
   margin-left: 10px;
   margin-top: -10px;
+  height: 45px;
+  display: flex;
+  align-items: center;
 `;
 
 export default MyComponent;

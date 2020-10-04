@@ -498,7 +498,7 @@ const MemberComponent = () => (
         <SubTitle>Meet our favorite people.</SubTitle>
         <Blurb>
           Whether it’s starting a venture or an adventure, these are the
-          wonferful people we do it with!
+          wonderful people we do it with!
         </Blurb>
         <Link to="/members" style={{textDecoration: 'none'}}>
           <MemberSelectorButton className="button" role="button" tabIndex={0}>
