@@ -206,8 +206,8 @@ Menu.propTypes = {
   open: PropTypes.string.isRequired,
 };
 
-const MyComponent = ({activePage}) => {
-  const [width, setWidth] = React.useState(0);
+const MyComponent = ({initialWidth, activePage}) => {
+  const [width, setWidth] = React.useState(initialWidth);
   const breakpoint = 1024;
 
   React.useEffect(() => {
@@ -226,6 +226,7 @@ const MyComponent = ({activePage}) => {
 };
 
 MyComponent.propTypes = {
+  initialWidth: PropTypes.number.isRequired,
   activePage: PropTypes.string.isRequired,
 };
 
@@ -234,21 +235,33 @@ NavigationBar.propTypes = {
 };
 
 const Container = styled.div`
-  margin: ${MARGINS.m} ${MARGINS.l};
+  margin: 0px ${MARGINS.l};
+  margin-top: ${MARGINS.ms};
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 1300px) {
+    margin: 0px ${MARGINS.m};
+    margin-top: ${MARGINS.ms};
+  }
 `;
 
 const SideBarContainer = styled.div`
   margin: 0;
 `;
 const MobileContainer = styled.div`
-  margin: ${MARGINS.ms} ${MARGINS.s};
+  margin: 0px ${MARGINS.m};
+  margin-top: ${MARGINS.ms};
   margin-bottom: ${MARGINS.s};
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 700px) {
+    margin: 0px ${MARGINS.s};
+    margin-top: ${MARGINS.ms};
+  }
 `;
 
 const SidebarMenuItemCover = styled.li`
@@ -333,8 +346,8 @@ const StyledMenu = styled.nav`
   background: #fff;
   transform: translateX(100px);
   transform: ${({open}) => (open ? 'translateX(0%)' : 'translateX(100%)')};
-  height: 100%;
   padding-right: 6rem;
+  height: 100vh;
   padding-top: 5rem;
   position: absolute;
   top: -10px;

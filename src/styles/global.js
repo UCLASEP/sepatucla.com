@@ -37,7 +37,7 @@ export const MARGINS = {
   xl: '256px',
   l: '128px',
   m: '68px',
-  ms: '32px',
+  ms: '36px',
   s: '16px',
   xs: '12px',
 };

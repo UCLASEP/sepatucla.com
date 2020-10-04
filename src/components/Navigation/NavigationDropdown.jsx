@@ -108,7 +108,6 @@ const optionTextColors = {
 const OptionText = styled.div`
   display: block;
   padding: 0 16px;
-  margin: 32px;
   line-height: inherit;
   cursor: pointer;
   color: ${props => optionTextColors[props.nature]};
