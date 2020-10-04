@@ -60,20 +60,32 @@ const LinksComponent = () => (
 
 const SocialsComponent = () => (
   <SocialColumn>
-    <a to="https://www.facebook.com/sigmaetapi/" rel="noopener" target="_blank">
+    <a
+      href="https://www.facebook.com/sigmaetapi/"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
       <img src={FacebookIcon} alt="facebook icon" />
     </a>
     <a
-      to="https://www.instagram.com/uclasigmaetapi/"
-      rel="noopener"
+      href="https://www.instagram.com/uclasigmaetapi/"
+      rel="noopener noreferrer"
       target="_blank"
     >
       <img src={InstagramIcon} alt="facebook icon" />
     </a>
-    <a to="https://medium.com/uclasep" rel="noopener" target="_blank">
+    <a
+      href="https://medium.com/uclasep"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
       <img src={MediumIcon} alt="facebook icon" />
     </a>
-    <a to="https://www.facebook.com/sigmaetapi/" rel="noopener" target="_blank">
+    <a
+      href="https://www.facebook.com/sigmaetapi/"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
       <img src={LinkedinIcon} alt="facebook icon" />
     </a>
   </SocialColumn>

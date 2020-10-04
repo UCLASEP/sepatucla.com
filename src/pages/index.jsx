@@ -42,6 +42,7 @@ const MainTitle = styled.div`
 const Container = styled.div`
   display: flex;
   margin-left: 9px;
+  margin-top: 24px;
   flex-direction: row;
   width: 92.3%;
 

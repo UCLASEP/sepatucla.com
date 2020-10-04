@@ -298,7 +298,13 @@ const RightImage = ({windowWidth}) => {
 };
 
 const Main = ({windowWidth}) => (
-  <div style={{display: 'flex', justifyContent: 'space-between'}}>
+  <div
+    style={{
+      display: 'flex',
+      justifyContent: 'space-between',
+      marginTop: '48px',
+    }}
+  >
     <LeftImage windowWidth={windowWidth} />
     <BannerTextContainer>
       <AccentText>- come join us!</AccentText>
