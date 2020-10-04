@@ -249,6 +249,7 @@ const MemberContainer = styled.div`
 `;
 
 const MemberText = styled.div`
+  margin-left: 24px;
   @media (max-width: 1100px) {
     width: 273px;
     display: block;
@@ -321,12 +322,12 @@ const MemberSelectorButton = styled.div`
 `;
 
 const MemberPhoto = styled.div`
-  margin-left: ${MARGINS.l};
+  margin-left: -20px;
   @media (max-width: 1100px) {
     margin-top: ${MARGINS.s};
     display: flex;
     justify-content: center;
-    margin-right: 130px;
+    margin-left: 0px;
   }
 `;
 

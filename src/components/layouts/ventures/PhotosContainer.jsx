@@ -42,7 +42,7 @@ const Subtitle = styled.div`
   font-size: ${TEXT_FONT_SIZES.m};
   color: ${GREY70};
   line-height: 1.56;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 
   @media (max-width: 600px) {
     font-size: ${TEXT_FONT_SIZES.s};
