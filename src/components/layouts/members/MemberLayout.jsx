@@ -24,6 +24,11 @@ const Name = styled.div`
   color: ${BLACK};
   margin: 4px 0px;
   letter-spacing: -1px;
+
+  @media (max-width: 450px) {
+    font-size: 16px;
+    letter-spacing: -1px;
+  }
 `;
 
 const TextContainer = styled.div`
@@ -37,6 +42,10 @@ const Class = styled.div`
   text-transform: uppercase;
   font-size: 10px;
   color: ${GREY40};
+
+  @media (max-width: 450px) {
+    font-size: 8px;
+  }
 `;
 
 const Major = styled.div`

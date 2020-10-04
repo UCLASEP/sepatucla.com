@@ -76,7 +76,7 @@ const TextContainer = styled.div`
 const MemberLayout = ({name, title, desc, notPictured, isDirector}) => (
   <FadeInSection>
     <Container>
-      <MemberPhoto name={name} notPictured={notPictured} />
+      <MemberPhoto exec name={name} notPictured={notPictured} />
       <TextContainer>
         <Name>{name}</Name>
         <Title>{isDirector ? `Director, ${title}` : title}</Title>
