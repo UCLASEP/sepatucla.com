@@ -9,6 +9,7 @@ html, body {
     margin-top: 10px; 
     margin-left: 25px; 
     margin-bottom: -10px;
+    margin: 0px 8px !important;
 }
 .Home:hover{
     color: rgba(33, 150, 83, 0.5);

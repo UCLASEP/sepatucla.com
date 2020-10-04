@@ -43,6 +43,14 @@ const PhotosContainer = ({title, children}) => {
     marginBottom: '48px',
   };
 
+  if (windowWidth > 1450) {
+    style = {
+      ...style,
+      height: '300px',
+      width: '300px',
+    };
+  }
+
   if (windowWidth < 1080) {
     style = {
       ...style,

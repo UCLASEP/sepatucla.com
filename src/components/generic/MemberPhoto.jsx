@@ -1,7 +1,7 @@
 /* eslint-disable global-require */
 /* eslint-disable import/no-dynamic-require */
 import React from 'react';
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
 import PropTypes from 'prop-types';
 
 const Photo = styled.img`
@@ -23,11 +23,21 @@ const Photo = styled.img`
   @media (max-width: 600px) {
     width: 210px;
   }
+
+  ${props =>
+    !props.exec &&
+    css`
+      @media (max-width: 450px) {
+        width: 150px;
+        height: auto;
+      }
+    `}
 `;
 
-const MemberPhoto = ({name, notPictured}) => {
+const MemberPhoto = ({exec, name, notPictured}) => {
   return (
     <Photo
+      exec={exec}
       src={require(`../../../assets/images/brothers/${
         notPictured
           ? 'icons/notpictured_opt.jpg'
@@ -41,11 +51,13 @@ const MemberPhoto = ({name, notPictured}) => {
 };
 
 MemberPhoto.propTypes = {
+  exec: PropTypes.bool,
   name: PropTypes.string.isRequired,
   notPictured: PropTypes.bool,
 };
 
 MemberPhoto.defaultProps = {
+  exec: false,
   notPictured: false,
 };
 
