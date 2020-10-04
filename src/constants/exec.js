@@ -5,7 +5,7 @@ import {
   CAMERON_MILLER,
   ANDY_CAI,
   CINDY_ZHENG,
-  JAY_MISHRA,
+  // JAY_MISHRA,
   EVELYN_LUU,
   JUSTIN_RAMIREZ,
   JULIA_TUNG,
@@ -55,18 +55,18 @@ const PRESIDENTS = [
 ];
 
 const DIRECTORS = [
-  {
-    ...KATHERINE_MIAO,
-    title: 'Engagement',
-    desc:
-      'Katherine is a 4th year Computer Science major. She recently interned at Microsoft, loves choreographing and is director of Synthesis Dance Theater. She has a soft spot for the beach, rooftopping, and NPR Planet Money podcasts.',
-  },
-  {
-    ...JAY_MISHRA,
-    title: 'Engagement',
-    desc:
-      'Jay is a 4th year computer science major. He has interned at Confluent, Facebook, and Snackpass. Jay loves playing poker and board games, watching anime, and attempting to play guitar.',
-  },
+  // {
+  //   ...KATHERINE_MIAO,
+  //   title: 'Engagement',
+  //   desc:
+  //     'Katherine is a 4th year Computer Science major. She recently interned at Microsoft, loves choreographing and is director of Synthesis Dance Theater. She has a soft spot for the beach, rooftopping, and NPR Planet Money podcasts.',
+  // },
+  // {
+  //   ...JAY_MISHRA,
+  //   title: 'Engagement',
+  //   desc:
+  //     'Jay is a 4th year computer science major. He has interned at Confluent, Facebook, and Snackpass. Jay loves playing poker and board games, watching anime, and attempting to play guitar.',
+  // },
   {
     ...EVELYN_LUU,
     title: 'Recruitment',

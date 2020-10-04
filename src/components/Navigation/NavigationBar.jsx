@@ -164,13 +164,17 @@ function Menu({open}) {
 
       <SideBarContainer>
         <SidebarMenuItemCover>Members</SidebarMenuItemCover>
-        <Link to="/exec" style={{textDecoration: 'none'}}>
-          <div className="Subtext">Executive Board</div>
-        </Link>
+        <SubItem>
+          <Link to="/exec" style={{textDecoration: 'none'}}>
+            <div className="Subtext">Executive Board</div>
+          </Link>
+        </SubItem>
 
-        <Link to="/members" style={{textDecoration: 'none'}}>
-          <div className="Subtext">Active Members</div>
-        </Link>
+        <SubItem>
+          <Link to="/members" style={{textDecoration: 'none'}}>
+            <div className="Subtext">Active Members</div>
+          </Link>
+        </SubItem>
       </SideBarContainer>
 
       <Border2 />
@@ -178,17 +182,23 @@ function Menu({open}) {
       <SideBarContainer>
         <SidebarMenuItemCover>Entrepreneurship</SidebarMenuItemCover>
 
-        <Link to="/ventures" style={{textDecoration: 'none'}}>
-          <div className="Subtext">Ventures</div>
-        </Link>
+        <SubItem>
+          <Link to="/ventures" style={{textDecoration: 'none'}}>
+            <div className="Subtext">Ventures</div>
+          </Link>
+        </SubItem>
 
-        <Link to="/careers" style={{textDecoration: 'none'}}>
-          <div className="Subtext">Careers</div>
-        </Link>
+        <SubItem>
+          <Link to="/careers" style={{textDecoration: 'none'}}>
+            <div className="Subtext">Careers</div>
+          </Link>
+        </SubItem>
 
-        <Link to="http://bruintank.com/" style={{textDecoration: 'none'}}>
-          <div className="Bottom">Bruin Tank</div>
-        </Link>
+        <SubItem>
+          <Link to="http://bruintank.com/" style={{textDecoration: 'none'}}>
+            <div className="Bottom">Bruin Tank</div>
+          </Link>
+        </SubItem>
       </SideBarContainer>
 
       <Border />
@@ -354,7 +364,10 @@ const StyledMenu = styled.nav`
   right: -10px;
   transition: transform 0.3s ease-in-out;
   box-shadow: ${({open}) => (open ? '-10px 0px 10px 1px #aaaaaa' : '')};
-
+  * {
+    margin: 1.5px;
+    margin-left: 3px;
+  }
   ${props =>
     props.open &&
     css`
@@ -362,6 +375,11 @@ const StyledMenu = styled.nav`
         overflow: hidden;
       }
     `}
+`;
+
+const SubItem = styled.div`
+  margin-left: 10px;
+  margin-top: -10px;
 `;
 
 export default MyComponent;

@@ -40,7 +40,6 @@ export const JAY_MISHRA = {
   class: OMICRON,
   linkedin: 'https://www.linkedin.com/in/jaythemishra/',
   email: 'jaythemishra@gmail.com',
-  notPictured: true,
 };
 
 export const JILL_TIUTAN = {
