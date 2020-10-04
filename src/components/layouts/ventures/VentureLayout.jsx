@@ -32,7 +32,7 @@ const Name = styled.div`
 
 const Title = styled.div`
   font-size: ${HEADER_FONT_SIZES.xs};
-  font-weight: bold;
+  font-weight: 500;
   color: ${GREY40};
   text-transform: uppercase;
   margin-bottom: 8px;

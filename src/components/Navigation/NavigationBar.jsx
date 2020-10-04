@@ -252,7 +252,6 @@ const MobileContainer = styled.div`
 `;
 
 const SidebarMenuItemCover = styled.li`
-  padding-left: ${MARGINS.s};
   color: ${GREY80};
   display: flex;
   height: 20px;
