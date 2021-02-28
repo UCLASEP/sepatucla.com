@@ -3,6 +3,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-preload-fonts`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -10,16 +11,6 @@ module.exports = {
       },
     },
     'gatsby-plugin-styled-components',
-    {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: `Fira Sans:400,600`,
-          },
-        ],
-      },
-    },
   ],
   pathPrefix: '/uclasep.com',
 };

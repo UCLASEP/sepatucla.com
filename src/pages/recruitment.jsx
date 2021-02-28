@@ -413,7 +413,7 @@ const Video = () => (
   <FadeInSection>
     <VideoContainer>
       <iframe
-        src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fsigmaetapi%2Fvideos%2F774916883082913%2F&show_text=0&width=560"
+        src="https://www.youtube.com/embed/pLROJ-SZO6g"
         style={{border: 'none'}}
         width="1028"
         height="628"
