@@ -85,7 +85,7 @@ export const LUCAS_LEE = {
 export const RAHUL_NATARAJAN = {
   firstname: 'Rahul',
   lastname: 'Natarajan',
-  major: 'Computer Science and Engineering',
+  major: 'Computer Science and Engineering | Mathematics',
   year: '2022',
   class: SIGMA,
   linkedin: 'https://www.linkedin.com/in/rahul-natarajan-361269173/',
