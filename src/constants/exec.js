@@ -93,7 +93,7 @@ const DIRECTORS = [
     ...RAHUL_NATARAJAN,
     title: 'Technology',
     desc:
-      'Rahul is a 3rd year Computer Science and Mathematics Major. He has a strong interest in biotechnology and tech applied to healthcare. At school, he is involved in DevX and research. He loves art, music, and soccer',
+      'Rahul is a 3rd year Computer Science and Mathematics Major. He has a strong interest in biotechnology and tech applied to healthcare. At school, he is involved in DevX and research. He loves art, music, and soccer.',
   },
   {
     ...ANUPAMA_SHIVAKUMAR,
