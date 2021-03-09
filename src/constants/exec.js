@@ -6,13 +6,18 @@ import {
   ANDY_CAI,
   CINDY_ZHENG,
   // JAY_MISHRA,
+  RAHUL_NATARAJAN,
+  NEHA_BHONGIR,
   EVELYN_LUU,
-  JUSTIN_RAMIREZ,
+  JENNY_YOO,
+  // JUSTIN_RAMIREZ,
   JULIA_TUNG,
-  BENNY_ZHANG,
-  RACHEL_LU,
+  // BENNY_ZHANG,
+  ANUPAMA_SHIVAKUMAR,
+  // RACHEL_LU,
   SAUMYA_DEDHIA,
   KIA_AZAR,
+  NYAN_KIM,
 } from './members';
 
 const PRESIDENTS = [
@@ -68,16 +73,15 @@ const DIRECTORS = [
   //     'Jay is a 4th year computer science major. He has interned at Confluent, Facebook, and Snackpass. Jay loves playing poker and board games, watching anime, and attempting to play guitar.',
   // },
   {
-    ...EVELYN_LUU,
+    ...NEHA_BHONGIR,
     title: 'Recruitment',
-    desc:
-      'Evelyn is a 4th year Cognitive Science major and Film minor. She’s interned at Yumi and Nextbest and is currently working on becoming Tiktok famous. She’s passionate about sustainability, fashion, film, video editing, traveling, and Frank Ocean.',
+    desc: 'Neha is a 2nd year Computational & Systems Biology major.',
   },
   {
-    ...JUSTIN_RAMIREZ,
+    ...JENNY_YOO,
     title: 'Recruitment',
     desc:
-      'Justin is a 3rd year Applied Math major. He loves cooking, watching movies and recipe tutorials, music and playing guitar. He is currently interning as a research analyst at Navegar, a private equity firm.',
+      'Jenny is a 2nd year Sociology and Political Science major. She is passionate about pursuing a career in the legal field after graduation and has interned at Tenants Law Firm and the Harriet Buhai Center for Family Law. On campus, she is involved in UCLA Cub Tours and Matriculate. In her free time, Jenny loves to cook, get brunch, and watch sitcoms.',
   },
   {
     ...JULIA_TUNG,
@@ -86,22 +90,26 @@ const DIRECTORS = [
       'Julia is a senior civil engineering student and outdoor enthusiast. She is interested in pursuing architecture post grad and making an impact in green, affordable housing.',
   },
   {
-    ...HARI_SENTHILKUMAR,
+    ...RAHUL_NATARAJAN,
     title: 'Technology',
     desc:
-      'Hari is a 3rd year Computer Science Major. He was an Unshackled Ventures Fellow this past year and is passionate about startups and building products. He is obsessed with the Lakers and loves to have thoughtful conversations.',
+      'Rahul is a 3rd year Computer Science and Mathematics Major. He has a strong interest in biotechnology and tech applied to healthcare. At school, he is involved in DevX and research. He loves art, music, and soccer.',
   },
   {
-    ...BENNY_ZHANG,
+    ...ANUPAMA_SHIVAKUMAR,
     title: 'Marketing',
-    desc:
-      'Benny is a 3rd year psychology and sociology double major. She is working at the Daily Bruin as an assistant design director and loves taking personality quizzes and cooking food from recipes she finds off TikTok.',
+    desc: 'Anu is a 2nd year Business Economics major.',
   },
   {
-    ...RACHEL_LU,
+    ...NYAN_KIM,
+    title: 'Creative',
+    desc: 'Nyan is a 2nd year Cognitive Science major.',
+  },
+  {
+    ...EVELYN_LUU,
     title: 'Media Relations',
     desc:
-      'Rachel is a 4th year Environmental Science major with a Conservation Biology minor. Passionate about the climate crisis, she is currently interning at Seeds to Plate and working as a graphic designer for Sustainable LA Grand Challenge. She enjoys dabbling in anything creative from photography to playing the kalimba.',
+      'Evelyn is a 4th year Cognitive Science major and Film minor. She’s interned at Yumi and Nextbest and is currently working on becoming Tiktok famous. She’s passionate about sustainability, fashion, film, video editing, traveling, and Frank Ocean.',
   },
   {
     ...SAUMYA_DEDHIA,
