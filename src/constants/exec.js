@@ -98,7 +98,8 @@ const DIRECTORS = [
   {
     ...ANUPAMA_SHIVAKUMAR,
     title: 'Marketing',
-    desc: 'Anu is a 2nd year Business Economics major.',
+    desc:
+      "Anu is a second year Business Economics major who's passionate about global markets and financial journalism. In her free time, she enjoys skateboarding through LA, reading the Wall Street Journal, and exploring the outdoors with friends. Currently, she manages 3 meme pages and writes satire articles for publications.",
   },
   {
     ...NYAN_KIM,
