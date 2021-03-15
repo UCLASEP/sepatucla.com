@@ -239,7 +239,7 @@ const Dates = () => (
 
 const FacebookEventButton = ({tabIndex, margin = '24px'}) => (
   <LinkContainer
-    href="https://fb.me/e/4zgdSo3RB"
+    href="https://fb.me/e/1gIRE5HuN"
     target="_blank"
     rel="noopener noreferrer"
     margin={margin}
@@ -309,7 +309,7 @@ const Main = ({windowWidth}) => (
     <BannerTextContainer>
       <AccentText>- come join us!</AccentText>
       <Header>Recruitment</Header>
-      <Bold>Fall Rush 2020&emsp;|&emsp;Oct 5th - Oct 8th</Bold>
+      <Bold>Spring Rush 2021&emsp;|&emsp;Mar 29th - Apr 1st</Bold>
       <FacebookEventButton tabIndex={0} />
       <VerticalBorder resize />
       <GreyText resize>
@@ -330,7 +330,7 @@ const FbLink = () => (
       isFb
     >
       <a
-        href="https://fb.me/e/4zgdSo3RB"
+        href="https://fb.me/e/1gIRE5HuN"
         rel="noopener noreferrer"
         target="_blank"
       >
