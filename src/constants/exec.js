@@ -75,7 +75,8 @@ const DIRECTORS = [
   {
     ...NEHA_BHONGIR,
     title: 'Recruitment',
-    desc: 'Neha is a 2nd year Computational & Systems Biology major.',
+    desc:
+      'Neha is a 2nd year Computational & Systems Biology major. She is currently interning at Slingshow, an event-hosting platform founded by UCLA SEP alumni. She spends her free time cooking, reading, and listening to R&B music.',
   },
   {
     ...JENNY_YOO,
