@@ -413,7 +413,7 @@ const Video = () => (
   <FadeInSection>
     <VideoContainer>
       <iframe
-        src="https://www.youtube.com/embed/pLROJ-SZO6g"
+        src="https://www.youtube.com/embed/6UcNBV1ssh4"
         style={{border: 'none'}}
         width="1028"
         height="628"
