@@ -48,7 +48,6 @@ export const EMILY_NORONHA = {
   class: TAU,
   linkedin: '',
   email: '',
-  notPictured: true,
 };
 
 export const JENNY_YOO = {
