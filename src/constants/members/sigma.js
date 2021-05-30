@@ -41,16 +41,6 @@ export const JONATHAN_HWANG = {
   email: 'jonathanchwang1833@gmail.com',
 };
 
-export const JUSTIN_RAMIREZ = {
-  firstname: 'Justin',
-  lastname: 'Ramirez',
-  major: 'Math of Computation',
-  year: '2022',
-  class: SIGMA,
-  linkedin: 'https://www.linkedin.com/in/justin-ramirez-659ba8178/',
-  email: 'thejmirez43@gmail.com',
-};
-
 export const KARAN_NARANG = {
   firstname: 'Karan',
   lastname: 'Narang',

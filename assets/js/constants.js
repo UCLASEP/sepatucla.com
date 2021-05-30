@@ -379,14 +379,6 @@ const sigmaMembers = [
     email: 'jonathanchwang1833@gmail.com',
   },
   {
-    firstname: 'Justin',
-    lastname: 'Ramirez',
-    major: 'Math of Computation',
-    year: '2022',
-    linkedin: 'https://www.linkedin.com/in/justin-ramirez-659ba8178/',
-    email: 'thejmirez43@gmail.com',
-  },
-  {
     firstname: 'Karan',
     lastname: 'Narang',
     major: 'Business Economics',
