@@ -28,7 +28,6 @@ export const DAKOTA_EDISON = {
   class: PHI,
   linkedin: '',
   email: '',
-  notPictured: true
 };
 
 export const EMILY_NG = {
@@ -39,7 +38,6 @@ export const EMILY_NG = {
   class: PHI,
   linkedin: '',
   email: '',
-  notPictured: true
 };
 
 export const GEORGE_MA = {
@@ -50,7 +48,6 @@ export const GEORGE_MA = {
   class: PHI,
   linkedin: '',
   email: '',
-  notPictured: true
 };
 
 export const JACOB_JOHN = {
@@ -61,7 +58,6 @@ export const JACOB_JOHN = {
   class: PHI,
   linkedin: '',
   email: '',
-  notPictured: true
 };
 
 export const JESSI_HU = {
@@ -83,7 +79,6 @@ export const MELISSA_CHEN = {
   class: PHI,
   linkedin: '',
   email: '',
-  notPictured: true
 };
 
 export const NATASHA_CHEUNG = {
@@ -105,7 +100,6 @@ export const NEAL_AGARWAL = {
   class: PHI,
   linkedin: '',
   email: '',
-  notPictured: true
 };
 
 export const OLIVIA_AN = {
@@ -116,7 +110,6 @@ export const OLIVIA_AN = {
   class: PHI,
   linkedin: '',
   email: '',
-  notPictured: true
 };
 
 export const PALLAVI_JAYARAMAN = {
@@ -127,7 +120,6 @@ export const PALLAVI_JAYARAMAN = {
   class: PHI,
   linkedin: '',
   email: '',
-  notPictured: true
 };
 
 export const VARUN_PATRO = {
@@ -138,7 +130,6 @@ export const VARUN_PATRO = {
   class: PHI,
   linkedin: '',
   email: '',
-  notPictured: true
 };
 
 export const ZAHRA_KESHWANI = {
@@ -149,5 +140,4 @@ export const ZAHRA_KESHWANI = {
   class: PHI,
   linkedin: '',
   email: '',
-  notPictured: true
 };
