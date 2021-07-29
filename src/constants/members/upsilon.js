@@ -180,8 +180,7 @@ export const VISHAL_NARAYAN = {
   year: '2022',
   class: UPSILON,
   linkedin: '',
-  email: '',
-  notPictured: true,
+  email: ''
 };
 
 export const ZACHARY_BHATIA = {
