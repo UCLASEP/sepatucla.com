@@ -73,13 +73,21 @@ const TextContainer = styled.div`
   }
 `;
 
-const MemberLayout = ({name, title, desc, notPictured, isDirector}) => (
+const Major = styled.div`
+  font-size: 12px;
+  margin-bottom: 8px;
+  color: ${GREY40};
+`;
+
+
+const MemberLayout = ({name, title, major, minor, desc, notPictured}) => (
   <FadeInSection>
     <Container>
       <MemberPhoto exec name={name} notPictured={notPictured} />
       <TextContainer>
         <Name>{name}</Name>
-        <Title>{isDirector ? `Director, ${title}` : title}</Title>
+        <Title>{title}</Title> 
+        <Major>{major}{minor ? `, ${minor} Minor` : ''}</Major>
         <Description>{desc}</Description>
       </TextContainer>
     </Container>
@@ -89,13 +97,17 @@ const MemberLayout = ({name, title, desc, notPictured, isDirector}) => (
 MemberLayout.propTypes = {
   name: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
+  major: PropTypes.string.isRequired,
+  minor: PropTypes.string.isRequired,
   desc: PropTypes.string.isRequired,
-  notPictured: PropTypes.bool.isRequired,
-  isDirector: PropTypes.bool,
+  notPictured: PropTypes.bool.isRequired
 };
+
+/*
 
 MemberLayout.defaultProps = {
   isDirector: false,
 };
+*/
 
 export default MemberLayout;

@@ -25,6 +25,7 @@ export const ANNE_SHEN = {
   firstname: 'Anne',
   lastname: 'Shen',
   major: 'Political Science',
+  minor: 'Global Studies',
   year: '2022',
   class: UPSILON,
   linkedin: '',
@@ -35,6 +36,7 @@ export const AUSTIN_PHAM = {
   firstname: 'Austin',
   lastname: 'Pham',
   major: 'Business Economics | Music Industry | Film TV',
+  minor: 'Statistics',
   year: '2023',
   class: UPSILON,
   linkedin: '',
@@ -86,6 +88,7 @@ export const ELEANOR_PAE = {
   firstname: 'Eleanor',
   lastname: 'Pae',
   major: 'Computational & Systems Biology',
+  minor: 'Statistics',
   year: '2023',
   class: UPSILON,
   linkedin: '',
@@ -136,6 +139,7 @@ export const NEERAJ_SAMTANI = {
   firstname: 'Neeraj',
   lastname: 'Samtani',
   major: 'Computer Science',
+  minor: 'Film, Television, and Digital Media',
   year: '2022',
   class: UPSILON,
   linkedin: '',
@@ -165,12 +169,12 @@ export const RONAK_SHAH = {
 export const VALENTIN_NGUYEN = {
   firstname: 'Valentin',
   lastname: 'Nguyen',
-  major: 'Design Media Arts | Cognitive Science',
+  major: 'Design Media Arts',
+  minor: 'Digital Humanities',
   year: '2023',
   class: UPSILON,
   linkedin: '',
   email: '',
-  notPictured: true,
 };
 
 export const VISHAL_NARAYAN = {

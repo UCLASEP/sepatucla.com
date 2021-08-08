@@ -53,7 +53,7 @@ export const EMILY_NORONHA = {
 export const JENNY_YOO = {
   firstname: 'Jenny',
   lastname: 'Yoo',
-  major: 'Economics & Philosophy',
+  major: 'Sociology | Political Science',
   year: '2023',
   class: TAU,
   linkedin: '',
@@ -84,6 +84,7 @@ export const NEHA_BHONGIR = {
   firstname: 'Neha',
   lastname: 'Bhongir',
   major: 'Computational & Systems Biology',
+  minor: 'Society & Genetics',
   year: '2023',
   class: TAU,
   linkedin: '',

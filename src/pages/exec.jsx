@@ -22,6 +22,8 @@ const ExecPage = () => (
         <MemberLayout
           name={`${pres.firstname} ${pres.lastname}`}
           title={pres.title}
+          major={pres.major}
+          minor={pres.minor}
           key={`${pres.firstname} ${pres.lastname}`}
           desc={pres.desc}
           notPictured={pres.notPictured}
@@ -33,10 +35,11 @@ const ExecPage = () => (
         <MemberLayout
           name={`${director.firstname} ${director.lastname}`}
           title={director.title}
+          major={director.major}
+          minor={director.minor}
           key={`${director.firstname} ${director.lastname}`}
           desc={director.desc}
           notPictured={director.notPictured}
-          isDirector
         />
       ))}
     </PhotosContainer>

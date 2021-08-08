@@ -64,6 +64,7 @@ export const CINDY_ZHENG = {
   firstname: 'Cindy',
   lastname: 'Zheng',
   major: 'Computer Science',
+  minor: 'Linguistics',
   year: '2022',
   class: RHO,
   linkedin: 'https://www.linkedin.com/in/cindy-z-b2860013a/',
@@ -73,7 +74,7 @@ export const CINDY_ZHENG = {
 export const HARI_SENTHILKUMAR = {
   firstname: 'Hari',
   lastname: 'Senthilkumar',
-  major: 'Computer Science',
+  major: 'Computer Science | Math/Economics',
   year: '2022',
   class: RHO,
   linkedin: 'https://www.linkedin.com/in/hari-s-114618118/',
