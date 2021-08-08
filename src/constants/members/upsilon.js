@@ -62,8 +62,8 @@ export const BRIAN_ROYSAR = {
   email: '',
 };
 
-export const CINDY_YUAN = {
-  firstname: 'Cindy',
+export const ASHTON_YUAN = {
+  firstname: 'Ashton',
   lastname: 'Yuan',
   major: 'Communications',
   year: '2023',
