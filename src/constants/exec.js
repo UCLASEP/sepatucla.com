@@ -68,19 +68,19 @@ const DIRECTORS = [
     ...RINGY_ZHANG,
     title: 'Recruitment',
     desc:
-      ''  
+      'Ringy\'s (3rd) current interest lies in product management, venture capital, and startups. She loves street photography, solo travel, spontaneous adventures and above all else, chocolate milk.'  
   },
   {
     ...HENRY_NGUYEN,
     title: 'Finance',
     desc:
-      ''
+      'Henry (4th) is interested in implementing technology solutions within finance and has worked with Parametric Portfolios for their fixed income team. He’s also an avid rock climber and steak lover!'
   },
   {
     ...VISHAL_NARAYAN,
     title: 'Technology',
     desc:
-      'Just a cool guy'
+      'Vishal (3rd) is passionate about using computers to make life more convenient. He loves playing chess, shooting hoops, and flipping omelettes.'
   },
   {
     ...FELIX_ZHANG,
@@ -115,7 +115,7 @@ const DIRECTORS = [
     ...RONAK_SHAH,
     title: 'Alumni Relations',
     desc:
-      ''
+      'Ronak (4th) has interests in supply chain optimization, inventory management and business analytics. He has previously interned at companies like EY and Apeel Sciences. He spends his free time playing soccer, skateboarding, watching classic movies and exploring LA. '
   }
 ];
 

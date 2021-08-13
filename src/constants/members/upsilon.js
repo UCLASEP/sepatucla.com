@@ -149,7 +149,8 @@ export const NEERAJ_SAMTANI = {
 export const RINGY_ZHANG = {
   firstname: 'Ringy',
   lastname: 'Zhang',
-  major: 'Business Economics | Philosophy | Film TV',
+  major: 'Business Economics | Philosophy',
+  minor: 'Film TV',
   year: '2023',
   class: UPSILON,
   linkedin: '',
@@ -175,6 +176,7 @@ export const VALENTIN_NGUYEN = {
   class: UPSILON,
   linkedin: '',
   email: '',
+  notPictured: true,
 };
 
 export const VISHAL_NARAYAN = {

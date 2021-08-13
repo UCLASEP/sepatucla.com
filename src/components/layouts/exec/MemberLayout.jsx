@@ -79,6 +79,12 @@ const Major = styled.div`
   color: ${GREY40};
 `;
 
+const Minor = styled.div`
+  font-size: 12px;
+  margin-bottom: 8px;
+  color: ${GREY40};
+`;
+
 
 const MemberLayout = ({name, title, major, minor, desc, notPictured}) => (
   <FadeInSection>
@@ -87,7 +93,8 @@ const MemberLayout = ({name, title, major, minor, desc, notPictured}) => (
       <TextContainer>
         <Name>{name}</Name>
         <Title>{title}</Title> 
-        <Major>{major}{minor ? `, ${minor} Minor` : ''}</Major>
+        <Major>{major}</Major>
+        <Minor>{minor ? `Minor: ${minor}` : ''}</Minor>
         <Description>{desc}</Description>
       </TextContainer>
     </Container>
