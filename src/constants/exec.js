@@ -35,7 +35,7 @@ const PRESIDENTS = [
     ...ELEANOR_PAE,
     title: 'VP, Professional Affairs',
     desc:
-      'Eleanor has interests in biotechnology, healthcare consulting, and product management. She has interned at BioMarin Pharmaceutical, Cress Health and Bluebonnet Data. On campus, she is also involved in 180 Degrees Consulting, Total Wellness magazine, and DataRes. In her free time, she enjoys discovering new music, going to the beach, and playing with her dog.',
+      'Eleanor has interests in biotechnology, healthcare consulting, and product management. She has interned at BioMarin Pharmaceutical, Cress Health and Bluebonnet Data. She is also involved in 180 Degrees Consulting, Total Wellness magazine, and DataRes. She enjoys discovering new music, going to the beach, and playing with her dog.',
   },
   {
     ...NEHA_BHONGIR,
