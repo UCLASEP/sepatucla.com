@@ -23,7 +23,8 @@ export const AVANISH_JAY_ARUN = {
 export const DAKOTA_EDISON = {
   firstname: 'Dakota',
   lastname: 'Edison',
-  major: 'Business Economics',
+  pronouns: 'He/Him/His',
+  major: 'Economics',
   year: '2023',
   class: PHI,
   linkedin: '',
@@ -95,7 +96,7 @@ export const NATASHA_CHEUNG = {
 export const NEAL_AGARWAL = {
   firstname: 'Neal',
   lastname: 'Agarwal',
-  major: 'Biochemistry',
+  major: 'Physiological Sciences',
   year: '2024',
   class: PHI,
   linkedin: '',

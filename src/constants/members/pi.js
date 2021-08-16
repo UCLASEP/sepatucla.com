@@ -42,13 +42,14 @@ export const PHAKORN_CHANSRICHAWLA = {
 };
 
 export const RONALD_LIU = {
-  firstname: 'Ronald',
+  firstname: 'Ron',
   lastname: 'Liu',
   major: 'Cognitive Science',
   year: '2021',
   class: PI,
   linkedin: 'https://www.linkedin.com/in/ronaldaliu/',
   email: 'ronaldxliu@gmail.com',
+  notPictured: true,
 };
 
 export const SAAGAR_GODITHI = {

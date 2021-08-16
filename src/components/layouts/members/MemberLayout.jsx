@@ -53,6 +53,12 @@ const Major = styled.div`
   color: ${GREY40};
 `;
 
+const Minor = styled.div`
+  font-size: 12px;
+  margin-bottom: 8px;
+  color: ${GREY40};
+`;
+
 const MemberLayout = ({member}) => (
   <Container>
     <MemberPhoto
@@ -60,11 +66,12 @@ const MemberLayout = ({member}) => (
       notPictured={member.notPictured}
     />
     <TextContainer>
-      <Class>{member.class} Class</Class>
+      <Class>{member.class} Class {member.pronouns ? `| ${member.pronouns}` : ''}</Class>
       <Name>
         {member.firstname} {member.lastname}
       </Name>
       <Major>{member.major}</Major>
+      <Minor>{member.minor ? `Minor: ${member.minor}` : ''}</Minor>
     </TextContainer>
   </Container>
 );
@@ -74,8 +81,10 @@ MemberLayout.propTypes = {
   member: PropTypes.shape({
     firstname: PropTypes.string.isRequired,
     lastname: PropTypes.string.isRequired,
+    pronouns: PropTypes.string.isRequired,
     class: PropTypes.string.isRequired,
     major: PropTypes.string.isRequired,
+    minor: PropTypes.string.isRequired,
     notPictured: PropTypes.bool.isRequired,
   }).isRequired,
 };

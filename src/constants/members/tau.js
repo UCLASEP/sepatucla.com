@@ -23,7 +23,8 @@ export const ANUPAMA_SHIVAKUMAR = {
 export const BAILEY_MEYERS = {
   firstname: 'Bailey',
   lastname: 'Meyers',
-  major: 'Undeclared',
+  pronouns: 'He/Him/His',
+  major: 'Global Studies | English',
   year: '2023',
   class: TAU,
   linkedin: '',
@@ -33,6 +34,7 @@ export const BAILEY_MEYERS = {
 export const BENNY_ZHANG = {
   firstname: 'Benny',
   lastname: 'Zhang',
+  pronouns: 'She/Her/Hers',
   major: 'Psychology & Sociology',
   year: '2022',
   class: TAU,
@@ -43,6 +45,7 @@ export const BENNY_ZHANG = {
 export const EMILY_NORONHA = {
   firstname: 'Emily',
   lastname: 'Noronha',
+  pronouns: 'She/Her/Hers',
   major: 'Human Biology & Society',
   year: '2023',
   class: TAU,

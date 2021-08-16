@@ -32,22 +32,34 @@ export const ANNE_SHEN = {
   email: '',
 };
 
-export const AUSTIN_PHAM = {
-  firstname: 'Austin',
-  lastname: 'Pham',
-  major: 'Business Economics | Music Industry | Film TV',
-  minor: 'Statistics',
+export const ASHTON_YUAN = {
+  firstname: 'Ashton',
+  lastname: 'Yuan',
+  pronouns: 'She/They',
+  major: 'Communications',
   year: '2023',
   class: UPSILON,
   linkedin: '',
   email: '',
-  notPictured: true,
+};
+
+export const AUSTIN_PHAM = {
+  firstname: 'Austin',
+  lastname: 'Pham',
+  major: 'Business Economics | Statistics',
+  minor: 'Music Industry',
+  year: '2023',
+  class: UPSILON,
+  linkedin: '',
+  email: '',
 };
 
 export const AVNISH_SENGUPTA = {
   firstname: 'Avnish',
   lastname: 'Sengupta',
-  major: 'Computer Engineering',
+  pronouns: 'He/Him/His',
+  major: 'Computer Science',
+  minor: 'Statistics',
   year: '2023',
   class: UPSILON,
   linkedin: '',
@@ -58,16 +70,6 @@ export const BRIAN_ROYSAR = {
   firstname: 'Brian',
   lastname: 'Roysar',
   major: 'Computer Science',
-  year: '2023',
-  class: UPSILON,
-  linkedin: '',
-  email: '',
-};
-
-export const ASHTON_YUAN = {
-  firstname: 'Ashton',
-  lastname: 'Yuan',
-  major: 'Communications',
   year: '2023',
   class: UPSILON,
   linkedin: '',
@@ -149,8 +151,8 @@ export const NEERAJ_SAMTANI = {
 export const RINGY_ZHANG = {
   firstname: 'Ringy',
   lastname: 'Zhang',
-  major: 'Business Economics | Philosophy',
-  minor: 'Film TV',
+  major: 'Philosophy | Cognitive Science (Computing)',
+  minor: 'Film',
   year: '2023',
   class: UPSILON,
   linkedin: '',
