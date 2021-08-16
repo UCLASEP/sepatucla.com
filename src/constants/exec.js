@@ -35,7 +35,7 @@ const PRESIDENTS = [
     ...ELEANOR_PAE,
     title: 'VP, Professional Affairs',
     desc:
-      'Eleanor has interests in biotechnology, healthcare consulting, and product management. She has interned at BioMarin Pharmaceutical, Cress Health and Bluebonnet Data. On campus, she is also involved in 180 Degrees Consulting, Total Wellness magazine, DataRes, and research. In her free time, Eleanor enjoys discovering new music, going to the beach, and playing with her dog.',
+      'Eleanor has interests in biotechnology, healthcare consulting, and product management. She has interned at BioMarin Pharmaceutical, Cress Health and Bluebonnet Data. On campus, she is also involved in 180 Degrees Consulting, Total Wellness magazine, and DataRes. In her free time, she enjoys discovering new music, going to the beach, and playing with her dog.',
   },
   {
     ...NEHA_BHONGIR,
@@ -45,25 +45,19 @@ const PRESIDENTS = [
   },
   {
     ...AUSTIN_PHAM,
-    title: 'VP, Social Affairs',
+    title: 'VP, Social Affairs | Recruitment',
     desc:
-      'I’m an Audio Engineer. My favorite Jewish intellects are Sam Harris, Michael Singer, Yuval Noah Harari (and Naval Ravikant). I exclusively wear muscle tees, 5” shorts, and oversized hoodies. Catch me tripping in a sauna munching on an acai bowl. One day, I hope to be a professional DJ !!'
+      'Through Austin\'s lifelong endeavors in music, art, and technology, he\'s found a love for the intersection between entertainment and data science. On campus, he\'s involved in Music Industry Committee and DataRes Consulting. His favorite (Jewish) intellects are Sam Harris, Michael Singer, and Naval Ravikant. As an audio engineer, he hopes to one day be a DJ!'
   },
   {
     ...RONALD_LIU,
     title: 'VP, Social Affairs',
     desc:
-      'Ronald is interested in Japanese culture and Japan.'
+      'Ron has a background in computer science, videography, and animation and is pursuing a career in interactive media. In his free time, he likes learning languages, listening to music, and playing the guitar/piano.'
   }
 ];
 
 const DIRECTORS = [
-  {
-    ...AUSTIN_PHAM,
-    title: 'Recruitment',
-    desc:
-      ''
-  },
   {
     ...RINGY_ZHANG,
     title: 'Recruitment',
