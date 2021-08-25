@@ -224,8 +224,7 @@ const Dates = () => (
       ))}
     </DatesSpecificContainer>
     <Text>
-      All events are virtual and held via Zoom through UCLA accounts. Links to
-      Zoom are updated{' '}
+      We will meet at Bruin Plaza 15 minutes before the start of each event.{' '}
       <a
         href="http://bit.ly/sepzoomlinks"
         rel="noopener noreferrer"
@@ -239,13 +238,13 @@ const Dates = () => (
 
 const FacebookEventButton = ({tabIndex, margin = '24px'}) => (
   <LinkContainer
-    href="https://fb.me/e/1gIRE5HuN"
+    href="https://docs.google.com/forms/d/e/1FAIpQLSfWT9quPp5FSmF7PJxavzGHF_-9gCDzJ2N8XZ2VBn_7igHabA/viewform"
     target="_blank"
     rel="noopener noreferrer"
     margin={margin}
   >
     <Button className="button" role="button" tabIndex={tabIndex}>
-      Come Rush
+      Interest Form
     </Button>
   </LinkContainer>
 );
@@ -309,7 +308,7 @@ const Main = ({windowWidth}) => (
     <BannerTextContainer>
       <AccentText>- come join us!</AccentText>
       <Header>Recruitment</Header>
-      <Bold>Spring Rush 2021&emsp;|&emsp;Mar 29th - Apr 1st</Bold>
+      <Bold>Fall Rush 2021&emsp;|&emsp;Sept 27th - Sept 30th</Bold>
       <FacebookEventButton tabIndex={0} />
       <VerticalBorder resize />
       <GreyText resize>
@@ -433,8 +432,8 @@ const RecruitmentPage = () => {
     <PageLayout title="Recruitment -- UCLA Sigma Eta Pi" location="recruitment">
       <Main windowWidth={windowWidth} />
       <Dates />
-      <Video />
-      <FbLink />
+      {/* <Video />
+      <FbLink /> */}
     </PageLayout>
   );
 };
