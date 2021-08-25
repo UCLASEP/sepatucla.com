@@ -225,7 +225,6 @@ const Dates = () => (
     </DatesSpecificContainer>
     <Text>
       We will meet at Bruin Plaza 15 minutes before the start of each event.{' '}
-
     </Text>
   </DatesContainer>
 );
