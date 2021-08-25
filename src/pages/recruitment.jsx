@@ -225,13 +225,7 @@ const Dates = () => (
     </DatesSpecificContainer>
     <Text>
       We will meet at Bruin Plaza 15 minutes before the start of each event.{' '}
-      <a
-        href="http://bit.ly/sepzoomlinks"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        here.
-      </a>
+
     </Text>
   </DatesContainer>
 );
