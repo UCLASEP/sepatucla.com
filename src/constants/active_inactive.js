@@ -39,6 +39,12 @@ import {
 
 const FEATURED = [
   {
+    ...SLINGSHOW,
+    title: 'Nilay Modi (Iota), Jorge Fuentes (Pi)',
+    desc:
+      'Slingshow (YC 20W) is an event-hosting platform that builds community and drives revenue all year round. Slingshow allows anyone to create highly interactive and engaging micro-events in just five minutes.',
+  },
+  {
     ...BRUINTANK,
     title: 'Sigma Eta Pi',
     desc:
@@ -183,12 +189,6 @@ const ACTIVE = [
     title: 'Sam Donner (Lambda)',
     desc:
       'Finding Founders is a podcast showcasing the vibrant entrepreneurial spirit of Los Angeles and their journey is to find the founders responsible',
-  },
-  {
-    ...SLINGSHOW,
-    title: 'Nilay Modi (Iota), Jorge Fuentes (Pi)',
-    desc:
-      'Create an engaged and connected community with networking, breakout rooms, presentations, and more with Slingshow!',
   },
 ];
 
