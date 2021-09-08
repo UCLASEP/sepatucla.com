@@ -215,6 +215,17 @@ const Dates = () => (
         passions without looking back.
       </Text>
       <Text>Are you an independent thinker? Want to carve your own path?</Text>
+      <Text>
+      Join Today!{' '}
+      <a
+        href="https://docs.google.com/forms/d/e/1FAIpQLSfWT9quPp5FSmF7PJxavzGHF_-9gCDzJ2N8XZ2VBn_7igHabA/viewform"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        here.
+      </a>
+    </Text>
+
     </div>
     <DatesSpecificContainer>
       {RUSH_INFO.map(({title, date, location, dress}) => (
@@ -224,7 +235,7 @@ const Dates = () => (
       ))}
     </DatesSpecificContainer>
     <Text>
-      We will meet at Bruin Plaza 15 minutes before the start of each event.{' '}
+      For any rush related questions, feel free to text our rush chair Austin Pham @ 949-244-4035{' '}
     </Text>
   </DatesContainer>
 );
