@@ -214,17 +214,14 @@ const Dates = () => (
         We encourage our brothers and sisters to jump headfirst into their
         passions without looking back.
       </Text>
-      <Text>Are you an independent thinker? Want to carve your own path?</Text>
-      <Text>
-      Join Today!{' '}
-      <a
+      <Text>Are you an independent thinker? Want to carve your own path? <a
         href="https://docs.google.com/forms/d/e/1FAIpQLSfWT9quPp5FSmF7PJxavzGHF_-9gCDzJ2N8XZ2VBn_7igHabA/viewform"
         rel="noopener noreferrer"
         target="_blank"
       >
-        here.
-      </a>
-    </Text>
+        Join Today!
+      </a></Text>
+     
 
     </div>
     <DatesSpecificContainer>
