@@ -27,7 +27,6 @@ import {
   PEARL,
   GOGYFT,
   FINDINGFOUNDERS,
-  SLINGSHOW,
   ETERNALIST,
   FREEMONEYFORFOUNDERS,
   ECSTATIC,
@@ -38,12 +37,6 @@ import {
 } from './venture';
 
 const FEATURED = [
-  {
-    ...SLINGSHOW,
-    title: 'Nilay Modi (Iota), Jorge Fuentes (Pi)',
-    desc:
-      'Slingshow (YC 20W) is an event-hosting platform that builds community and drives revenue all year round. Slingshow allows anyone to create highly interactive and engaging micro-events in just five minutes.',
-  },
   {
     ...BRUINTANK,
     title: 'Sigma Eta Pi',
