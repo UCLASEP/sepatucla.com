@@ -20,7 +20,6 @@ import {
   PEARL,
   GOGYFT,
   FINDINGFOUNDERS,
-  SLINGSHOW,
 } from './ventures/ActiveAlumni';
 
 import {
@@ -95,7 +94,6 @@ const ventures = [
   PEARL,
   GOGYFT,
   FINDINGFOUNDERS,
-  SLINGSHOW,
   ETERNALIST,
   FREEMONEYFORFOUNDERS,
   ECSTATIC,
