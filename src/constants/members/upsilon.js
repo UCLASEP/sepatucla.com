@@ -117,16 +117,6 @@ export const HENRY_NGUYEN = {
   email: '',
 };
 
-export const HIYA_GUPTA = {
-  firstname: 'Hiya',
-  lastname: 'Gupta',
-  major: 'Computer Science',
-  year: '2023',
-  class: UPSILON,
-  linkedin: '',
-  email: '',
-};
-
 export const KELLY_NGUYEN = {
   firstname: 'Kelly',
   lastname: 'Nguyen',
@@ -188,7 +178,7 @@ export const VISHAL_NARAYAN = {
   year: '2022',
   class: UPSILON,
   linkedin: '',
-  email: ''
+  email: '',
 };
 
 export const ZACHARY_BHATIA = {

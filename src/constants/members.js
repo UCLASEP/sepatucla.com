@@ -93,7 +93,6 @@ import {
   ELEANOR_PAE,
   ELI_PELLOT,
   HENRY_NGUYEN,
-  HIYA_GUPTA,
   KELLY_NGUYEN,
   NEERAJ_SAMTANI,
   RINGY_ZHANG,
@@ -102,8 +101,6 @@ import {
   VISHAL_NARAYAN,
   ZACHARY_BHATIA,
 } from './members/upsilon';
-
-
 
 import {
   ARYA_GOYAL,
@@ -119,9 +116,8 @@ import {
   OLIVIA_AN,
   PALLAVI_JAYARAMAN,
   VARUN_PATRO,
-  ZAHRA_KESHWANI
+  ZAHRA_KESHWANI,
 } from './members/phi';
-
 
 const members = [
   // ANIKET_MUTATKAR,
@@ -201,7 +197,6 @@ const members = [
   ELEANOR_PAE,
   ELI_PELLOT,
   HENRY_NGUYEN,
-  HIYA_GUPTA,
   KELLY_NGUYEN,
   NEERAJ_SAMTANI,
   RINGY_ZHANG,
@@ -222,7 +217,7 @@ const members = [
   OLIVIA_AN,
   PALLAVI_JAYARAMAN,
   VARUN_PATRO,
-  ZAHRA_KESHWANI
+  ZAHRA_KESHWANI,
 ];
 
 export {
@@ -303,7 +298,6 @@ export {
   ELEANOR_PAE,
   ELI_PELLOT,
   HENRY_NGUYEN,
-  HIYA_GUPTA,
   KELLY_NGUYEN,
   NEERAJ_SAMTANI,
   RINGY_ZHANG,
