@@ -96,6 +96,7 @@ const Button = styled.div`
   width: 218px;
   height: 50px;
   font-size: 14px;
+  padding: 14px;
   letter-spacing: 4px;
   color: white;
   background-color: ${PRIMARY_GREEN};
