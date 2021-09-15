@@ -11,7 +11,7 @@ import Right from '../../assets/images/recruitment/right.png';
 import LeftNarrow from '../../assets/images/recruitment/narrow-left.png';
 import RightNarrow from '../../assets/images/recruitment/narrow-right.png';
 
-import FbBanner from '../../assets/images/recruitment/recruitment_banner.png';
+// import FbBanner from '../../assets/images/recruitment/recruitment_banner.png';
 
 import {PRIMARY_GREEN} from '../styles/global';
 
@@ -91,6 +91,7 @@ const Button = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   text-transform: uppercase;
   width: 218px;
   height: 50px;
@@ -234,7 +235,7 @@ const Dates = () => (
   </DatesContainer>
 );
 
-const FacebookEventButton = ({tabIndex, margin = '24px'}) => (
+const RushInterestButton = ({tabIndex, margin = '24px'}) => (
   <LinkContainer
     href="https://docs.google.com/forms/d/e/1FAIpQLSfWT9quPp5FSmF7PJxavzGHF_-9gCDzJ2N8XZ2VBn_7igHabA/viewform"
     target="_blank"
@@ -243,13 +244,30 @@ const FacebookEventButton = ({tabIndex, margin = '24px'}) => (
   >
     <Button className="button" role="button" tabIndex={tabIndex}>
       Interest Form
+
     </Button>
+  </LinkContainer>
+);
+
+const FacebookEventButton = ({tabIndex, margin = '24px'}) => (
+  <LinkContainer
+    href="https://www.facebook.com/events/540040773738566"
+    target="_blank"
+    rel="noopener noreferrer"
+    margin={margin}
+  >
+  <div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+    <Button className="button" role="button" tabIndex={tabIndex}>
+      Entrepreneurship Event
+    </Button>
+  </div>
   </LinkContainer>
 );
 
 const LinkContainer = styled.a`
   text-decoration: none;
   margin-top: ${props => props.margin};
+  align-items: center;
 
   @media (max-width: 1000px) {
     margin: 10px;
@@ -307,6 +325,8 @@ const Main = ({windowWidth}) => (
       <AccentText>- come join us!</AccentText>
       <Header>Recruitment</Header>
       <Bold>Fall Rush 2021&emsp;|&emsp;Sept 27th - Sept 30th</Bold>
+      <RushInterestButton tabIndex={0} />
+      <VerticalBorder resize />
       <FacebookEventButton tabIndex={0} />
       <VerticalBorder resize />
       <GreyText resize>
@@ -319,6 +339,9 @@ const Main = ({windowWidth}) => (
   </div>
 );
 
+
+
+/*
 const FbLink = () => (
   <FadeInSection>
     <RecruitmentAdditionalSection
@@ -340,6 +363,7 @@ const FbLink = () => (
     </RecruitmentAdditionalSection>
   </FadeInSection>
 );
+*/
 
 // const Sponsorship = () => (
 //   <FadeInSection>
@@ -352,7 +376,7 @@ const FbLink = () => (
 //   </FadeInSection>
 // );
 
-const AdditionalSectionConatiner = styled.div`
+/* const AdditionalSectionConatiner = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -369,18 +393,20 @@ const AdditionalSectionConatiner = styled.div`
     margin: 25px 50px;
     padding: 25px 0px;
   }
-`;
+`; */
 
-const AdditionalSectionSubContainer = styled.div`
+
+/* const AdditionalSectionSubContainer = styled.div`
   display: flex;
   justify-content: space-between;
 
   @media (max-width: 800px) {
     flex-direction: column;
   }
-`;
+`; */
 
-const RecruitmentAdditionalSection = ({title, desc, isFb, children}) => (
+
+/* const RecruitmentAdditionalSection = ({title, desc, isFb, children}) => (
   <AdditionalSectionConatiner>
     <AdditionalSectionSubContainer>
       <div>
@@ -391,9 +417,9 @@ const RecruitmentAdditionalSection = ({title, desc, isFb, children}) => (
     </AdditionalSectionSubContainer>
     {children}
   </AdditionalSectionConatiner>
-);
+); */
 
-const VideoContainer = styled.div`
+/* const VideoContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -404,8 +430,11 @@ const VideoContainer = styled.div`
       width: 500px;
     }
   }
-`;
+`; */
 
+
+
+/*
 const Video = () => (
   <FadeInSection>
     <VideoContainer>
@@ -422,6 +451,7 @@ const Video = () => (
     </VideoContainer>
   </FadeInSection>
 );
+*/
 
 const RecruitmentPage = () => {
   const windowWidth = useWindowWidth();
@@ -430,8 +460,8 @@ const RecruitmentPage = () => {
     <PageLayout title="Recruitment -- UCLA Sigma Eta Pi" location="recruitment">
       <Main windowWidth={windowWidth} />
       <Dates />
-      {/* <Video />
-      <FbLink /> */}
+      {/* <Video /> } 
+      <FbLink /> */ } 
     </PageLayout>
   );
 };
