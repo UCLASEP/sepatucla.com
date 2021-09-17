@@ -11,7 +11,7 @@ import Right from '../../assets/images/recruitment/right.png';
 import LeftNarrow from '../../assets/images/recruitment/narrow-left.png';
 import RightNarrow from '../../assets/images/recruitment/narrow-right.png';
 
-// import FbBanner from '../../assets/images/recruitment/recruitment_banner.png';
+import FbBanner from '../../assets/images/recruitment/recruitment_banner.png';
 
 import {PRIMARY_GREEN} from '../styles/global';
 
@@ -238,13 +238,13 @@ const Dates = () => (
 
 const RushInterestButton = ({tabIndex, margin = '24px'}) => (
   <LinkContainer
-    href="https://docs.google.com/forms/d/e/1FAIpQLSfWT9quPp5FSmF7PJxavzGHF_-9gCDzJ2N8XZ2VBn_7igHabA/viewform"
+    href="https://docs.google.com/forms/d/e/1FAIpQLSfWT9quPp5FSmF7PJxavzGHF_-9gCDzJ2N8XZ2VBn_7igHabA/viewform" // UPDATE RUSH FB LINK
     target="_blank"
     rel="noopener noreferrer"
     margin={margin}
   >
     <Button className="button" role="button" tabIndex={tabIndex}>
-      Interest Form
+      Come Rush
 
     </Button>
   </LinkContainer>
@@ -252,7 +252,7 @@ const RushInterestButton = ({tabIndex, margin = '24px'}) => (
 
 const FacebookEventButton = ({tabIndex, margin = '24px'}) => (
   <LinkContainer
-    href="https://www.facebook.com/events/540040773738566"
+    href="https://www.facebook.com/events/644554040265135"
     target="_blank"
     rel="noopener noreferrer"
     margin={margin}
@@ -342,7 +342,7 @@ const Main = ({windowWidth}) => (
 
 
 
-/*
+
 const FbLink = () => (
   <FadeInSection>
     <RecruitmentAdditionalSection
@@ -351,7 +351,7 @@ const FbLink = () => (
       isFb
     >
       <a
-        href="https://fb.me/e/1gIRE5HuN"
+        href="https://www.facebook.com/events/644554040265135" // UPDATE FB EVENT LINK
         rel="noopener noreferrer"
         target="_blank"
       >
@@ -364,20 +364,20 @@ const FbLink = () => (
     </RecruitmentAdditionalSection>
   </FadeInSection>
 );
-*/
 
-// const Sponsorship = () => (
-//   <FadeInSection>
-//     <RecruitmentAdditionalSection
-//       title="sponsorship"
-//       desc="A huge thank you to this year's sponsors!"
-//     >
-//       <>{/* Add sponsorship logos here */}</>
-//     </RecruitmentAdditionalSection>
-//   </FadeInSection>
-// );
 
-/* const AdditionalSectionConatiner = styled.div`
+const Sponsorship = () => (
+  <FadeInSection>
+    <RecruitmentAdditionalSection
+      title="sponsorship"
+      desc="A huge thank you to this year's sponsors!"
+    >
+      <>{/* Add sponsorship logos here */}</>
+    </RecruitmentAdditionalSection>
+  </FadeInSection>
+);
+
+ const AdditionalSectionConatiner = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -394,33 +394,33 @@ const FbLink = () => (
     margin: 25px 50px;
     padding: 25px 0px;
   }
-`; */
+`; 
 
 
-/* const AdditionalSectionSubContainer = styled.div`
+ const AdditionalSectionSubContainer = styled.div`
   display: flex;
   justify-content: space-between;
 
   @media (max-width: 800px) {
     flex-direction: column;
   }
-`; */
+`; 
 
 
-/* const RecruitmentAdditionalSection = ({title, desc, isFb, children}) => (
+const RecruitmentAdditionalSection = ({title, desc, isFb, children}) => (
   <AdditionalSectionConatiner>
     <AdditionalSectionSubContainer>
       <div>
         <AccentText>- {title}</AccentText>
         <Bold style={{margin: '10px 0px'}}>{desc}</Bold>
       </div>
-      {isFb && <FacebookEventButton margin="0px" tabIndex={-1} />}
+      {isFb && <RushInterestButton margin="0px" tabIndex={-1} />}
     </AdditionalSectionSubContainer>
     {children}
   </AdditionalSectionConatiner>
-); */
+); 
 
-/* const VideoContainer = styled.div`
+const VideoContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -431,16 +431,16 @@ const FbLink = () => (
       width: 500px;
     }
   }
-`; */
+`; 
 
 
 
-/*
+
 const Video = () => (
   <FadeInSection>
     <VideoContainer>
       <iframe
-        src="https://www.youtube.com/embed/6UcNBV1ssh4"
+        src="https://youtu.be/ZVBTXEz4GvU" // UPDATE RUSH VIDEO LINK
         style={{border: 'none'}}
         width="1028"
         height="628"
@@ -452,7 +452,7 @@ const Video = () => (
     </VideoContainer>
   </FadeInSection>
 );
-*/
+
 
 const RecruitmentPage = () => {
   const windowWidth = useWindowWidth();
@@ -461,8 +461,8 @@ const RecruitmentPage = () => {
     <PageLayout title="Recruitment -- UCLA Sigma Eta Pi" location="recruitment">
       <Main windowWidth={windowWidth} />
       <Dates />
-      {/* <Video /> } 
-      <FbLink /> */ } 
+       <Video />
+      <FbLink />  
     </PageLayout>
   );
 };
