@@ -437,7 +437,7 @@ const Video = () => (
   <FadeInSection>
     <VideoContainer>
       <iframe
-        src="https://vimeo.com/607013125" // UPDATE RUSH VIDEO LINK
+        src="https://www.youtube.com/watch?v=ZVBTXEz4GvU" // UPDATE RUSH VIDEO LINK
         style={{border: 'none'}}
         width="1028"
         height="628"
