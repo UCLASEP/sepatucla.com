@@ -461,7 +461,7 @@ const RecruitmentPage = () => {
     <PageLayout title="Recruitment -- UCLA Sigma Eta Pi" location="recruitment">
       <Main windowWidth={windowWidth} />
       <Dates />
-       <Video />
+       {/* <Video /> */}
       <FbLink />  
     </PageLayout>
   );
