@@ -243,7 +243,7 @@ const Dates = () => (
 
 const RushInterestButton = ({tabIndex, margin = '24px'}) => (
   <LinkContainer
-    href="https://docs.google.com/forms/d/e/1FAIpQLSfWT9quPp5FSmF7PJxavzGHF_-9gCDzJ2N8XZ2VBn_7igHabA/viewform" // UPDATE RUSH FB LINK
+    href="https://www.facebook.com/events/644554040265135" // UPDATE RUSH FB LINK
     target="_blank"
     rel="noopener noreferrer"
     margin={margin}
@@ -256,7 +256,7 @@ const RushInterestButton = ({tabIndex, margin = '24px'}) => (
 
 const FacebookEventButton = ({tabIndex, margin = '24px'}) => (
   <LinkContainer
-    href="https://www.facebook.com/events/644554040265135"
+    href="https://www.facebook.com/events/540040773738566"
     target="_blank"
     rel="noopener noreferrer"
     margin={margin}
