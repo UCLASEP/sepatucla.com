@@ -216,12 +216,16 @@ const Dates = () => (
         We encourage our brothers and sisters to jump headfirst into their
         passions without looking back.
       </Text>
-      <Text>Are you an independent thinker? Want to carve your own path? <a
-        href="https://docs.google.com/forms/d/e/1FAIpQLSfWT9quPp5FSmF7PJxavzGHF_-9gCDzJ2N8XZ2VBn_7igHabA/viewform"
-        rel="noopener noreferrer"
-        target="_blank"
-      >Join Today!</a></Text>
-
+      <Text>
+        Are you an independent thinker? Want to carve your own path?{' '}
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSfWT9quPp5FSmF7PJxavzGHF_-9gCDzJ2N8XZ2VBn_7igHabA/viewform"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Join Today!
+        </a>
+      </Text>
     </div>
     <DatesSpecificContainer>
       {RUSH_INFO.map(({title, date, location, dress}) => (
@@ -231,7 +235,8 @@ const Dates = () => (
       ))}
     </DatesSpecificContainer>
     <Text>
-      For any rush related questions, feel free to text our rush chair Austin Pham @ 949-244-4035{' '}
+      For any rush related questions, feel free to text our rush chair Austin
+      Pham @ 949-244-4035{' '}
     </Text>
   </DatesContainer>
 );
@@ -245,7 +250,6 @@ const RushInterestButton = ({tabIndex, margin = '24px'}) => (
   >
     <Button className="button" role="button" tabIndex={tabIndex}>
       Come Rush
-
     </Button>
   </LinkContainer>
 );
@@ -257,11 +261,13 @@ const FacebookEventButton = ({tabIndex, margin = '24px'}) => (
     rel="noopener noreferrer"
     margin={margin}
   >
-  <div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
-    <Button className="button" role="button" tabIndex={tabIndex}>
-      Entrepreneurship Event
-    </Button>
-  </div>
+    <div
+      style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}
+    >
+      <Button className="button" role="button" tabIndex={tabIndex}>
+        Entrepreneurship Event
+      </Button>
+    </div>
   </LinkContainer>
 );
 
@@ -340,9 +346,6 @@ const Main = ({windowWidth}) => (
   </div>
 );
 
-
-
-
 const FbLink = () => (
   <FadeInSection>
     <RecruitmentAdditionalSection
@@ -365,7 +368,6 @@ const FbLink = () => (
   </FadeInSection>
 );
 
-
 const Sponsorship = () => (
   <FadeInSection>
     <RecruitmentAdditionalSection
@@ -377,7 +379,7 @@ const Sponsorship = () => (
   </FadeInSection>
 );
 
- const AdditionalSectionConatiner = styled.div`
+const AdditionalSectionConatiner = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -394,18 +396,16 @@ const Sponsorship = () => (
     margin: 25px 50px;
     padding: 25px 0px;
   }
-`; 
+`;
 
-
- const AdditionalSectionSubContainer = styled.div`
+const AdditionalSectionSubContainer = styled.div`
   display: flex;
   justify-content: space-between;
 
   @media (max-width: 800px) {
     flex-direction: column;
   }
-`; 
-
+`;
 
 const RecruitmentAdditionalSection = ({title, desc, isFb, children}) => (
   <AdditionalSectionConatiner>
@@ -418,7 +418,7 @@ const RecruitmentAdditionalSection = ({title, desc, isFb, children}) => (
     </AdditionalSectionSubContainer>
     {children}
   </AdditionalSectionConatiner>
-); 
+);
 
 const VideoContainer = styled.div`
   display: flex;
@@ -431,16 +431,13 @@ const VideoContainer = styled.div`
       width: 500px;
     }
   }
-`; 
-
-
-
+`;
 
 const Video = () => (
   <FadeInSection>
     <VideoContainer>
       <iframe
-        src="https://youtu.be/ZVBTXEz4GvU" // UPDATE RUSH VIDEO LINK
+        src="https://www.youtube.com/watch?v=ZVBTXEz4GvU" // UPDATE RUSH VIDEO LINK
         style={{border: 'none'}}
         width="1028"
         height="628"
@@ -453,7 +450,6 @@ const Video = () => (
   </FadeInSection>
 );
 
-
 const RecruitmentPage = () => {
   const windowWidth = useWindowWidth();
 
@@ -461,8 +457,8 @@ const RecruitmentPage = () => {
     <PageLayout title="Recruitment -- UCLA Sigma Eta Pi" location="recruitment">
       <Main windowWidth={windowWidth} />
       <Dates />
-       {/* <Video /> */}
-      <FbLink />  
+      <Video />
+      <FbLink />
     </PageLayout>
   );
 };
