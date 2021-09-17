@@ -440,7 +440,7 @@ const Video = () => (
   <FadeInSection>
     <VideoContainer>
       <iframe
-        src="https://youtu.be/ZVBTXEz4GvU" // UPDATE RUSH VIDEO LINK
+        src="https://vimeo.com/607013125" // UPDATE RUSH VIDEO LINK
         style={{border: 'none'}}
         width="1028"
         height="628"
@@ -461,7 +461,7 @@ const RecruitmentPage = () => {
     <PageLayout title="Recruitment -- UCLA Sigma Eta Pi" location="recruitment">
       <Main windowWidth={windowWidth} />
       <Dates />
-       {/* <Video /> */}
+       <Video /> 
       <FbLink />  
     </PageLayout>
   );
