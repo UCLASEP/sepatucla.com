@@ -327,9 +327,9 @@ const Main = ({windowWidth}) => (
       <AccentText>- come join us!</AccentText>
       <Header>Recruitment</Header>
       <Bold>Fall Rush 2021&emsp;|&emsp;Sept 27th - Sept 30th</Bold>
-      <RushInterestButton tabIndex={0} />
-      <VerticalBorder resize />
       <FacebookEventButton tabIndex={0} />
+      <VerticalBorder resize />
+      <RushInterestButton tabIndex={0} />
       <VerticalBorder resize />
       <GreyText resize>
         Although vastly diverse and widespread, our SEP family shares one
