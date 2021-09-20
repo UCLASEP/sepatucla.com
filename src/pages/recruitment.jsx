@@ -11,7 +11,7 @@ import Right from '../../assets/images/recruitment/right.png';
 import LeftNarrow from '../../assets/images/recruitment/narrow-left.png';
 import RightNarrow from '../../assets/images/recruitment/narrow-right.png';
 
-import FbBanner from '../../assets/images/recruitment/recruitment_banner.png';
+// import FbBanner from '../../assets/images/recruitment/recruitment_banner.png';
 
 import {PRIMARY_GREEN} from '../styles/global';
 
@@ -210,22 +210,18 @@ const DatesSpecificContainer = styled.div`
 const Dates = () => (
   <DatesContainer>
     <div>
-      <AccentText>- Come join us!</AccentText>
+      <AccentText />
       <br />
       <Text>
-        We encourage our brothers and sisters to jump headfirst into their
-        passions without looking back.
-      </Text>
-      <Text>
-        Are you an independent thinker? Want to carve your own path?{' '}
-        <a
-          href="https://docs.google.com/forms/d/e/1FAIpQLSfWT9quPp5FSmF7PJxavzGHF_-9gCDzJ2N8XZ2VBn_7igHabA/viewform"
+        Excited to come out Rush but don&quot;t know where to start? Feel 
+        free to text our rush chair Austin Pham @ 949-244-4035 or take 
+        a look at our <a
+          href="https://drive.google.com/file/d/1CiKS7ot9TIAjfpgYuWgjPeul-U9JCegr/view"
           rel="noopener noreferrer"
           target="_blank"
-        >
-          Join Today!
-        </a>
+        > rush guide. </a>
       </Text>
+
     </div>
     <DatesSpecificContainer>
       {RUSH_INFO.map(({title, date, location, dress}) => (
@@ -234,10 +230,7 @@ const Dates = () => (
         </FadeInSection>
       ))}
     </DatesSpecificContainer>
-    <Text>
-      For any rush related questions, feel free to text our rush chair Austin
-      Pham @ 949-244-4035{' '}
-    </Text>
+    <Text />
   </DatesContainer>
 );
 
@@ -346,7 +339,8 @@ const Main = ({windowWidth}) => (
   </div>
 );
 
-const FbLink = () => (
+
+/* const FbLink = () => (
   <FadeInSection>
     <RecruitmentAdditionalSection
       title="event details"
@@ -366,20 +360,20 @@ const FbLink = () => (
       </a>
     </RecruitmentAdditionalSection>
   </FadeInSection>
-);
+); */
 
-const Sponsorship = () => (
+/* const Sponsorship = () => (
   <FadeInSection>
     <RecruitmentAdditionalSection
       title="sponsorship"
       desc="A huge thank you to this year's sponsors!"
     >
-      <>{/* Add sponsorship logos here */}</>
+      <>{ Add sponsorship logos here }</>
     </RecruitmentAdditionalSection>
   </FadeInSection>
-);
+); */
 
-const AdditionalSectionConatiner = styled.div`
+/* const AdditionalSectionConatiner = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -396,18 +390,18 @@ const AdditionalSectionConatiner = styled.div`
     margin: 25px 50px;
     padding: 25px 0px;
   }
-`;
+`; */
 
-const AdditionalSectionSubContainer = styled.div`
+/* const AdditionalSectionSubContainer = styled.div`
   display: flex;
   justify-content: space-between;
 
   @media (max-width: 800px) {
     flex-direction: column;
   }
-`;
+`; */
 
-const RecruitmentAdditionalSection = ({title, desc, isFb, children}) => (
+/* const RecruitmentAdditionalSection = ({title, desc, isFb, children}) => (
   <AdditionalSectionConatiner>
     <AdditionalSectionSubContainer>
       <div>
@@ -418,9 +412,9 @@ const RecruitmentAdditionalSection = ({title, desc, isFb, children}) => (
     </AdditionalSectionSubContainer>
     {children}
   </AdditionalSectionConatiner>
-);
+); */
 
-const VideoContainer = styled.div`
+/* const VideoContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -431,9 +425,9 @@ const VideoContainer = styled.div`
       width: 500px;
     }
   }
-`;
+`; */
 
-const Video = () => (
+/* const Video = () => (
   <FadeInSection>
     <VideoContainer>
       <iframe
@@ -448,7 +442,7 @@ const Video = () => (
       />
     </VideoContainer>
   </FadeInSection>
-);
+); */
 
 const RecruitmentPage = () => {
   const windowWidth = useWindowWidth();
@@ -457,8 +451,6 @@ const RecruitmentPage = () => {
     <PageLayout title="Recruitment -- UCLA Sigma Eta Pi" location="recruitment">
       <Main windowWidth={windowWidth} />
       <Dates />
-      <Video />
-      <FbLink />
     </PageLayout>
   );
 };
