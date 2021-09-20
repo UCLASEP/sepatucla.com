@@ -213,7 +213,7 @@ const Dates = () => (
       <AccentText />
       <br />
       <Text>
-        Excited to come out Rush but don&quot;t know where to start? Feel 
+        Excited to come out Rush but don&apos;t know where to start? Feel 
         free to text our rush chair Austin Pham @ 949-244-4035 or take 
         a look at our <a
           href="https://drive.google.com/file/d/1CiKS7ot9TIAjfpgYuWgjPeul-U9JCegr/view"
@@ -242,7 +242,7 @@ const RushInterestButton = ({tabIndex, margin = '24px'}) => (
     margin={margin}
   >
     <Button className="button" role="button" tabIndex={tabIndex}>
-      Come Rush
+      RSVP on FB
     </Button>
   </LinkContainer>
 );
