@@ -11,7 +11,7 @@ import Right from '../../assets/images/recruitment/right.png';
 import LeftNarrow from '../../assets/images/recruitment/narrow-left.png';
 import RightNarrow from '../../assets/images/recruitment/narrow-right.png';
 
-// import FbBanner from '../../assets/images/recruitment/recruitment_banner.png';
+import FbBanner from '../../assets/images/recruitment/recruitment_banner.png';
 
 import {PRIMARY_GREEN} from '../styles/global';
 
@@ -213,15 +213,17 @@ const Dates = () => (
       <AccentText />
       <br />
       <Text>
-        Excited to come out Rush but don&apos;t know where to start? Feel 
-        free to text our rush chair Austin Pham @ 949-244-4035 or take 
-        a look at our <a
+        Excited to come out Rush but don&apos;t know where to start? Feel free
+        to text our rush chair Austin Pham @ 949-244-4035 or take a look at our{' '}
+        <a
           href="https://drive.google.com/file/d/1CiKS7ot9TIAjfpgYuWgjPeul-U9JCegr/view"
           rel="noopener noreferrer"
           target="_blank"
-        > rush guide. </a>
+        >
+          {' '}
+          rush guide.{' '}
+        </a>
       </Text>
-
     </div>
     <DatesSpecificContainer>
       {RUSH_INFO.map(({title, date, location, dress}) => (
@@ -325,9 +327,9 @@ const Main = ({windowWidth}) => (
       <AccentText>- come join us!</AccentText>
       <Header>Recruitment</Header>
       <Bold>Fall Rush 2021&emsp;|&emsp;Sept 27th - Sept 30th</Bold>
-      <RushInterestButton tabIndex={0} />
-      <VerticalBorder resize />
       <FacebookEventButton tabIndex={0} />
+      <VerticalBorder resize />
+      <RushInterestButton tabIndex={0} />
       <VerticalBorder resize />
       <GreyText resize>
         Although vastly diverse and widespread, our SEP family shares one
@@ -339,8 +341,7 @@ const Main = ({windowWidth}) => (
   </div>
 );
 
-
-/* const FbLink = () => (
+const FbLink = () => (
   <FadeInSection>
     <RecruitmentAdditionalSection
       title="event details"
@@ -360,20 +361,20 @@ const Main = ({windowWidth}) => (
       </a>
     </RecruitmentAdditionalSection>
   </FadeInSection>
-); */
+);
 
-/* const Sponsorship = () => (
-  <FadeInSection>
-    <RecruitmentAdditionalSection
-      title="sponsorship"
-      desc="A huge thank you to this year's sponsors!"
-    >
-      <>{ Add sponsorship logos here }</>
-    </RecruitmentAdditionalSection>
-  </FadeInSection>
-); */
+// const Sponsorship = () => (
+//   <FadeInSection>
+//     <RecruitmentAdditionalSection
+//       title="sponsorship"
+//       desc="A huge thank you to this year's sponsors!"
+//     >
+//       <>{ }</>
+//     </RecruitmentAdditionalSection>
+//   </FadeInSection>
+// );
 
-/* const AdditionalSectionConatiner = styled.div`
+const AdditionalSectionConatiner = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -390,18 +391,18 @@ const Main = ({windowWidth}) => (
     margin: 25px 50px;
     padding: 25px 0px;
   }
-`; */
+`;
 
-/* const AdditionalSectionSubContainer = styled.div`
+const AdditionalSectionSubContainer = styled.div`
   display: flex;
   justify-content: space-between;
 
   @media (max-width: 800px) {
     flex-direction: column;
   }
-`; */
+`;
 
-/* const RecruitmentAdditionalSection = ({title, desc, isFb, children}) => (
+const RecruitmentAdditionalSection = ({title, desc, isFb, children}) => (
   <AdditionalSectionConatiner>
     <AdditionalSectionSubContainer>
       <div>
@@ -412,7 +413,7 @@ const Main = ({windowWidth}) => (
     </AdditionalSectionSubContainer>
     {children}
   </AdditionalSectionConatiner>
-); */
+);
 
 /* const VideoContainer = styled.div`
   display: flex;
@@ -451,6 +452,7 @@ const RecruitmentPage = () => {
     <PageLayout title="Recruitment -- UCLA Sigma Eta Pi" location="recruitment">
       <Main windowWidth={windowWidth} />
       <Dates />
+      <FbLink />
     </PageLayout>
   );
 };
