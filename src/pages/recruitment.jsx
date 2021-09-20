@@ -256,7 +256,7 @@ const RushInterestButton = ({tabIndex, margin = '24px'}) => (
 
 const FacebookEventButton = ({tabIndex, margin = '24px'}) => (
   <LinkContainer
-    href="https://www.facebook.com/events/540040773738566"
+    href="https://docs.google.com/forms/d/e/1FAIpQLSfWT9quPp5FSmF7PJxavzGHF_-9gCDzJ2N8XZ2VBn_7igHabA/viewform"
     target="_blank"
     rel="noopener noreferrer"
     margin={margin}
@@ -265,7 +265,7 @@ const FacebookEventButton = ({tabIndex, margin = '24px'}) => (
       style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}
     >
       <Button className="button" role="button" tabIndex={tabIndex}>
-        Entrepreneurship Event
+        Interest Form
       </Button>
     </div>
   </LinkContainer>
