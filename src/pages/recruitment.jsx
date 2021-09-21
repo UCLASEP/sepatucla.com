@@ -214,7 +214,7 @@ const Dates = () => (
       <br />
       <Text>
         Excited to come out Rush but don&apos;t know where to start? Feel free
-        to text our rush chair Austin Pham @ 949-244-4035 or take a look at our{' '}
+        to message our rush chairs, Austin and Ringy, on instagram @uclasep or take a look at our{' '}
         <a
           href="https://drive.google.com/file/d/1CiKS7ot9TIAjfpgYuWgjPeul-U9JCegr/view"
           rel="noopener noreferrer"
