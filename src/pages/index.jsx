@@ -8,7 +8,7 @@ import FacebookIcon from '../../assets/images/icons/facebook-icon.svg';
 import MediumIcon from '../../assets/images/icons/medium.svg';
 import InstagramIcon from '../../assets/images/icons/instagram.svg';
 import LinkedinIcon from '../../assets/images/icons/linkedin.svg';
-import gallery from '../../assets/images/gallery/temp.png';
+import gallery from '../../assets/images/gallery/image.png';
 import people from '../../assets/images/gallery/people.png';
 import farout from '../../assets/images/gallery/farout.png';
 import './home.css';
@@ -420,7 +420,7 @@ const SocialsComponent = () => (
       <img src={FacebookIcon} alt="facebook icon" />
     </a>
     <a
-      href="https://www.instagram.com/uclasigmaetapi/"
+      href="https://www.instagram.com/uclasep/"
       rel="noopener noreferrer"
       target="_blank"
     >
