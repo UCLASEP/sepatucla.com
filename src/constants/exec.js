@@ -41,7 +41,7 @@ const PRESIDENTS = [
     ...NEHA_BHONGIR,
     title: 'VP, Professional Affairs',
     desc:
-      'Neha plans to pursue healthcare consulting and has interned at Well Health, Seed Health, and Slingshow. She loves to spend her free time cooking, reading, and listening to R&B music.'
+      'Neha plans to pursue healthcare consulting and has interned at Well Health and Seed Health. She loves to spend her free time cooking, reading, and listening to R&B music.'
   },
   {
     ...AUSTIN_PHAM,
