@@ -11,7 +11,7 @@ import Right from '../../assets/images/recruitment/right.png';
 import LeftNarrow from '../../assets/images/recruitment/narrow-left.png';
 import RightNarrow from '../../assets/images/recruitment/narrow-right.png';
 
-import FbBanner from '../../assets/images/recruitment/recruitment_banner.png';
+// import FbBanner from '../../assets/images/recruitment/recruitment_banner.png';
 
 import {PRIMARY_GREEN} from '../styles/global';
 
@@ -214,7 +214,7 @@ const Dates = () => (
       <br />
       <Text>
         Excited to come out Rush but don&apos;t know where to start? Feel free
-        to message our rush chairs, Austin and Ringy, on instagram @uclasep or take a look at our{' '}
+        to message our rush chairs, Melissa and Brian, on instagram @uclasep or take a look at our{' '}
         <a
           href="https://drive.google.com/file/d/1CiKS7ot9TIAjfpgYuWgjPeul-U9JCegr/view"
           rel="noopener noreferrer"
@@ -238,33 +238,31 @@ const Dates = () => (
 
 const RushInterestButton = ({tabIndex, margin = '24px'}) => (
   <LinkContainer
-    href="https://www.facebook.com/events/644554040265135" // UPDATE RUSH FB LINK
+    href="https://forms.gle/kwwidPYg9KtWdckn8" // UPDATE RUSH INTEREST FORM
     target="_blank"
     rel="noopener noreferrer"
     margin={margin}
   >
     <Button className="button" role="button" tabIndex={tabIndex}>
-      RSVP on FB
+      Interest Form
     </Button>
   </LinkContainer>
 );
 
-const FacebookEventButton = ({tabIndex, margin = '24px'}) => (
+const AirtableButton = ({tabIndex, margin = '24px'}) => (
   <LinkContainer
-    href="https://docs.google.com/forms/d/e/1FAIpQLSfWT9quPp5FSmF7PJxavzGHF_-9gCDzJ2N8XZ2VBn_7igHabA/viewform"
+    href="https://airtable.com/shrJgmpX4FC9zrTE8/tblrppwoITrQkIx05"
     target="_blank"
-    rel="noopener noreferrer"
+    rel="noopener-noreferrer"
     margin={margin}
   >
-    <div
-      style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}
-    >
-      <Button className="button" role="button" tabIndex={tabIndex}>
-        Interest Form
-      </Button>
-    </div>
+    <Button className="button" role="button" tabIndex={tabIndex}>
+      Come Meet us
+    </Button>
   </LinkContainer>
 );
+
+
 
 const LinkContainer = styled.a`
   text-decoration: none;
@@ -326,10 +324,10 @@ const Main = ({windowWidth}) => (
     <BannerTextContainer>
       <AccentText>- come join us!</AccentText>
       <Header>Recruitment</Header>
-      <Bold>Fall Rush 2021&emsp;|&emsp;Sept 27th - Sept 30th</Bold>
-      <FacebookEventButton tabIndex={0} />
-      <VerticalBorder resize />
+      <Bold>Spring Rush 2022&emsp;|&emsp;Mar 28th - Mar 31st</Bold>
       <RushInterestButton tabIndex={0} />
+      <VerticalBorder resize />
+      <AirtableButton tabIndex={0} />
       <VerticalBorder resize />
       <GreyText resize>
         Although vastly diverse and widespread, our SEP family shares one
@@ -341,6 +339,7 @@ const Main = ({windowWidth}) => (
   </div>
 );
 
+/*
 const FbLink = () => (
   <FadeInSection>
     <RecruitmentAdditionalSection
@@ -362,6 +361,7 @@ const FbLink = () => (
     </RecruitmentAdditionalSection>
   </FadeInSection>
 );
+*/
 
 // const Sponsorship = () => (
 //   <FadeInSection>
@@ -374,6 +374,7 @@ const FbLink = () => (
 //   </FadeInSection>
 // );
 
+/*
 const AdditionalSectionConatiner = styled.div`
   display: flex;
   flex-direction: column;
@@ -401,7 +402,9 @@ const AdditionalSectionSubContainer = styled.div`
     flex-direction: column;
   }
 `;
+*/
 
+/*
 const RecruitmentAdditionalSection = ({title, desc, isFb, children}) => (
   <AdditionalSectionConatiner>
     <AdditionalSectionSubContainer>
@@ -414,6 +417,7 @@ const RecruitmentAdditionalSection = ({title, desc, isFb, children}) => (
     {children}
   </AdditionalSectionConatiner>
 );
+*/
 
 /* const VideoContainer = styled.div`
   display: flex;

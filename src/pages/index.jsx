@@ -483,7 +483,7 @@ const HeaderComponent = () => (
     </HeaderSubtext>
     <Link to="/recruitment" style={{textDecoration: 'none'}}>
       <ViewSelectorButton className="button" role="button" tabIndex={0}>
-        Fall recruitment 2021
+        Spring Recruitment 2022
       </ViewSelectorButton>
     </Link>
   </HeaderContainer>
