@@ -68,7 +68,7 @@ const SocialsComponent = () => (
       <img src={FacebookIcon} alt="facebook icon" />
     </a>
     <a
-      href="https://www.instagram.com/uclasigmaetapi/"
+      href="https://www.instagram.com/sepatucla/"
       rel="noopener noreferrer"
       target="_blank"
     >
