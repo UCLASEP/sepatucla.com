@@ -75,7 +75,7 @@ export const JESSI_HU = {
 export const MELISSA_CHEN = {
   firstname: 'Melissa',
   lastname: 'Chen',
-  major: 'Bioengineering',
+  major: 'Computer Science',
   year: '2024',
   class: PHI,
   linkedin: '',
