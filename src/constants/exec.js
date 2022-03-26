@@ -5,15 +5,14 @@ import {
   ELEANOR_PAE,
   NEHA_BHONGIR,
   AUSTIN_PHAM,
-  RONALD_LIU,
 
-  RINGY_ZHANG,
+  MELISSA_CHEN,
+  BRIAN_ROYSAR,
+  JESSI_HU,
   HENRY_NGUYEN,
   JENNY_YOO,
-  NEERAJ_SAMTANI,
   ANNE_SHEN,
   RONAK_SHAH,
-  FELIX_ZHANG,
   VISHAL_NARAYAN,
   VALENTIN_NGUYEN
 } from './members';
@@ -45,24 +44,30 @@ const PRESIDENTS = [
   },
   {
     ...AUSTIN_PHAM,
-    title: 'VP, Social Affairs | Recruitment',
-    desc:
-      'Through Austin\'s lifelong endeavors in music, art, and technology, he\'s found a love for the intersection between entertainment and data science. On campus, he\'s involved in Music Industry Committee and DataRes Consulting. His favorite (Jewish) intellects are Sam Harris, Michael Singer, and Naval Ravikant. As an audio engineer, he hopes to one day be a DJ!'
-  },
-  {
-    ...RONALD_LIU,
     title: 'VP, Social Affairs',
     desc:
-      'Ron has a background in computer science, videography, and animation and is pursuing a career in interactive media. In his free time, he likes learning languages, listening to music, and playing the guitar/piano.'
+      'Through Austin\'s lifelong endeavors in music, art, and technology, he\'s found a love for the intersection between entertainment and data science. On campus, he\'s involved in Music Industry Committee and DataRes Consulting. His favorite (Jewish) intellects are Sam Harris, Michael Singer, and Naval Ravikant. As an audio engineer, he hopes to one day be a DJ!'
   }
 ];
 
 const DIRECTORS = [
   {
-    ...RINGY_ZHANG,
+    ...MELISSA_CHEN,
+    title: 'Recruitment | Marketing',
+    desc:
+      'After Melissa’s experience in bioengineering, she has recently decided to transition to computer science. She is now interested in pursuing a career in product management. In her free time, Melissa enjoys curating playlists, running, and painting.'  
+  },
+  {
+    ...BRIAN_ROYSAR,
     title: 'Recruitment',
     desc:
-      'Ringy\'s current interest lies in product management, venture capital, and startups. She loves street photography, solo travel, spontaneous adventures and above all else, chocolate milk.'  
+      ''
+  },
+  {
+    ...JESSI_HU,
+    title: 'Media',
+    desc:
+      'Jessi plans to pursue product management in the future and has been involved with consulting and tech clubs at UCLA. She hopes to retire early with at least two corgis.'
   },
   {
     ...HENRY_NGUYEN,
@@ -77,21 +82,9 @@ const DIRECTORS = [
       'Vishal is passionate about using computers to make life more convenient. He loves playing chess, shooting hoops, and flipping omelettes.'
   },
   {
-    ...FELIX_ZHANG,
-    title: 'Marketing',
-    desc:
-      'Felix enjoys aesthetics and computers.'
-  },
-  {
     ...VALENTIN_NGUYEN,
     title: 'Creative',
     desc: 'Valentin is interested in all things art and design, and is currently exploring UI/UX design. In her free time, she enjoys illustrating food, collecting Kermit memes, and having thoughtful conversations.',
-  },
-  {
-    ...NEERAJ_SAMTANI,
-    title: 'Media',
-    desc:
-      'Neeraj enjoys reading, playing basketball, and going to the gym. At UCLA, he’s also involved in The Film and Photography Society and Upsilon Pi Epsilon.'
   },
   {
     ...JENNY_YOO,
