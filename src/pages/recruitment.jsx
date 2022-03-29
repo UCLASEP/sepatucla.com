@@ -216,7 +216,7 @@ const Dates = () => (
         Excited to come out Rush but don&apos;t know where to start? Feel free
         to message our rush chairs, Melissa and Brian, on instagram @sepatucla or take a look at our{' '}
         <a
-          href="https://drive.google.com/file/d/1CiKS7ot9TIAjfpgYuWgjPeul-U9JCegr/view"
+          href="https://drive.google.com/file/d/1cJUNiQ5YvLrYPBMl1-94KKlxd6gPgtkA/view?usp=sharing"
           rel="noopener noreferrer"
           target="_blank"
         >
