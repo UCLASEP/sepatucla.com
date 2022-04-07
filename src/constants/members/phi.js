@@ -18,6 +18,7 @@ export const AVANISH_JAY_ARUN = {
   class: PHI,
   linkedin: '',
   email: '',
+  notPictured: true
 };
 
 export const DAKOTA_EDISON = {

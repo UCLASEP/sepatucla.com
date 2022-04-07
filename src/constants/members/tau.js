@@ -10,8 +10,8 @@ export const ANTHONY_WONG = {
   email: '',
 };
 
-export const ANUPAMA_SHIVAKUMAR = {
-  firstname: 'Anupama',
+export const ANU_SHIVAKUMAR = {
+  firstname: 'Anu',
   lastname: 'Shivakumar',
   major: 'Business Economics',
   year: '2023',
@@ -51,7 +51,6 @@ export const EMILY_NORONHA = {
   class: TAU,
   linkedin: '',
   email: '',
-  notPictured: true,
 };
 
 export const JENNY_YOO = {
