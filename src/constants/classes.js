@@ -7,5 +7,6 @@ const SIGMA = 'Sigma';
 const TAU = 'Tau';
 const UPSILON = 'Upsilon';
 const PHI = 'Phi';
+const CHI = 'Chi';
 
-export {NU, XI, OMICRON, PI, RHO, SIGMA, TAU, UPSILON, PHI};
+export {NU, XI, OMICRON, PI, RHO, SIGMA, TAU, UPSILON, PHI, CHI};
