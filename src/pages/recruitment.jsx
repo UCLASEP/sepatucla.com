@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 
 import React from 'react';
-import styled, {css} from 'styled-components';
+import styled, { css } from 'styled-components';
 
 import PageLayout from '../components/layouts/PageLayout';
 import FadeInSection from '../components/generic/FadeInSection';
@@ -13,7 +13,7 @@ import RightNarrow from '../../assets/images/recruitment/narrow-right.png';
 
 // import FbBanner from '../../assets/images/recruitment/recruitment_banner.png';
 
-import {PRIMARY_GREEN} from '../styles/global';
+import { PRIMARY_GREEN } from '../styles/global';
 
 import RUSH_INFO from '../constants/rush-info';
 
@@ -157,13 +157,13 @@ const DateContainer = styled.div`
 `;
 
 // eslint-disable-next-line react/prop-types
-const Date = ({title, date, location, dress}) => (
+const Date = ({ title, date, location, dress }) => (
   <DateContainer>
     <VerticalBorder
-      style={{height: '120px', margin: '0px 12px', border: '2px solid #E0E0E0'}}
+      style={{ height: '120px', margin: '0px 12px', border: '2px solid #E0E0E0' }}
     />
-    <div style={{display: 'flex', flexDirection: 'column'}}>
-      <Bold style={{margin: '4px 0px'}}>{title}</Bold>
+    <div style={{ display: 'flex', flexDirection: 'column' }}>
+      <Bold style={{ margin: '4px 0px' }}>{title}</Bold>
       <AccentText>{date}</AccentText>
       <Text>{location}</Text>
       <Text>{dress}</Text>
@@ -216,7 +216,7 @@ const Dates = () => (
         Excited to come out Rush but don&apos;t know where to start? Feel free
         to message our rush chairs, Melissa and Brian, on instagram @sepatucla or take a look at our{' '}
         <a
-          href="https://drive.google.com/file/d/1cJUNiQ5YvLrYPBMl1-94KKlxd6gPgtkA/view?usp=sharing"
+          href="https://drive.google.com/file/d/1vCq0yd8aRNNf2E168Fqhl8UhC0BwgXf5/view?usp=sharing"
           rel="noopener noreferrer"
           target="_blank"
         >
@@ -226,7 +226,7 @@ const Dates = () => (
       </Text>
     </div>
     <DatesSpecificContainer>
-      {RUSH_INFO.map(({title, date, location, dress}) => (
+      {RUSH_INFO.map(({ title, date, location, dress }) => (
         <FadeInSection key={title}>
           <Date title={title} date={date} location={location} dress={dress} />
         </FadeInSection>
@@ -236,9 +236,10 @@ const Dates = () => (
   </DatesContainer>
 );
 
-const RushInterestButton = ({tabIndex, margin = '24px'}) => (
+// Link container that opens file assets/pdf/rush_guide_f22.pdf:
+const RushInterestButton = ({ tabIndex, margin = '24px' }) => (
   <LinkContainer
-    href="https://forms.gle/kwwidPYg9KtWdckn8" // UPDATE RUSH INTEREST FORM
+    href="https://drive.google.com/file/d/1vCq0yd8aRNNf2E168Fqhl8UhC0BwgXf5/view?usp=sharing"
     target="_blank"
     rel="noopener noreferrer"
     margin={margin}
@@ -249,7 +250,7 @@ const RushInterestButton = ({tabIndex, margin = '24px'}) => (
   </LinkContainer>
 );
 
-const AirtableButton = ({tabIndex, margin = '24px'}) => (
+const AirtableButton = ({ tabIndex, margin = '24px' }) => (
   <LinkContainer
     href="https://airtable.com/shrJgmpX4FC9zrTE8/tblrppwoITrQkIx05"
     target="_blank"
@@ -298,21 +299,21 @@ const BannerTextContainer = styled.div`
   }
 `;
 
-const LeftImage = ({windowWidth}) => {
+const LeftImage = ({ windowWidth }) => {
   if (windowWidth < 830) return <></>;
   if (windowWidth < 1130)
     return <MemberImage src={LeftNarrow} alt="Members of Sigma Eta Pi" />;
   return <MemberImage src={Left} alt="Members of Sigma Eta Pi" />;
 };
 
-const RightImage = ({windowWidth}) => {
+const RightImage = ({ windowWidth }) => {
   if (windowWidth < 830) return <></>;
   if (windowWidth < 1130)
     return <MemberImage src={RightNarrow} alt="Members of Sigma Eta Pi" />;
   return <MemberImage src={Right} alt="Members of Sigma Eta Pi" />;
 };
 
-const Main = ({windowWidth}) => (
+const Main = ({ windowWidth }) => (
   <div
     style={{
       display: 'flex',
@@ -322,9 +323,9 @@ const Main = ({windowWidth}) => (
   >
     <LeftImage windowWidth={windowWidth} />
     <BannerTextContainer>
-      <AccentText>- come join us!</AccentText>
+      <AccentText>come join us!</AccentText>
       <Header>Recruitment</Header>
-      <Bold>Spring Rush 2022&emsp;|&emsp;Mar 28th - Mar 31st</Bold>
+      <Bold>Fall Rush 2022&emsp;|&emsp;Sep 26th - Sep 29th</Bold>
       <RushInterestButton tabIndex={0} />
       <VerticalBorder resize />
       <AirtableButton tabIndex={0} />

@@ -1,27 +1,27 @@
 const DAY_ONE = {
   title: 'Meet The Chapter 👋',
-  date: 'March 28',
-  location: 'Ackerman Viewpoint, 7-9pm',
+  date: 'September 26',
+  location: 'Pauley S.E. Concourse, 7-9pm',
   dress: 'Casual Attire',
 };
 
 const DAY_TWO = {
   title: 'Social Night 😁',
-  date: 'March 29',
-  location: 'Ackerman Viewpoint, 7-9pm',
+  date: 'September 27',
+  location: 'LATC Strauss Clubhouse, 7-9pm',
   dress: 'Casual Attire',
 };
 
 const DAY_THREE = {
   title: 'Professional Night 👔',
-  date: 'March 30',
+  date: 'September 28',
   location: 'Invite Only, 7-9pm',
   dress: 'Business Casual',
 };
 
 const DAY_FOUR = {
   title: 'Coffee Chat ☕️',
-  date: 'March 31',
+  date: 'September 29',
   location: 'Invite Only, 7-9pm',
   dress: 'Casual Attire',
 };
