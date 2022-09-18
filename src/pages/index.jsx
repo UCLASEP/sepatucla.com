@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {Link} from 'gatsby';
+import { Link } from 'gatsby';
 import PageLayout from '../components/layouts/PageLayout';
 import CallToAction from '../components/layouts/CallToAction';
 
@@ -457,7 +457,7 @@ const CaptionComponent = () => (
     <CaptionSeparateText>with</CaptionSeparateText>
 
     <CaptionParent>
-      <GreenCaptionPart>50+</GreenCaptionPart>{' '}
+      <GreenCaptionPart>45+</GreenCaptionPart>{' '}
       <CaptionText>Personalities</CaptionText>
     </CaptionParent>
 
@@ -476,14 +476,14 @@ const CaptionComponent = () => (
 );
 const HeaderComponent = () => (
   <HeaderContainer>
-    <HeaderTitle>We do things a little differently around here.</HeaderTitle>
+    <HeaderTitle>We do things differently.</HeaderTitle>
     <HeaderSubtext>
       Although vastly diverse and widespread, our SEP family shares one distinct
       objective: <HeaderGreen>do what you love</HeaderGreen>.
     </HeaderSubtext>
-    <Link to="/recruitment" style={{textDecoration: 'none'}}>
+    <Link to="/recruitment" style={{ textDecoration: 'none' }}>
       <ViewSelectorButton className="button" role="button" tabIndex={0}>
-        Spring Recruitment 2022
+        Fall Recruitment 2022
       </ViewSelectorButton>
     </Link>
   </HeaderContainer>
@@ -500,7 +500,7 @@ const MemberComponent = () => (
           Whether it’s starting a venture or an adventure, these are the
           wonderful people we do it with!
         </Blurb>
-        <Link to="/members" style={{textDecoration: 'none'}}>
+        <Link to="/members" style={{ textDecoration: 'none' }}>
           <MemberSelectorButton className="button" role="button" tabIndex={0}>
             Active Members
           </MemberSelectorButton>
@@ -524,14 +524,14 @@ const EntrepreneurshipComponent = () => (
         </EntrepreneurshipPhoto>
         <EntrepreneurshipText>
           <MiniTitle>— entrepreneurship</MiniTitle>
-          <SubTitle>There’s something here for everyone</SubTitle>
+          <SubTitle>There’s something here for everyone.</SubTitle>
           <Blurb>
             Some of us go off to start something right off the bat, while others
             put their expertise into helping organizations grow. There’s space
             here for everyone.
           </Blurb>
           <ButtonContainer>
-            <Link to="/ventures" style={{textDecoration: 'none'}}>
+            <Link to="/ventures" style={{ textDecoration: 'none' }}>
               <MemberSelectorButton
                 className="button"
                 role="button"
@@ -541,7 +541,7 @@ const EntrepreneurshipComponent = () => (
               </MemberSelectorButton>
             </Link>
 
-            <Link to="/careers" style={{textDecoration: 'none'}}>
+            <Link to="/careers" style={{ textDecoration: 'none' }}>
               <WorkSelectorButton className="button" role="button" tabIndex={0}>
                 where we’ve worked
               </WorkSelectorButton>
